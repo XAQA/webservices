@@ -1,0 +1,66 @@
+import urllib
+import urllib2
+
+#GET
+#----------------------------------------------
+def GetFunc(url, headers):
+    request = urllib2.Request(url)
+
+    for key, value in headers.items():
+        request.add_header(key,value)
+    print request.headers
+
+    response = urllib2.urlopen(request)
+
+    print "Status =", response.code
+    print "Headers"
+    print "-"*60
+    for line in response.info().headers:
+        print line
+
+    print "Response"
+    print "-"*60
+    print response.read()
+
+#POST
+#-------------------------------------------------
+def PostFunc(url, headers, data):
+    request = urllib2.Request(url)
+
+    request.add_data(data)  
+
+    for key, value in headers.items():
+        request.add_header(key,value)
+    
+
+    response = urllib2.urlopen(request)
+
+    print "Status =", response.code
+    print "Headers"
+    print "-"*60
+    for line in response.info().headers:
+        if "Set-Cookie" in line:
+            cookie = line.replace("Set-Cookie: ", "")
+        print line
+
+    for index, letter in enumerate(cookie):
+        #if letter == ":":
+            #begin = index+2
+        if letter == ";":
+            end = index+1
+            cookieValue = cookie[0:end]
+            return cookieValue
+
+#main code
+#----------------------------------------------------------------------
+url = "https://xadev.xactware.com/apps/xa/ws/auth/login"
+headers = {"Content-Type":"text/xml", "Connection": "Keep-Alive"}
+data = "<credentials><username>safejcm</username><password>super5</password></credentials>"
+
+cookieVal = PostFunc(url, headers, data)
+print "cookie val =", cookieVal
+
+##url1 = "https://xadev.xactware.com/apps/xa/ws/auth/userNumber"
+##headers1 = {"Cookie":cookieVal}
+##print "headers1 =", headers1
+##newcookieVal = GetFunc(url1, headers1)

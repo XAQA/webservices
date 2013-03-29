@@ -1,0 +1,37 @@
+import urllib3
+
+def PostFunc(url, data, hdrs=None):
+    https = urllib3.PoolManager()
+    response = https.urlopen("POST", url, body = data, headers = hdrs)
+
+    print "Status = ", response.status
+    print "Response"
+    print "-"*60
+    print response.data
+    print "Headers"
+    print "-"*60
+    for key, value in response.headers.iteritems():
+        if key == "set-cookie":
+            cookie = value
+        print key + ":", value
+    return cookie, https
+
+
+def GetFunc(url, hdrs = None):
+    https = urllib3.PoolManager()
+    response = https.urlopen("GET", url, headers = hdrs)
+    
+    print "Status = ", response.status
+    print "Response"
+    print "-"*60
+    print response.data
+    print "Headers"
+    print "-"*60
+    for key, value in response.headers.iteritems():
+        print key + ":", value
+
+
+GetFunc("https://xadev.xactware.com/apps/xa/ws", {"Accept":"text/xml"})
+cookieVal, https = PostFunc("https://xadev.xactware.com/apps/xa/ws/auth/login", "<credentials><username>safejcm</username><password>super5</password></credentials>")
+stuff = https.urlopen("GET", "https://xadev.xactware.com/apps/xa/ws/auth/userNumber", headers = {"Cookie":cookieVal})
+GetFunc("https://xadev.xactware.com/apps/xa/ws/auth/userNumber", {"Cookie":cookieVal})
