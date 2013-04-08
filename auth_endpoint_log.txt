@@ -1,0 +1,116 @@
+Mon 04/08/2013 
+11:26:52.10 
+==================== GET Documentation =====================
+status = 401 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+set-cookie: JSESSIONID=1D882234AEC8DFD1353781D8E99FF814.xadevapp1; Path=/apps/; Secure; HttpOnly
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 17:26:52 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/auth</url><name>Authentication</name><description>This endpoint handles user authentication. To use any of the XactAnalysis web services, a user must first be authenticated and receive a session ID. This session ID will need to be passed with each request. If the session ID is not present, the web service will return a '403 Unauthorized' response. This session ID should be sent in the 'Cookie' header, with the name 'JSESSIONID'.</description><operations><operation><uri>login</uri><method>POST</method><description>This endpoint will examine your credentials to see if you are able to log in to the XactAnalysis web services. If your credentials are correct and you have the correct user rights, the service will reply with a '200 OK' response. The response will include a 'Set-Cookie' header with your new session ID. If your credentials were not correct, the service will reply with a '403 Unauthorized' response. If your credentials were correct, but you do not have rights to use the web service (or if you have been locked out due to too many failed log in attempts), the service will reply with a '401 Forbidden' response.</description><inputs><input><description>The credentials of the client that is attempting to log in</description><name>Credentials object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A new session ID (in the 'Set-Cookie' header)</output></operation><operation><uri>logout</uri><method>POST</method><description>This endpoint will close an open session, effectively logging a user out of the system. This will make the session ID invalid for future use. IT IS STRONGLY RECOMMENDED that you log out every time you are finished calling the web services that you need to. Leaving a valid session ID hanging around is a bad idea.</description><inputs><input><description>Your current session's ID.</description><name>JSESSIONID</name><isOptional>false</isOptional><type>Cookie</type></input></inputs><availableTypes/><output>none</output></operation></operations><children><child>/credentials</child></children></endpoint>
+
+
+========================== Login ===========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 08 Apr 2013 17:26:52 GMT
+set-cookie: JSESSIONID: FAB83CE6D1D068EB9905C9EE9C889CD1.xadevapp1;
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+======================= Check Login ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 35
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 17:26:52 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+Hello, safejcm. You are logged in.
+
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 08 Apr 2013 17:26:52 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+======================= Check Logout =======================
+status = 401 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 22
+set-cookie: JSESSIONID=DCA87DFD0C46E41FF9FFE1FE9BA3C5A7.xadevapp1; Path=/apps/; Secure; HttpOnly
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 17:26:52 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+You are not logged in
+
+
+
+================= Login (bad credentials) ==================
+status = 403 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 08 Apr 2013 17:26:52 GMT
+content-length: 20
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+Incorrect password.
+
+
+
