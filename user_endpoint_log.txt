@@ -1,0 +1,132 @@
+Mon 04/08/2013 
+12:01:46.07 
+========================== Login ===========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 08 Apr 2013 18:01:46 GMT
+set-cookie: JSESSIONID: 90EE19B19EB46E282FFA74605BCE95C3.xadevapp1;
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+==================== Details About User ====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 18:01:46 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>safejcm1</userId><userNumber>32611J1701</userNumber><lastName>Millett</lastName><firstName>Jace</firstName><account>SafeHaven</account><passwordExpireDate>2013-05-28 00:00:00</passwordExpireDate><email>jcmillett@xactware.com</email></user>
+
+
+================ Search For User By UserId =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 18:01:47 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+
+
+=============== Search For User By Last Name ===============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 18:01:47 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+
+
+============== Search For User By First Name ===============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 18:01:47 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+
+
+============= Search For User By Email Address =============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 08 Apr 2013 18:01:47 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>testjcm</userId><firstName>test</firstName><lastName>test</lastName><userNumber>13919H8125</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 08 Apr 2013 18:01:47 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
