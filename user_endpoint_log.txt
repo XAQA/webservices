@@ -1,4 +1,4 @@
-Tue 04/09/2013 
+Wed 04/10/2013 
 11:00:45.03 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 09 Apr 2013 17:00:45 GMT
-set-cookie: JSESSIONID: 57343CE1F1977C8D47865848092FD138.xadevapp1;
+date: Wed, 10 Apr 2013 17:00:45 GMT
+set-cookie: JSESSIONID: 14FC8E2CBAA708BD649A966E7DC6BD47.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,13 +28,31 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/user</url><name>User Administration</name><description>This endpoint allows clients to find and manage their users.</description><operations><operation><uri></uri><method>POST</method><description>Creates a new user.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>text/plain</contentType></availableTypes><output>The URL of the newly created user resource.</output></operation><operation><uri>{userNumber}</uri><method>GET</method><description>Retrieves detailed information about a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A User object</output></operation><operation><uri>{userNumber}</uri><method>POST</method><description>Modifies data of an existing user.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{userNumber}</uri><method>DELETE</method><description>Deletes a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>search</uri><method>GET</method><description>Allows clients to search for existing users.</description><inputs><input><description>The username of a user. Can include wildcard characters '*' and '?'.</description><name>userId</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The last name of a user. Can include wildcard characters '*' and '?'</description><name>last</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The first name of a user. Can include wildcard characters '*' and '?'</description><name>first</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The email address of a user. Can include wildcard characters '*' and '?'</description><name>email</name><isOptional>false</isOptional><type>Query Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A UserSearchResults object</output></operation></operations><children><child>/example</child></children></endpoint>
+
+
+======================= Create User ========================
+status = 201 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Wed, 10 Apr 2013 17:00:45 GMT
+content-length: 44
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://xadev.xactware.com/apps/xa/ws/user/
+
 
 
 ==================== Details About User ====================
@@ -47,7 +65,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -66,7 +84,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -85,7 +103,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -104,7 +122,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -123,7 +141,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Tue, 09 Apr 2013 17:00:45 GMT
+date: Wed, 10 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -138,7 +156,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 09 Apr 2013 17:00:46 GMT
+date: Wed, 10 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
