@@ -1,13 +1,13 @@
-Mon 04/08/2013 
-12:01:47.87 
+Tue 04/09/2013 
+11:00:44.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 18:01:48 GMT
-set-cookie: JSESSIONID: 881F2D9281505123A194BDCA493B975A.xadevapp1;
+date: Tue, 09 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: E4E099B461714C6541D988A3A484B491.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -18,13 +18,32 @@ data
 None
 
 
+==================== GET Documentation =====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Tue, 09 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact Information</name><description>This endpoint handles user contact information. One can insert, update, and delete contact information as well as associate (or disassociate) a certain bit of contact information with a given user.</description><operations><operation><uri>createPhoneEntry</uri><method>POST</method><description>Hello World.</description><inputs/><availableTypes><contentType>text/xml</contentType></availableTypes><output>A recordId by which to identify the phone entry.</output></operation></operations><children><child>/phone</child></children></endpoint>
+
+
 ===================== Add Phone Number =====================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 18:01:48 GMT
+date: Tue, 09 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -41,7 +60,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 18:01:48 GMT
+date: Tue, 09 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
