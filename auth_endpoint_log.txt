@@ -1,6 +1,5 @@
-test
-Mon 04/08/2013 
-11:26:52.10 
+Wed 04/10/2013 
+11:36:51.00 
 ==================== GET Documentation =====================
 status = 401 
 
@@ -8,11 +7,11 @@ status = 401
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=1D882234AEC8DFD1353781D8E99FF814.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=F5BC0425C194AF8865281CFFAA374CF6.xadevapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 08 Apr 2013 17:26:52 GMT
+date: Wed, 10 Apr 2013 17:36:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -27,8 +26,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 17:26:52 GMT
-set-cookie: JSESSIONID: FAB83CE6D1D068EB9905C9EE9C889CD1.xadevapp1;
+date: Wed, 10 Apr 2013 17:36:51 GMT
+set-cookie: JSESSIONID: 155DF94F9970B7032EBCA9901006AFE7.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -49,7 +48,7 @@ content-length: 35
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 08 Apr 2013 17:26:52 GMT
+date: Wed, 10 Apr 2013 17:36:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -65,7 +64,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 17:26:52 GMT
+date: Wed, 10 Apr 2013 17:36:52 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -83,11 +82,11 @@ status = 401
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=DCA87DFD0C46E41FF9FFE1FE9BA3C5A7.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=F61F6FD988BB0396285E65FD026DA440.xadevapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 08 Apr 2013 17:26:52 GMT
+date: Wed, 10 Apr 2013 17:36:52 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -103,7 +102,7 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 08 Apr 2013 17:26:52 GMT
+date: Wed, 10 Apr 2013 17:36:52 GMT
 content-length: 20
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
