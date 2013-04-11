@@ -1,13 +1,13 @@
-Wed 04/10/2013 
-11:00:35.02 
+Thu 04/11/2013 
+11:00:35.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 10 Apr 2013 17:00:35 GMT
-set-cookie: JSESSIONID: 3A0D97976BB926D0436E70C895FEABB4.xadevapp1;
+date: Thu, 11 Apr 2013 17:00:35 GMT
+set-cookie: JSESSIONID: 42E8535BEEC0EE4B11C343A775DF8D45.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -18,16 +18,18 @@ data
 None
 
 
-========================== Logout ==========================
-status = 200 
+================ GET Documentation (/right) ================
+status = 404 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 10 Apr 2013 17:00:35 GMT
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
+cache-control: private
+date: Thu, 11 Apr 2013 17:00:35 GMT
+content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
