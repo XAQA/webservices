@@ -1,35 +1,16 @@
-Thu 04/11/2013 
-11:00:35.03 
+Fri 04/12/2013 
+11:00:35.02 
 ========================== Login ===========================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-date: Thu, 11 Apr 2013 17:00:35 GMT
-set-cookie: JSESSIONID: 42E8535BEEC0EE4B11C343A775DF8D45.xadevapp1;
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
-server: Apache
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
-
-
-================ GET Documentation (/right) ================
 status = 404 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
+date: Fri, 12 Apr 2013 17:00:35 GMT
+set-cookie: JSESSIONID: 1357CD570CAF52FA285E77CEBDA94EB7.xadevapp1;
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache
-cache-control: private
-date: Thu, 11 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
+server: Apache
 
 ------------------------------------------------------------
 data
