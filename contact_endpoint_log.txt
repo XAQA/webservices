@@ -1,13 +1,13 @@
 Mon 04/15/2013 
- 8:39:34.57 
+11:00:44.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
-set-cookie: JSESSIONID: 1D90BBED6EDA6DDE7F18B90C532D7C74.xadevapp1;
+date: Mon, 15 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 752B30718A0E5E02501DAC01FD631DBE.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:35 GMT
+date: Mon, 15 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -37,13 +37,32 @@ data
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact Information</name><description>This endpoint handles user contact information. One can insert, update, and delete contact information as well as associate (or disassociate) a certain bit of contact information with a given user.</description><operations><operation><uri>createPhoneEntry</uri><method>POST</method><description>Hello World.</description><inputs/><availableTypes><contentType>text/xml</contentType></availableTypes><output>A recordId by which to identify the phone entry.</output></operation></operations><children><child>/phone</child></children></endpoint>
 
 
+=============== GET Add Phone Documentation ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 15 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Phone Object</name><description>This object holds the core contact information for a user</description><properties><property><propName>recordId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>phoneType</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneExtension</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumberCtry</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>contractorId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>xnAddress</propName><type>string</type><description></description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;phone&gt;&lt;contractorId&gt;-8&lt;/contractorId&gt;&lt;phoneExtension&gt;121&lt;/phoneExtension&gt;&lt;phoneNumber&gt;8018675309&lt;/phoneNumber&gt;&lt;phoneNumberCtry&gt;506&lt;/phoneNumberCtry&gt;&lt;phoneType&gt;MOBILE&lt;/phoneType&gt;&lt;recordId&gt;253713&lt;/recordId&gt;&lt;userNumber&gt;555A51230&lt;/userNumber&gt;&lt;xnAddress&gt;John@DOE.XM8.FUN&lt;/xnAddress&gt;&lt;/phone&gt;</example></model>
+
+
 ===================== Add Phone Number =====================
 status = 404 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
+date: Mon, 15 Apr 2013 17:00:44 GMT
 transfer-encoding: chunked
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -60,7 +79,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
+date: Mon, 15 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

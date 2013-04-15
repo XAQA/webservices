@@ -1,13 +1,13 @@
 Mon 04/15/2013 
- 8:39:32.01 
+11:00:05.21 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:32 GMT
-set-cookie: JSESSIONID: 084CEDD199067DA3118F8F9B18E2E085.xadevapp1;
+date: Mon, 15 Apr 2013 17:00:05 GMT
+set-cookie: JSESSIONID: FEF810A15A3F19A086E950CBB18AB60D.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -25,10 +25,10 @@ status = 401
 headers
 ------------------------------------------------------------
 content-length: 1017
-set-cookie: JSESSIONID=E988C5EE3A481121369EF01911FF3AB1.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=3D89B6406D47BCE5DA6313E4D056EA64.xadevapp1; Path=/apps/; Secure; HttpOnly
 vary: Accept-Encoding
 server: Apache
-date: Mon, 15 Apr 2013 14:39:32 GMT
+date: Mon, 15 Apr 2013 17:00:05 GMT
 content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
@@ -48,7 +48,7 @@ expires: Wed, 31 Dec 1969 17:00:00 MST
 vary: Accept-Encoding
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:32 GMT
+date: Mon, 15 Apr 2013 17:00:05 GMT
 content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
@@ -63,7 +63,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:32 GMT
+date: Mon, 15 Apr 2013 17:00:05 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

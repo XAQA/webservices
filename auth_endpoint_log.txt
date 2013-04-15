@@ -1,5 +1,5 @@
 Mon 04/15/2013 
- 8:39:33.88 
+11:00:41.03 
 ==================== GET Documentation =====================
 status = 200 
 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=F7E33A89B97864D54FF63530361D1F1F.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=C1BFF558AF758376291BE3B1A884031C.xadevapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:34 GMT
+date: Mon, 15 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -26,8 +26,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:34 GMT
-set-cookie: JSESSIONID: 990A783BAF9DF8E93672C0EA94D61C3F.xadevapp1;
+date: Mon, 15 Apr 2013 17:00:41 GMT
+set-cookie: JSESSIONID: CF8ACB2743C54075171B6F770CEAE4C1.xadevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -48,7 +48,7 @@ content-length: 34
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:34 GMT
+date: Mon, 15 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -64,7 +64,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:34 GMT
+date: Mon, 15 Apr 2013 17:00:41 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -82,11 +82,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=B39AA14602FAEB573D8456DC575B2019.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=4E723E8A6F45F62B722210A71BDC9DCF.xadevapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:34 GMT
+date: Mon, 15 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -102,7 +102,7 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:34 GMT
+date: Mon, 15 Apr 2013 17:00:41 GMT
 content-length: 20
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
