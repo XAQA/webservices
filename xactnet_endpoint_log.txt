@@ -1,14 +1,50 @@
-Fri 04/12/2013 
-11:00:12.04 
+Mon 04/15/2013 
+ 8:39:32.85 
 ========================== Login ===========================
-status = 404 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 12 Apr 2013 17:00:12 GMT
-set-cookie: JSESSIONID: B4BB038856BFE9830389E3FA91F368EC.xadevapp1;
+date: Mon, 15 Apr 2013 14:39:33 GMT
+set-cookie: JSESSIONID: 1E5688AF3395A62986A868883D3E7ADB.xadevapp1;
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+==================== GET Documentation =====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
 transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 15 Apr 2013 14:39:33 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/xactnet/axaImport</url><name>AXA User Import Services</name><description>		This endpoint documents the services that XactNet uses to import AXA users into the XactAnalysis-controlled 		tables (mainly the ones that are prefaced with 'XINFO_').	</description><operations><operation><uri>user/{email address}</uri><method>GET</method><description>Finds or creates a user with the given email address (email addresses are guaranteed to be unique by AXA).</description><inputs><input><description>The email address of the user. The address should be URL encoded.</description><name>email address</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes><contentType>text/plain</contentType></availableTypes><output>A user number</output></operation><operation><uri>user/{email address}</uri><method>POST</method><description>Updates a user's information. Also marks the user as 'active' so that it is not deleted by the user import 'end' call.</description><inputs><input><description>The email address of the user. The address should be URL encoded.</description><name>email address</name><isOptional>false</isOptional><type>URL Path Parameter</type></input><input><description>An object containing AXA user information. An example user object can be found at '/xa/ws/xactnet/axaImport/axaUser'.</description><name>AXA User object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>start</uri><method>POST</method><description>Signals the beginning of the daily AXA user import. Marks all current AXA users as 'needs processing'. If users are still marked as 'needs processing' by the time the 'end' call is received, they will be deleted.</description><inputs/><availableTypes/><output>none</output></operation><operation><uri>end</uri><method>POST</method><description>Signals the end of the daily AXA user import. All users that are still marked as 'needs processing' are assumed to be absent from the user import and are deleted.</description><inputs/><availableTypes/><output>none</output></operation></operations><children><child>/axaUser</child></children></endpoint>
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 15 Apr 2013 14:39:33 GMT
+content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
 

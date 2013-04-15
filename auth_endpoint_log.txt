@@ -1,5 +1,5 @@
-Fri 04/12/2013 
-11:00:41.03 
+Mon 04/15/2013 
+ 8:39:33.88 
 ==================== GET Documentation =====================
 status = 200 
 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=492B8B5CEAA09A4C0A9A4AE9DA07D51D.xadevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=F7E33A89B97864D54FF63530361D1F1F.xadevapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Fri, 12 Apr 2013 17:00:41 GMT
+date: Mon, 15 Apr 2013 14:39:34 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -21,14 +21,14 @@ data
 
 
 ========================== Login ===========================
-status = 404 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 12 Apr 2013 17:00:41 GMT
-set-cookie: JSESSIONID: 7635FEDD1A4A58E6AC446A30C43643D3.xadevapp1;
-transfer-encoding: chunked
+date: Mon, 15 Apr 2013 14:39:34 GMT
+set-cookie: JSESSIONID: 990A783BAF9DF8E93672C0EA94D61C3F.xadevapp1;
+content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
 
@@ -36,5 +36,81 @@ server: Apache
 data
 ------------------------------------------------------------
 None
+
+
+======================= Check Login ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 34
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 15 Apr 2013 14:39:34 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+Hello, xwrjcm. You are logged in.
+
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 15 Apr 2013 14:39:34 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+======================= Check Logout =======================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 22
+set-cookie: JSESSIONID=B39AA14602FAEB573D8456DC575B2019.xadevapp1; Path=/apps/; Secure; HttpOnly
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Mon, 15 Apr 2013 14:39:34 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+You are not logged in
+
+
+
+================= Login (bad credentials) ==================
+status = 403 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 15 Apr 2013 14:39:34 GMT
+content-length: 20
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+Incorrect password.
+
 
 
