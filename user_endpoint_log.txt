@@ -1,13 +1,13 @@
-Mon 04/15/2013 
-11:00:45.03 
+Tue 04/16/2013 
+11:00:45.04 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:45 GMT
-set-cookie: JSESSIONID: 7C61EF9C32C93D39DA3E8BA106F8A144.xadevapp1;
+date: Tue, 16 Apr 2013 17:00:45 GMT
+set-cookie: JSESSIONID: 3833FA8A94F1B63F72C7F8FA12BC8207.xaeudevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,35 +62,16 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:45 GMT
-content-length: 44
+date: Tue, 16 Apr 2013 17:00:45 GMT
+content-length: 50
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://xadev.xactware.com/apps/xa/ws/user/
+https://xadev.xactware.co.uk/apps/xa/ws/user/null
 
-
-
-==================== Details About User ====================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache
-cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>safejcm1</userId><userNumber>32611J1701</userNumber><lastName>Millett</lastName><firstName>Jace</firstName><account>SafeHaven</account><passwordExpireDate>2013-05-28 00:00:00</passwordExpireDate><email>jcmillett@xactware.com</email></user>
 
 
 ================ Search For User By UserId =================
@@ -103,13 +84,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_29432G1036</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
 
 
 =============== Search For User By Last Name ===============
@@ -122,13 +103,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>72487G7141</userNumber><email>jcmillett@xactware.com</email></user><user><userId>spjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>25339I5655</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user><user><userId>qrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65074H1334</userNumber><email>jcmillett@xactware.com</email></user><user><userId>n0063815</userId><firstName>Debbie</firstName><lastName>Millett</lastName><userNumber>74154I3711</userNumber><email>debbie.millett@libertymutual.com</email></user><user><userId>alljcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>29586A4791</userNumber><email>jcmillett@xactware.com</email></user><user><userId>aijcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65524G7505</userNumber><email>jcmillett@xactware.com</email></user><user><userId>adjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>91716G1086</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_59864I2026</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_29432G1036</userNumber><email>jcmillett@xactware.com</email></user><user><userId>axabjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_89067F9063</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
 
 
 ============== Search For User By First Name ===============
@@ -141,13 +122,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>72487G7141</userNumber><email>jcmillett@xactware.com</email></user><user><userId>spjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>25339I5655</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user><user><userId>qrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65074H1334</userNumber><email>jcmillett@xactware.com</email></user><user><userId>alljcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>29586A4791</userNumber><email>jcmillett@xactware.com</email></user><user><userId>aijcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65524G7505</userNumber><email>jcmillett@xactware.com</email></user><user><userId>adjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>91716G1086</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_59864I2026</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_29432G1036</userNumber><email>jcmillett@xactware.com</email></user><user><userId>axabjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_89067F9063</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
 
 
 ============= Search For User By Email Address =============
@@ -160,13 +141,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:45 GMT
+date: Tue, 16 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>72487G7141</userNumber><email>jcmillett@xactware.com</email></user><user><userId>testjcm</userId><firstName>test</firstName><lastName>test</lastName><userNumber>13919H8125</userNumber><email>jcmillett@xactware.com</email></user><user><userId>spjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>25339I5655</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm1</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>32611J1701</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>30135H8614</userNumber><email>jcmillett@xactware.com</email></user><user><userId>qrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65074H1334</userNumber><email>jcmillett@xactware.com</email></user><user><userId>alljcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>29586A4791</userNumber><email>jcmillett@xactware.com</email></user><user><userId>aijcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>65524G7505</userNumber><email>jcmillett@xactware.com</email></user><user><userId>adjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>91716G1086</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>xwrjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_59864I2026</userNumber><email>jcmillett@xactware.com</email></user><user><userId>safejcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_29432G1036</userNumber><email>jcmillett@xactware.com</email></user><user><userId>jwh-sh-ws2</userId><firstName>Holt</firstName><lastName>Jon</lastName><userNumber>EU_99419E7582</userNumber><email>jcmillett@xactware.com</email></user><user><userId>jwh-sh-ws</userId><firstName>Jon</firstName><lastName>Holt</lastName><userNumber>EU_09154G3261</userNumber><email>jcmillett@xactware.com</email></user><user><userId>axabjcm</userId><firstName>Jace</firstName><lastName>Millett</lastName><userNumber>EU_89067F9063</userNumber><email>jcmillett@xactware.com</email></user></users></searchResults>
 
 
 ========================== Logout ==========================
@@ -175,7 +156,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:46 GMT
+date: Tue, 16 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

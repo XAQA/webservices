@@ -1,4 +1,4 @@
-Mon 04/15/2013 
+Tue 04/16/2013 
 11:00:44.03 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:44 GMT
-set-cookie: JSESSIONID: 752B30718A0E5E02501DAC01FD631DBE.xadevapp1;
+date: Tue, 16 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 731E8AAC4C6EEDCC5B44E61BBB99C106.xaeudevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:44 GMT
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 17:00:44 GMT
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -57,20 +57,21 @@ data
 
 
 ===================== Add Phone Number =====================
-status = 404 
+status = 400 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:44 GMT
-transfer-encoding: chunked
-content-type: text/plain; charset=ISO-8859-1
+date: Tue, 16 Apr 2013 17:00:44 GMT
+content-length: 1058
+content-type: text/html;charset=utf-8
+connection: close
 server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+<html><head><title>Apache Tomcat/7.0.37 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - The following fields are not valid: xm8UserId</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>The following fields are not valid: xm8UserId</u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.37</h3></body></html>
 
 
 ========================== Logout ==========================
@@ -79,7 +80,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 17:00:44 GMT
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
