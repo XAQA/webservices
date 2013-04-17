@@ -1,13 +1,13 @@
-Mon 04/15/2013 
- 8:39:34.57 
+Tue 04/16/2013 
+11:00:44.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
-set-cookie: JSESSIONID: 1D90BBED6EDA6DDE7F18B90C532D7C74.xadevapp1;
+date: Tue, 16 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 731E8AAC4C6EEDCC5B44E61BBB99C106.xaeudevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:35 GMT
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -37,21 +37,41 @@ data
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact Information</name><description>This endpoint handles user contact information. One can insert, update, and delete contact information as well as associate (or disassociate) a certain bit of contact information with a given user.</description><operations><operation><uri>createPhoneEntry</uri><method>POST</method><description>Hello World.</description><inputs/><availableTypes><contentType>text/xml</contentType></availableTypes><output>A recordId by which to identify the phone entry.</output></operation></operations><children><child>/phone</child></children></endpoint>
 
 
-===================== Add Phone Number =====================
-status = 404 
+=============== GET Add Phone Documentation ================
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
 transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache
+cache-control: private
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Phone Object</name><description>This object holds the core contact information for a user</description><properties><property><propName>recordId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>phoneType</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneExtension</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumberCtry</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>contractorId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>xnAddress</propName><type>string</type><description></description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;phone&gt;&lt;contractorId&gt;-8&lt;/contractorId&gt;&lt;phoneExtension&gt;121&lt;/phoneExtension&gt;&lt;phoneNumber&gt;8018675309&lt;/phoneNumber&gt;&lt;phoneNumberCtry&gt;506&lt;/phoneNumberCtry&gt;&lt;phoneType&gt;MOBILE&lt;/phoneType&gt;&lt;recordId&gt;253713&lt;/recordId&gt;&lt;userNumber&gt;555A51230&lt;/userNumber&gt;&lt;xnAddress&gt;John@DOE.XM8.FUN&lt;/xnAddress&gt;&lt;/phone&gt;</example></model>
+
+
+===================== Add Phone Number =====================
+status = 400 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 16 Apr 2013 17:00:44 GMT
+content-length: 1058
+content-type: text/html;charset=utf-8
+connection: close
 server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+<html><head><title>Apache Tomcat/7.0.37 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - The following fields are not valid: xm8UserId</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>The following fields are not valid: xm8UserId</u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.37</h3></body></html>
 
 
 ========================== Logout ==========================
@@ -60,7 +80,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:35 GMT
+date: Tue, 16 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

@@ -1,13 +1,13 @@
-Mon 04/15/2013 
- 8:39:32.85 
+Tue 04/16/2013 
+11:00:12.04 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:33 GMT
-set-cookie: JSESSIONID: 1E5688AF3395A62986A868883D3E7ADB.xadevapp1;
+date: Tue, 16 Apr 2013 17:00:12 GMT
+set-cookie: JSESSIONID: B1EAFE2DEEF57D1394E73E5CAC8D26AC.xaeudevapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache
 cache-control: private
-date: Mon, 15 Apr 2013 14:39:33 GMT
+date: Tue, 16 Apr 2013 17:00:12 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -38,19 +38,28 @@ data
 
 
 ========================== Logout ==========================
-status = 200 
+status = 502 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 15 Apr 2013 14:39:33 GMT
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
+date: Tue, 16 Apr 2013 17:00:12 GMT
+content-length: 232
+content-type: text/html; charset=iso-8859-1
 server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>502 Bad Gateway</title>
+</head><body>
+<h1>Bad Gateway</h1>
+<p>The proxy server received an invalid
+response from an upstream server.<br />
+</p>
+</body></html>
+
 
 
