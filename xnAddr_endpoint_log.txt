@@ -1,16 +1,16 @@
-Tue 04/16/2013 
-11:00:05.19 
+Wed 04/17/2013 
+11:00:05.18 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:05 GMT
-set-cookie: JSESSIONID: 3D6B6A2A5801611DFA9855FB10A816B8.xaeudevapp1;
+date: Wed, 17 Apr 2013 17:00:05 GMT
+set-cookie: JSESSIONID: 9DD8D86041E24481E7E7D0B320DA4550.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
@@ -19,20 +19,39 @@ None
 
 
 ===================== Link XN Address ======================
-status = 401 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:05 GMT
-content-length: 1035
-content-type: text/html;charset=utf-8
-server: Apache
+date: Wed, 17 Apr 2013 17:00:07 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<html><head><title>Apache Tomcat/7.0.37 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 401 - The requested resource could not be found.</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>The requested resource could not be found.</u></p><p><b>description</b> <u>This request requires HTTP authentication.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.37</h3></body></html>
+None
+
+
+==================== Unlink XN Address =====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Wed, 17 Apr 2013 17:00:07 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
 
 
 ========================== Logout ==========================
@@ -41,10 +60,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:05 GMT
+date: Wed, 17 Apr 2013 17:00:07 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data

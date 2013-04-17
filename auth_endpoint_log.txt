@@ -1,5 +1,5 @@
-Tue 04/16/2013 
-11:00:41.03 
+Wed 04/17/2013 
+11:00:41.04 
 ==================== GET Documentation =====================
 status = 200 
 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=5D75ED835635F7878C84BBBC58C7B6D7.xaeudevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=36BDBD15EBC1F7FB0FBE6663FBF1966F.xaeutestapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Tue, 16 Apr 2013 17:00:41 GMT
+date: Wed, 17 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -26,11 +26,11 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:41 GMT
-set-cookie: JSESSIONID: 4665FCB5D2367BF411B0AB9704CE71D0.xaeudevapp1;
+date: Wed, 17 Apr 2013 17:00:41 GMT
+set-cookie: JSESSIONID: C9DE640294C7E53F07B180DC9FF82306.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
@@ -46,9 +46,9 @@ headers
 ------------------------------------------------------------
 content-length: 34
 expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Tue, 16 Apr 2013 17:00:41 GMT
+date: Wed, 17 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -64,10 +64,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:41 GMT
+date: Wed, 17 Apr 2013 17:00:41 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
@@ -82,11 +82,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=C99234190A9D14C3EFCF01CD614109D4.xaeudevapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=54217EF017CD301CF1463AEB589211F4.xaeutestapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Tue, 16 Apr 2013 17:00:41 GMT
+date: Wed, 17 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -102,10 +102,10 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Tue, 16 Apr 2013 17:00:41 GMT
+date: Wed, 17 Apr 2013 17:00:41 GMT
 content-length: 20
 content-type: text/plain; charset=ISO-8859-1
-server: Apache
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
