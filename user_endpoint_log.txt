@@ -1,13 +1,13 @@
-Wed 04/17/2013 
-11:00:45.04 
+Thu 04/18/2013 
+11:00:45.02 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 17 Apr 2013 17:00:45 GMT
-set-cookie: JSESSIONID: A0E67E0C5D82BD16DED9CFDB696163BD.xaeutestapp1;
+date: Thu, 18 Apr 2013 17:00:45 GMT
+set-cookie: JSESSIONID: 37F2D3C89579631CD0DD6F1BE604B4CB.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:45 GMT
+date: Thu, 18 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,13 +47,90 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:45 GMT
+date: Thu, 18 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>User</name><description>A representation of an XactAnalysis user.</description><properties><property><propName>userId</propName><type>string</type><description>This is the username that will be used when logging in to XactAnalysis. This property is required when creating a user, but is not required when updating a user.</description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description>A user number uniquely identifies an XactAnalysis user. This value cannot be modified, and is automatically generated when creating a user.</description><isRequired>false</isRequired></property><property><propName>lastName</propName><type>string</type><description>The last name of the user.</description><isRequired>false</isRequired></property><property><propName>firstName</propName><type>string</type><description>The first name of the user.</description><isRequired>false</isRequired></property><property><propName>account</propName><type>string</type><description>Users in XactAnalysis are created inside accounts. For example, the account 'SafeHaven' is used to store test users. This property is required when creating a user, but this property cannot be modified after a user is created.</description><isRequired>false</isRequired></property><property><propName>password</propName><type>string</type><description>A user's password. This property will not be sent back to the user; it is included in the user object so that web service clients can modify a user's password.</description><isRequired>false</isRequired></property><property><propName>passwordExpireDate</propName><type>date/time - in the format 'yyyy-MM-dd HH:mm:ss'; 'MM' is the month in the range 01-12, HH is the hour in the range 00-23 with 23 being 11:00 PM</type><description>The password expiration date. After this date has passed, the system will prompt the user to change their password.</description><isRequired>false</isRequired></property><property><propName>email</propName><type>string</type><description>The primary email address of the user. This property will be used if a password is forgotten; a recovery email will be sent to this address. If you wish to create more email addresses for a user, see the /contact endpoint.</description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;user&gt;&lt;userId&gt;sh-user&lt;/userId&gt;&lt;userNumber&gt;2348A97231&lt;/userNumber&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;firstName&gt;Peter&lt;/firstName&gt;&lt;account&gt;SafeHaven&lt;/account&gt;&lt;passwordExpireDate&gt;2013-04-04 16:12:33&lt;/passwordExpireDate&gt;&lt;email&gt;user@xactware.fake.com&lt;/email&gt;&lt;/user&gt;</example></model>
+
+
+======================= Create User ========================
+status = 201 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Thu, 18 Apr 2013 17:00:45 GMT
+content-length: 58
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://test.xactware.co.uk/apps/xa/ws/user/EU_47820A9929
+
+
+
+------------------------------------------------------------
+NEW USER NUMBER
+------------------------------------------------------------
+EU_47820A9929
+==================== Details About User ====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Thu, 18 Apr 2013 17:00:46 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_47820A9929</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+
+
+=============== Modify New Users first name ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Thu, 18 Apr 2013 17:00:46 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+======================== Verify Mod ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Thu, 18 Apr 2013 17:00:46 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_47820A9929</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -66,7 +143,7 @@ content-length: 0
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:45 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -85,7 +162,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:45 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -104,7 +181,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:46 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -123,7 +200,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:46 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -142,7 +219,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:46 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -161,7 +238,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Wed, 17 Apr 2013 17:00:46 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -176,7 +253,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 17 Apr 2013 17:00:46 GMT
+date: Thu, 18 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
