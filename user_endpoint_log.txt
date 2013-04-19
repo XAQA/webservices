@@ -1,13 +1,13 @@
-Thu 04/18/2013 
-11:00:45.02 
+Fri 04/19/2013 
+11:00:45.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:45 GMT
-set-cookie: JSESSIONID: 37F2D3C89579631CD0DD6F1BE604B4CB.xaeutestapp1;
+date: Fri, 19 Apr 2013 17:00:45 GMT
+set-cookie: JSESSIONID: 14E88A23B64D5A1D1302A79AAAC77474.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,13 +28,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:45 GMT
+date: Fri, 19 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/user</url><name>User Administration</name><description>This endpoint allows clients to find and manage their users.</description><operations><operation><uri></uri><method>POST</method><description>Creates a new user.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>text/plain</contentType></availableTypes><output>The URL of the newly created user resource.</output></operation><operation><uri>{userNumber}</uri><method>GET</method><description>Retrieves detailed information about a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A User object</output></operation><operation><uri>{userNumber}</uri><method>POST</method><description>Modifies data of an existing user.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{userNumber}</uri><method>DELETE</method><description>Deletes a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>search</uri><method>GET</method><description>Allows clients to search for existing users.</description><inputs><input><description>The username of a user. Can include wildcard characters '*' and '?'.</description><name>userId</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The last name of a user. Can include wildcard characters '*' and '?'</description><name>last</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The first name of a user. Can include wildcard characters '*' and '?'</description><name>first</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The email address of a user. Can include wildcard characters '*' and '?'</description><name>email</name><isOptional>false</isOptional><type>Query Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A UserSearchResults object</output></operation></operations><children><child>/example</child></children></endpoint>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/user</url><name>User Administration</name><description>This endpoint allows clients to find and manage their users.</description><operations><operation><uri></uri><method>POST</method><description>Creates a new user. This operation will automatically change the user ID to use all lowercase letters.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>text/plain</contentType></availableTypes><output>The URL of the newly created user resource.</output></operation><operation><uri>{userNumber}</uri><method>GET</method><description>Retrieves detailed information about a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A User object</output></operation><operation><uri>{userNumber}</uri><method>POST</method><description>Modifies data of an existing user.</description><inputs><input><description>An object containing user information. An example user object can be found at /user/example.</description><name>User object</name><isOptional>false</isOptional><type>Body Entity</type></input><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{userNumber}</uri><method>DELETE</method><description>Deletes a user.</description><inputs><input><description>A user number uniquely identifies a user in XactAnalysis</description><name>userNumber</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>search</uri><method>GET</method><description>Allows clients to search for existing users.</description><inputs><input><description>The username of a user. Can include wildcard characters '*' and '?'.</description><name>userId</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The last name of a user. Can include wildcard characters '*' and '?'</description><name>last</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The first name of a user. Can include wildcard characters '*' and '?'</description><name>first</name><isOptional>false</isOptional><type>Query Parameter</type></input><input><description>The email address of a user. Can include wildcard characters '*' and '?'</description><name>email</name><isOptional>false</isOptional><type>Query Parameter</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A UserSearchResults object</output></operation></operations><children><child>/example</child></children></endpoint>
 
 
 ============== GET User Object Documentation ===============
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:45 GMT
+date: Fri, 19 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:45 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-length: 58
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -70,14 +70,14 @@ server: Apache/2.2.15 (Red Hat)
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/user/EU_47820A9929
+https://test.xactware.co.uk/apps/xa/ws/user/EU_51802A4744
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_47820A9929
+EU_51802A4744
 ==================== Details About User ====================
 status = 200 
 
@@ -88,13 +88,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_47820A9929</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_51802A4744</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 =============== Modify New Users first name ================
@@ -103,7 +103,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -124,13 +124,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_47820A9929</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_51802A4744</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -143,7 +143,7 @@ content-length: 0
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -162,7 +162,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -181,7 +181,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -200,7 +200,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -219,7 +219,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -238,7 +238,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -253,7 +253,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:46 GMT
+date: Fri, 19 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)

@@ -1,5 +1,5 @@
-Thu 04/18/2013 
-11:00:41.03 
+Fri 04/19/2013 
+11:00:41.04 
 ==================== GET Documentation =====================
 status = 200 
 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=08FBD898BF6AEDC3F40FCBB4A5264F6E.xaeutestapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=6DC134358C499833FBDA40837B17F8C5.xaeutestapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:41 GMT
+date: Fri, 19 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -26,8 +26,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:41 GMT
-set-cookie: JSESSIONID: FA900D4627480C98DF9A14AFAE31217F.xaeutestapp1;
+date: Fri, 19 Apr 2013 17:00:41 GMT
+set-cookie: JSESSIONID: 28DF1ADC664F8D53CCCB4CF98FC2CEA2.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -48,7 +48,7 @@ content-length: 34
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:41 GMT
+date: Fri, 19 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -64,7 +64,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:41 GMT
+date: Fri, 19 Apr 2013 17:00:41 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -82,11 +82,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=6C43AE9ADE2D2A1C61B7B57315B480A3.xaeutestapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=821808815A97E75AA6E7689A6B7282EA.xaeutestapp1; Path=/apps/; Secure; HttpOnly
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:41 GMT
+date: Fri, 19 Apr 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -102,7 +102,7 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:41 GMT
+date: Fri, 19 Apr 2013 17:00:42 GMT
 content-length: 20
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)

@@ -1,13 +1,13 @@
-Thu 04/18/2013 
-11:00:44.04 
+Fri 04/19/2013 
+11:00:44.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:44 GMT
-set-cookie: JSESSIONID: 5D3D6472C6CB7BBC55C1BFA005C2F942.xaeutestapp1;
+date: Fri, 19 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 6B62ECA57D1A854808209A811B1FCEB1.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,13 +28,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:44 GMT
+date: Fri, 19 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact Information</name><description>This endpoint handles user contact information. One can insert, update, and delete contact information as well as associate (or disassociate) a certain bit of contact information with a given user.</description><operations><operation><uri>createPhoneEntry</uri><method>POST</method><description>Hello World.</description><inputs/><availableTypes><contentType>text/xml</contentType></availableTypes><output>A recordId by which to identify the phone entry.</output></operation></operations><children><child>/phone</child></children></endpoint>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact</name><description>This endpoint handles user contact data. A user's phone numbers, email addresses, or street addresses may be created, modified, and deleted via these service calls.</description><operations><operation><uri>contact</uri><method>GET</method><description>Get this documentation</description><inputs/><availableTypes><contentType>text/html</contentType><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation></operations><children><child>/phone</child><child>/email</child><child>/street</child></children></endpoint>
 
 
 =============== GET Add Phone Documentation ================
@@ -47,30 +47,32 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Thu, 18 Apr 2013 17:00:44 GMT
+date: Fri, 19 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Phone Object</name><description>This object holds the core contact information for a user</description><properties><property><propName>recordId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>phoneType</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneExtension</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>phoneNumberCtry</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>contractorId</propName><type>long</type><description></description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description></description><isRequired>false</isRequired></property><property><propName>xnAddress</propName><type>string</type><description></description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;phone&gt;&lt;contractorId&gt;-8&lt;/contractorId&gt;&lt;phoneExtension&gt;121&lt;/phoneExtension&gt;&lt;phoneNumber&gt;8018675309&lt;/phoneNumber&gt;&lt;phoneNumberCtry&gt;506&lt;/phoneNumberCtry&gt;&lt;phoneType&gt;MOBILE&lt;/phoneType&gt;&lt;recordId&gt;253713&lt;/recordId&gt;&lt;userNumber&gt;555A51230&lt;/userNumber&gt;&lt;xnAddress&gt;John@DOE.XM8.FUN&lt;/xnAddress&gt;&lt;/phone&gt;</example></model>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact/phone</url><name>Contact-Phone</name><description>This endpoint handles user contact data. A user's phone numbers via these service calls.</description><operations><operation><uri>phone</uri><method>POST</method><description>This endpoint will allow you to create a user's phone number.</description><inputs><input><description>The phone number data.</description><name>Phone object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>POST</method><description>This endpoint will allow you to update a user's phone number.</description><inputs><input><description>The phone number data. Note that the record id in the phone object, if provided, will be ignored in favor of the recordId passed in the URI</description><name>Phone object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>GET</method><description>This endpoint will allow you to retrieve a user's phone number.</description><inputs/><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>An xml representation of the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>DELETE</method><description>This endpoint will allow you to delete a user's phone number.</description><inputs/><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>None.</output></operation></operations><children><child>/phone</child></children></endpoint>
 
 
 ===================== Add Phone Number =====================
-status = 404 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:44 GMT
-transfer-encoding: chunked
+date: Fri, 19 Apr 2013 17:00:44 GMT
+content-length: 59
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+https://test.xactware.co.uk/apps/xa/ws/contact/phone/3034
+
+
 
 
 ========================== Logout ==========================
@@ -79,7 +81,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 18 Apr 2013 17:00:45 GMT
+date: Fri, 19 Apr 2013 17:00:45 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
