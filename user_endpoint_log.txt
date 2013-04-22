@@ -1,13 +1,13 @@
-Fri 04/19/2013 
-11:00:45.03 
+Mon 04/22/2013 
+ 8:38:37.82 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 19 Apr 2013 17:00:45 GMT
-set-cookie: JSESSIONID: 14E88A23B64D5A1D1302A79AAAC77474.xaeutestapp1;
+date: Mon, 22 Apr 2013 14:38:38 GMT
+set-cookie: JSESSIONID: 52D915096ADDB0780DD4C053463078C2.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:45 GMT
+date: Mon, 22 Apr 2013 14:38:38 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:45 GMT
+date: Mon, 22 Apr 2013 14:38:38 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 19 Apr 2013 17:00:46 GMT
+date: Mon, 22 Apr 2013 14:38:38 GMT
 content-length: 58
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -70,14 +70,14 @@ server: Apache/2.2.15 (Red Hat)
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/user/EU_51802A4744
+https://test.xactware.co.uk/apps/xa/ws/user/EU_76580J2522
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_51802A4744
+EU_76580J2522
 ==================== Details About User ====================
 status = 200 
 
@@ -88,13 +88,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
+date: Mon, 22 Apr 2013 14:38:39 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_51802A4744</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_76580J2522</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 =============== Modify New Users first name ================
@@ -103,7 +103,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 19 Apr 2013 17:00:46 GMT
+date: Mon, 22 Apr 2013 14:38:39 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -124,13 +124,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
+date: Mon, 22 Apr 2013 14:38:39 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_51802A4744</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_76580J2522</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -143,7 +143,7 @@ content-length: 0
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
+date: Mon, 22 Apr 2013 14:38:39 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -153,114 +153,44 @@ None
 
 
 ================= Verify user was deleted ==================
-status = 200 
+status = 500 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-transfer-encoding: chunked
+content-length: 1000
 expires: Wed, 31 Dec 1969 17:00:00 MST
+vary: Accept-Encoding
 server: Apache/2.2.15 (Red Hat)
+connection: close
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-type: text/plain; charset=ISO-8859-1
+date: Mon, 22 Apr 2013 14:38:40 GMT
+content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users/></searchResults>
+<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The server encountered an internal error () that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
 
 
 ================ Search For User By UserId =================
-status = 200 
+status = 500 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-transfer-encoding: chunked
+content-length: 1000
 expires: Wed, 31 Dec 1969 17:00:00 MST
+vary: Accept-Encoding
 server: Apache/2.2.15 (Red Hat)
+connection: close
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-type: text/plain; charset=ISO-8859-1
+date: Mon, 22 Apr 2013 14:38:40 GMT
+content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-=============== Search For User By Last Name ===============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-============== Search For User By First Name ===============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-============= Search For User By Email Address =============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-========================== Logout ==========================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-date: Fri, 19 Apr 2013 17:00:46 GMT
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
+<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The server encountered an internal error () that prevented it from fulfilling this request.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
 
 

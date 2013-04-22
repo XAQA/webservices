@@ -1,13 +1,13 @@
-Fri 04/19/2013 
-11:00:35.04 
+Mon 04/22/2013 
+ 8:38:34.77 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 19 Apr 2013 17:00:35 GMT
-set-cookie: JSESSIONID: 50FDA7B1E2A95CB84502045FE089A034.xaeutestapp1;
+date: Mon, 22 Apr 2013 14:38:35 GMT
+set-cookie: JSESSIONID: EAEF28AB25C60D815CAA713180D3A812.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -18,7 +18,140 @@ data
 None
 
 
-================ GET Documentation (/right) ================
+===================== Create userType ======================
+status = 201 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 22 Apr 2013 14:38:35 GMT
+vary: Accept-Encoding
+content-length: 56
+content-type: text/plain;charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://test.xactware.co.uk/apps/xa/ws/right/userType/2
+
+
+
+------------------------------------------------------------
+NEW USERTYPE ID
+------------------------------------------------------------
+2
+=============== Verify userType was created ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>2</id><account>SafeHaven</account><name>AUTO Test User</name><description>This user type was created AuToMaTiCaLlY</description></userType>
+
+
+=================== Modify new userType ====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================== Verify mod of userType ==================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>2</id><account>SafeHaven</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description></userType>
+
+
+=================== Add userType to user ===================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================ Remove userType from user =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+============== Delete newly created userType ===============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 14:38:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+=============== Verify userType was deleted ================
 status = 404 
 
 ------------------------------------------------------------
@@ -28,8 +161,25 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Fri, 19 Apr 2013 17:00:35 GMT
+date: Mon, 22 Apr 2013 14:38:35 GMT
 content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Mon, 22 Apr 2013 14:38:36 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
