@@ -1,13 +1,13 @@
 Mon 04/22/2013 
- 8:38:34.77 
+11:00:35.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:35 GMT
-set-cookie: JSESSIONID: EAEF28AB25C60D815CAA713180D3A812.xaeutestapp1;
+date: Mon, 22 Apr 2013 17:00:35 GMT
+set-cookie: JSESSIONID: D6EB836D39E4A4C829A636A49AE5DE73.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -18,13 +18,51 @@ data
 None
 
 
+=========== GET Documentation (/right/userType) ============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 17:00:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/right/userType</url><name>User Type Operations</name><description>This endpoint allows clients to manage their account's user types. Any modifications made to a user type will be applied to all users that have that user type. For example, if a group of users has the 'Administrator' user type and a dataset is added to the 'Administrator' type, the entire group of users would be granted access to that dataset.</description><operations><operation><uri></uri><method>POST</method><description>Creates a new user type.</description><inputs><input><description>For documentation on the user type object, see /right/userType/example</description><name>User Type object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>text/plain</contentType></availableTypes><output>A URL to the newly created user type.</output></operation><operation><uri>{user_type_id}</uri><method>GET</method><description>Returns the user type object with the given user type ID. This operation will return a 404 - Not Found if no user type exists with the given ID.</description><inputs><input><description>The ID of the user type.</description><name>user_type_id</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes><contentType>text/xml</contentType><contentType>application/xml</contentType></availableTypes><output>A User Type object</output></operation><operation><uri>{user_type_id}</uri><method>POST</method><description>Modifies the user type object with the given user type ID. This operation willreturn a 404 - Not Found if no user type exists with the given ID. This operation will also return a 400 - Bad Request if either the 'name' or 'description' fields are too large. The 'id' and 'account' fields cannot be modified.</description><inputs><input><description>The ID of the user type.</description><name>user_type_id</name><isOptional>false</isOptional><type>URL Path Parameter</type></input><input><description>For documentation on the user type object, see /right/userType/example</description><name>User Type object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{user_type_id}</uri><method>DELETE</method><description>Deletes a user type. IMPORTANT: Any rights that have been granted to users via this user type will be revoked when this user type is deleted! This operation will return a 404 - Not Found if there is no user type with the given ID.</description><inputs><input><description>The ID of the user type.</description><name>user_type_id</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{user_type_id}/user/{user_number}</uri><method>POST</method><description>Sets a user's type. A user can only have one user type, so if the user already has a user type, it will be replaced by this new user type, which also results in a change in granted rights. This operation will return a 404 - Not Found if either the user type or the user doesn't exist. This operation will also return a 403 - Forbidden if the client doesn't have rights to modify users.</description><inputs><input><description>The ID of the user type.</description><name>user_type_id</name><isOptional>false</isOptional><type>URL Path Parameter</type></input><input><description>The user number of an existing user.</description><name>user_number</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation><operation><uri>{user_type_id}/user/{user_number}</uri><method>DELETE</method><description>Removes a user's type. Any rights or privileges that were granted by the user type will be revoked. This operation will return a 404 - Not Found if either the user type or the user doesn't exist. This operation will also return a 403 - Forbidden if the client doesn't have rights to modify users.</description><inputs><input><description>The ID of the user type.</description><name>user_type_id</name><isOptional>false</isOptional><type>URL Path Parameter</type></input><input><description>The user number of an existing user.</description><name>user_number</name><isOptional>false</isOptional><type>URL Path Parameter</type></input></inputs><availableTypes/><output>none</output></operation></operations><children><child>/example</child></children></endpoint>
+
+
+=============== GET userType object example ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Mon, 22 Apr 2013 17:00:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>User</name><description>A representation of an XactAnalysis user.</description><properties><property><propName>userId</propName><type>string</type><description>This is the username that will be used when logging in to XactAnalysis. This property is required when creating a user, but is not required when updating a user.</description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description>A user number uniquely identifies an XactAnalysis user. This value cannot be modified, and is automatically generated when creating a user.</description><isRequired>false</isRequired></property><property><propName>lastName</propName><type>string</type><description>The last name of the user.</description><isRequired>false</isRequired></property><property><propName>firstName</propName><type>string</type><description>The first name of the user.</description><isRequired>false</isRequired></property><property><propName>account</propName><type>string</type><description>Users in XactAnalysis are created inside accounts. For example, the account 'SafeHaven' is used to store test users. This property is required when creating a user, but this property cannot be modified after a user is created.</description><isRequired>false</isRequired></property><property><propName>password</propName><type>string</type><description>A user's password. This property will not be sent back to the user; it is included in the user object so that web service clients can modify a user's password.</description><isRequired>false</isRequired></property><property><propName>passwordExpireDate</propName><type>date/time - in the format 'yyyy-MM-dd HH:mm:ss'; 'MM' is the month in the range 01-12, HH is the hour in the range 00-23 with 23 being 11:00 PM</type><description>The password expiration date. After this date has passed, the system will prompt the user to change their password.</description><isRequired>false</isRequired></property><property><propName>email</propName><type>string</type><description>The primary email address of the user. This property will be used if a password is forgotten; a recovery email will be sent to this address. If you wish to create more email addresses for a user, see the /contact endpoint.</description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;user&gt;&lt;userId&gt;sh-user&lt;/userId&gt;&lt;userNumber&gt;2348A97231&lt;/userNumber&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;firstName&gt;Peter&lt;/firstName&gt;&lt;account&gt;SafeHaven&lt;/account&gt;&lt;passwordExpireDate&gt;2013-04-04 16:12:33&lt;/passwordExpireDate&gt;&lt;email&gt;user@xactware.fake.com&lt;/email&gt;&lt;/user&gt;</example></model>
+
+
 ===================== Create userType ======================
 status = 201 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:35 GMT
 vary: Accept-Encoding
 content-length: 56
 content-type: text/plain;charset=ISO-8859-1
@@ -51,7 +89,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -66,7 +104,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:35 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -87,7 +125,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -96,13 +134,13 @@ data
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>2</id><account>SafeHaven</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description></userType>
 
 
-=================== Add userType to user ===================
+================= Add dataset to userType ==================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -113,18 +151,16 @@ data
 None
 
 
-================ Remove userType from user =================
+=================== Add userType to user ===================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
+date: Mon, 22 Apr 2013 17:00:36 GMT
 content-length: 0
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Mon, 22 Apr 2013 14:38:35 GMT
 content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
@@ -142,7 +178,7 @@ content-length: 0
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:36 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -161,7 +197,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:35 GMT
+date: Mon, 22 Apr 2013 17:00:36 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -176,7 +212,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:36 GMT
+date: Mon, 22 Apr 2013 17:00:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)

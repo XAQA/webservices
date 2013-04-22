@@ -1,13 +1,13 @@
 Mon 04/22/2013 
- 8:38:37.82 
+11:00:45.04 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:38 GMT
-set-cookie: JSESSIONID: 52D915096ADDB0780DD4C053463078C2.xaeutestapp1;
+date: Mon, 22 Apr 2013 17:00:45 GMT
+set-cookie: JSESSIONID: BFA51DDCFDE0E7CFD28FC0F87809713B.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:38 GMT
+date: Mon, 22 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:38 GMT
+date: Mon, 22 Apr 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:38 GMT
+date: Mon, 22 Apr 2013 17:00:45 GMT
 content-length: 58
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -70,14 +70,14 @@ server: Apache/2.2.15 (Red Hat)
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/user/EU_76580J2522
+https://test.xactware.co.uk/apps/xa/ws/user/EU_41358A0300
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_76580J2522
+EU_41358A0300
 ==================== Details About User ====================
 status = 200 
 
@@ -88,13 +88,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:39 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_76580J2522</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_41358A0300</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 =============== Modify New Users first name ================
@@ -103,7 +103,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 14:38:39 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -124,13 +124,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:39 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_76580J2522</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>ja-ce</userId><userNumber>EU_41358A0300</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -143,7 +143,7 @@ content-length: 0
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:39 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -164,7 +164,7 @@ vary: Accept-Encoding
 server: Apache/2.2.15 (Red Hat)
 connection: close
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:40 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
@@ -185,7 +185,7 @@ vary: Accept-Encoding
 server: Apache/2.2.15 (Red Hat)
 connection: close
 cache-control: private
-date: Mon, 22 Apr 2013 14:38:40 GMT
+date: Mon, 22 Apr 2013 17:00:46 GMT
 content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
