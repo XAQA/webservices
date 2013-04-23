@@ -1,4 +1,4 @@
-Mon 04/22/2013 
+Tue 04/23/2013 
 11:00:35.03 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:35 GMT
-set-cookie: JSESSIONID: D6EB836D39E4A4C829A636A49AE5DE73.xaeutestapp1;
+date: Tue, 23 Apr 2013 17:00:35 GMT
+set-cookie: JSESSIONID: 0F3F1B051900D45A518FE8EA02777EAA.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,23 +62,23 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 vary: Accept-Encoding
-content-length: 56
+content-length: 57
 content-type: text/plain;charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/right/userType/2
+https://test.xactware.co.uk/apps/xa/ws/right/userType/10
 
 
 
 ------------------------------------------------------------
 NEW USERTYPE ID
 ------------------------------------------------------------
-2
+10
 =============== Verify userType was created ================
 status = 200 
 
@@ -89,13 +89,13 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>2</id><account>SafeHaven</account><name>AUTO Test User</name><description>This user type was created AuToMaTiCaLlY</description></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>10</id><account>SafeHavenRein</account><name>AUTO Test User</name><description>This user type was created AuToMaTiCaLlY</description></userType>
 
 
 =================== Modify new userType ====================
@@ -104,7 +104,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -125,22 +125,22 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:35 GMT
+date: Tue, 23 Apr 2013 17:00:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>2</id><account>SafeHaven</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>10</id><account>SafeHavenRein</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description></userType>
 
 
-================= Add dataset to userType ==================
+============== Add dataset right to userType ===============
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:36 GMT
+date: Tue, 23 Apr 2013 17:00:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -149,6 +149,43 @@ server: Apache/2.2.15 (Red Hat)
 data
 ------------------------------------------------------------
 None
+
+
+================ Add org right to userType =================
+status = 400 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 971
+vary: Accept-Encoding
+server: Apache/2.2.15 (Red Hat)
+connection: close
+date: Tue, 23 Apr 2013 17:00:36 GMT
+content-type: text/html;charset=utf-8
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect ().</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
+
+
+========== Add company-specific right to userType ==========
+status = 403 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 23 Apr 2013 17:00:36 GMT
+vary: Accept-Encoding
+content-length: 964
+content-type: text/html;charset=utf-8
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 403 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Access to the specified resource () has been forbidden.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
 
 
 =================== Add userType to user ===================
@@ -157,48 +194,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:36 GMT
+date: Tue, 23 Apr 2013 17:00:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
-
-
-============== Delete newly created userType ===============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-content-length: 0
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Mon, 22 Apr 2013 17:00:36 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
-
-
-=============== Verify userType was deleted ================
-status = 404 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
-cache-control: private
-date: Mon, 22 Apr 2013 17:00:36 GMT
-content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
@@ -212,7 +211,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:36 GMT
+date: Tue, 23 Apr 2013 17:00:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)

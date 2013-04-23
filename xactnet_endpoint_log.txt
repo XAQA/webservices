@@ -1,13 +1,13 @@
-Mon 04/22/2013 
-11:00:12.04 
+Tue 04/23/2013 
+11:00:12.03 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:12 GMT
-set-cookie: JSESSIONID: 0205C4C8DAE5E144EF932EF8DEBBF550.xaeutestapp1;
+date: Tue, 23 Apr 2013 17:00:12 GMT
+set-cookie: JSESSIONID: E3B8586D9C8D1BB5118CB51ABCD261F1.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:12 GMT
+date: Tue, 23 Apr 2013 17:00:12 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -43,7 +43,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:12 GMT
+date: Tue, 23 Apr 2013 17:00:12 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)

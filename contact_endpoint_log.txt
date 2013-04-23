@@ -1,13 +1,13 @@
-Mon 04/22/2013 
-11:00:44.03 
+Tue 04/23/2013 
+11:00:44.01 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:44 GMT
-set-cookie: JSESSIONID: 36B4FFF37CF270491BA17F72CBC41C7E.xaeutestapp1;
+date: Tue, 23 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 8F1CB4CE14E0AAA75FB7C239EA0345E1.xaeutestapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -66,7 +66,7 @@ content-length: 1136
 vary: Accept-Encoding
 server: Apache/2.2.15 (Red Hat)
 connection: close
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
@@ -89,7 +89,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -104,7 +104,7 @@ status = 404
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 transfer-encoding: chunked
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
@@ -125,7 +125,7 @@ transfer-encoding: chunked
 expires: Wed, 31 Dec 1969 17:00:00 MST
 server: Apache/2.2.15 (Red Hat)
 cache-control: private
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -140,7 +140,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 22 Apr 2013 17:00:44 GMT
+date: Tue, 23 Apr 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache/2.2.15 (Red Hat)
