@@ -1,2 +1,153 @@
 Fri 04/26/2013 
- 8:32:07.03 
+11:00:44.03 
+========================== Login ===========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Fri, 26 Apr 2013 17:00:44 GMT
+set-cookie: JSESSIONID: 8E9E817A050EE358955E096CD56E4360.xaeutestapp1;
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+==================== GET Documentation =====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact</url><name>Contact</name><description>This endpoint handles user contact data. A user's phone numbers, email addresses, or street addresses may be created, modified, and deleted via these service calls.</description><operations><operation><uri>contact</uri><method>GET</method><description>Get this documentation</description><inputs/><availableTypes><contentType>text/html</contentType><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation></operations><children><child>/phone</child><child>/email</child><child>/street</child></children></endpoint>
+
+
+=============== GET Add Phone Documentation ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/contact/phone</url><name>Contact-Phone</name><description>This endpoint handles user contact data. A user's phone numbers can be created, retrieved, updated, and deleted via these service calls.</description><operations><operation><uri>phone</uri><method>POST</method><description>This endpoint will allow you to create a user's phone number.</description><inputs><input><description>The phone number data.</description><name>Phone object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>POST</method><description>This endpoint will allow you to update a user's phone number.</description><inputs><input><description>The phone number data. Note that the record id in the phone object, if provided, will be ignored in favor of the recordId passed in the URI</description><name>Phone object</name><isOptional>false</isOptional><type>Body Entity</type></input></inputs><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>A URL that can be used to retrieve the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>GET</method><description>This endpoint will allow you to retrieve a user's phone number.</description><inputs/><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>An xml representation of the Phone object</output></operation><operation><uri>phone/&lt;recordId&gt;</uri><method>DELETE</method><description>This endpoint will allow you to delete a user's phone number.</description><inputs/><availableTypes><contentType>application/xml</contentType><contentType>text/xml</contentType></availableTypes><output>None.</output></operation></operations><children><child>/phone</child></children></endpoint>
+
+
+===================== Add Phone Number =====================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-length: 59
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://test.xactware.co.uk/apps/xa/ws/contact/phone/3139
+
+
+
+
+------------------------------------------------------------
+NEW RECORD ID
+------------------------------------------------------------
+3139
+============== Verify Phone Number Was Added ===============
+status = 404 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================ Modify Users Phone Number =================
+status = 404 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Fri, 26 Apr 2013 17:00:44 GMT
+transfer-encoding: chunked
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================ Delete Users Phone Number =================
+status = 403 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Wed, 31 Dec 1969 17:00:00 MST
+server: Apache/2.2.15 (Red Hat)
+cache-control: private
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+========================== Logout ==========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Fri, 26 Apr 2013 17:00:44 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache/2.2.15 (Red Hat)
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
