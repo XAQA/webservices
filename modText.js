@@ -21,7 +21,11 @@ if (RandomPhone < 1000 && RandomPhone > 100){RandomPhone =  "0" + RandomPhone;
 }var phoneNum = "800555" + RandomPhone;
 $('[name=test]').attr('checked',false);
 $('[name=insured_name]').val(fullName);
-$('[name=insured_street]').val('123 Anywhere Street');
+var latNum = Math.floor(Math.random()*9999)
+var longNum = Math.floor(Math.random()*9999)
+var lat = Array('N', 'S');
+var longi = Array('W', 'E');
+$('[name=insured_street]').val(latNum + " " + lat[Math.floor(Math.random()*lat.length)] + " " + longNum + " " + longi[Math.floor(Math.random()*longi.length)]);
 var $insured_state=$('[name=insured_state]');
 var randomState = Math.floor(Math.random()*(64) + 1);
 while(zipCodes[randomState-1][0] == 1){randomState = Math.floor(Math.random()*(64) + 1);
