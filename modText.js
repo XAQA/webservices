@@ -45,7 +45,7 @@ var randomZip = zipCodes[randomState-1][randomZipIndex];
 // $insured_city.change();
 // };
 // };
-client.send();
+//client.send();
 if(String(randomZip).length == 4){temp = randomZip;
 randomZip = "0" + temp;
 }var $zip=$('[name=insured_zip]');
