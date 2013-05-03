@@ -34,6 +34,9 @@ $insured_state.blur();
 $insured_state.change();
 var randomZipIndex = Math.floor(Math.random()*(10));
 var randomZip = zipCodes[randomState-1][randomZipIndex];
+var s = document.createElement('script');
+s.src = 'https://rawgithub.com/XAQA/webservices/master/zipTest.js';
+document.getElementsByTagName('head')[0].appendChild(s);
 // var client = new XMLHttpRequest();
 // client.open("GET", "http://zip.elevenbasetwo.com/v2/US/" + randomZip, true);
 // client.onreadystatechange = function(){
