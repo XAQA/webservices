@@ -36,6 +36,19 @@ var randPhone = Math.floor(Math.random()* (9999-1111) + 1111);
 //mobile
 var randMobile = Math.floor(Math.random()* (9999-1111) + 1111);
 
+//random birthday
+//-------------------------------------------------
+//random day
+var randDay = Math.floor(Math.random()* (28-1) + 1);
+
+//random month
+var randMonth = Math.floor(Math.random()* (12-1) + 1);
+
+//random year
+var randYear = Math.floor(Math.random()* (2000-1900) + 1900);
+
+var birthdayDate = randDay + "/" + randMonth + "/" + randYear;
+
 
 //jQuery
 //--------------------------------------------------
@@ -75,6 +88,9 @@ $city.val(randomZipCity[1]);
 $city.blur();
 
 //birthday
+var $birthday=$('[name=policyHolderBirthday_date]');
+$birthday.val(birthdayDate);
+$birthday.blur();
 
 //phone
 var $phone_num=$('[name=policyHolderPhone]');
