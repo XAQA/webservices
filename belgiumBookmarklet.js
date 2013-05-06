@@ -65,7 +65,7 @@ $box_num.val(streetBox);
 $box_num.blur();
 
 //postal code
-var $postal_code=$('[name=policyHoler_zip]');
+var $postal_code=$('[name=policyHolder_zip]');
 $postal_code.val(randomZipCity[0]);
 $postal_code.blur();
 
