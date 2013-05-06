@@ -89,7 +89,7 @@ $city.blur();
 
 //birthday
 var $birthday=$('#policyHolderBirthday_date_visible');
-$birthday.xa_datePicker.xa_datePicker('setDate', birthdayDate);
+$birthday.datepicker.xa_datePicker('setDate', birthdayDate);
 
 //phone
 var $phone_num=$('[name=policyHolderPhone]');
