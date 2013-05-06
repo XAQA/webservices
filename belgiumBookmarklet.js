@@ -47,7 +47,7 @@ var randMonth = Math.floor(Math.random()* (12-1) + 1);
 //random year
 var randYear = Math.floor(Math.random()* (2000-1900) + 1900);
 
-var birthdayDate = randDay + "/" + randMonth + "/" + randYear;
+var birthdayDate = new Date(randYear, randMonth, randDay);
 
 
 //jQuery
