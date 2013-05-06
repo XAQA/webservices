@@ -31,7 +31,7 @@ var streetBox = randomLetterForBox + rand2digit + "/" + rand3digit;
 var randomZipCity = zipCity[Math.floor(Math.random()*zipCity.length)];
 
 //phone
-var randPhone = Math.floor(Math.random()*9999);
+var randPhone = Math.floor(Math.random()* (9999-1111) + 1111);
 
 //mobile
 var randMobile = Math.floor(Math.random()* (9999-1111) + 1111);
