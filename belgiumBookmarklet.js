@@ -90,7 +90,6 @@ $city.blur();
 //birthday
 var $birthday=$('#policyHolderBirthday_date_visible');
 $birthday.datepicker.datepicker('setDate', birthdayDate);
-$('#ui-datepicker-div').hide();
 
 //phone
 var $phone_num=$('[name=policyHolderPhone]');
