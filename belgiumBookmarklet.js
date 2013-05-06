@@ -88,7 +88,7 @@ $city.val(randomZipCity[1]);
 $city.blur();
 
 //birthday
-var $birthday=$('[name=policyHolderBirthday_date_visible]');
+var $birthday=$('#policyHolderBirthday_date_visible');
 $birthday.val(birthdayDate);
 $birthday.blur();
 
