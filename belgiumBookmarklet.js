@@ -61,8 +61,8 @@ $street_num.blur();
 
 //box number
 var $box_num=$('[name=policyHolder_street3]');
-$box.val(streetBox);
-$box.blur();
+$box_num.val(streetBox);
+$box_num.blur();
 
 //postal code
 var $postal_code=$('[name=policyHoler_zip]');
