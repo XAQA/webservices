@@ -18,7 +18,7 @@ var fullName = randomFName + " " + randomLName;
 //street
 var randomStreet = street[Math.floor(Math.random()*street.length)];
 var randomLetterForStreet = alpha[Math.floor(Math.random()*alpha.length)];
-var partyStreet = randomLetter + " " + randomStreet;
+var partyStreet = randomLetterForStreet + " " + randomStreet;
 
 //street number
 var streetNum = Math.floor(Math.random()*9999);
