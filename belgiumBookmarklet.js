@@ -34,7 +34,7 @@ var randomZipCity = zipCity[Math.floor(Math.random()*zipCity.length)];
 var randPhone = Math.floor(Math.random()*9999);
 
 //mobile
-var randMobile = Math.floor(Math.random()*9999);
+var randMobile = Math.floor(Math.random()* (9999-1111) + 1111);
 
 
 //jQuery
