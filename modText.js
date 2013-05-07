@@ -110,6 +110,5 @@ $('[name=coinsurance_1]').val('25');
 $('[name=reserv_amount_1]').val(y);
 $('[name=mortgage_holder_1]').val('Mortgage Holder Name');
 $('[name=loan_number_1]').val(x+'-'+z+y);
-$policy_num.blur();
 window.location=$('#mortgage_add').attr("href");
 })();
