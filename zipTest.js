@@ -1,3 +1,4 @@
+(function(){
 var client = new XMLHttpRequest();
 client.open("GET", "http://zip.elevenbasetwo.com/v2/US/" + randomZip, true);
 client.onreadystatechange = function(){
@@ -10,3 +11,4 @@ $insured_city.change();
 };
 };
 client.send();
+})();
