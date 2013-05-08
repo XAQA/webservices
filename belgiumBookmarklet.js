@@ -95,6 +95,11 @@ $branch_code.change();
 
 //Claim Info
 //-------------------------------------------------------------------------
+//postal code
+var $claim_postalCode=$('[name=claimPostalCode]');
+$claim_postalCode.val(max_branchCode);
+$claim_postlaCode.blur();
+
 
 
 //Party/Risk Information
