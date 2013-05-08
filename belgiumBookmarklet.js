@@ -76,12 +76,14 @@ var $dataset=$('[name=Carrier_ID]');
 var max_dataset = ($dataset.children('option').length) - 1;
 var random_dataset = Math.round(Math.random()*max_dataset);
 $dataset.prop('selectedIndex', random_dataset);
+$dataset.change();
 
 //company code
 var $company_code=$('[name=companyCode]');
 var max_companyCode = ($company_code.children('option').lengh) - 1;
 var random_companyCode = Math.round(Math.random()*max_companyCode);
 $company_code.prop('selectedIndex', random_dataset);
+$company_code.change();
 
 
 //Claim Info
