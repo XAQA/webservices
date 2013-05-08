@@ -81,14 +81,14 @@ $dataset.change();
 //company code
 var $company_code=$('[name=companyCode]');
 var max_companyCode = ($company_code.children('option').length) - 1;
-var random_companyCode = Math.round(Math.random()*(max_companyCode) + 1);
+var random_companyCode = Math.floor(Math.random()*(max_companyCode) + 1);
 $company_code.prop('selectedIndex', random_companyCode);
 $company_code.change();
 
 //agreement branch code
 var $branch_code=$('[name=agreementBranch]');
 var max_branchCode = ($branch_code.children('option').length) - 1;
-var random_branchCode = Math.round(Math.random()*(max_branchCode) + 1);
+var random_branchCode = Math.floor(Math.random()*(max_branchCode) + 1);
 $branch_code.prop('selectedIndex', random_branchCode);
 $branch_code.change();
 
