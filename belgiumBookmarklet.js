@@ -131,6 +131,11 @@ var $loss_date=$('#claimInformationDate_date_visible');
 $loss_date.datepicker().datepicker('setDate',yesterday);
 $('#ui-datepicker-div').hide();
 
+//test date
+var $test_date=$('[name=claimLocation_street]');
+$test_date.val(yesterday);
+$test_date.blur();
+
 //claim received date
 var today = new Date();
 var $received_date=$('#claimInformationReceivedDate_date_visible');
