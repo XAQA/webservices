@@ -125,18 +125,12 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-var currentTime = new Date();
-var timeout = currentTime.getSeconds()+5;
-do
-{currentTime = new Date();}
-while(currentTime <= timeout);
-
 //function
-var $function=$('[name=function]');
-var max_function = ($function.children('option').length) - 1;
+var $functionType=$('[name=function]');
+var max_function = ($functionType.children('option').length) - 1;
 var random_function = Math.floor(Math.random()*(max_function) + 1);
-$function.prop('selectedIndex', random_function);
-$function.change();
+$functionType.prop('selectedIndex', random_function);
+$functionType.change();
 
 //language code
 var $language_code=$('[name=languageCode]');
