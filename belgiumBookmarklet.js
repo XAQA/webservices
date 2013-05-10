@@ -113,6 +113,14 @@ licensePlateAlpha += alpha[Math.floor(Math.random()*alpha.length)];
 var licensePlateNum = Math.floor(Math.random()*(999-111) + 111);
 var rand_licensePlate = licensePlateAlpha + licensePlateNum;
 
+//chasis number
+var rand_chassisLetter = alpha[Math.floor(Math.random()*alpha.length)];
+var rand_chassisNums = Math.floor(Math.random()*(9999999999999999 - 1111111111111111) + 1111111111111111);
+var fullChassisNum = rand_chassisLetter + rand_chassisNums;
+
+//car power
+var rand_carPower = Math.floor(Math.random()*(999-100) + 100);
+
 
 //jQuery
 //=========================================================================
@@ -346,6 +354,16 @@ $car_model.blur();
 var $licensePlate=$('[name=riskCarPlateNumber]');
 $licensePlate.val(rand_licensePlate);
 $licensePlate.blur();
+
+//car chassis number
+var $chassisNum=$('[name=riskCarChassisNumber]');
+$chassisNum.val(fullChassisNum);
+$chassisNum.blur();
+
+//car power
+var $car_power=$('[name=riskCarPower]');
+$car_power.val(rand_carPower);
+$car_power.blur();
 
 
 //Fire
