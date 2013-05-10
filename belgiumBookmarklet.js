@@ -163,17 +163,17 @@ $observation.val(randObserve);
 $observation.blur();
 
 //claim handler last name
-var $handler_lastName('[name=claimHandler_last_name]');
+var $handler_lastName=$('[name=claimHandler_last_name]');
 $handler_lastName.val(randClaimHandler_LName);
 $handler_lastName.blur();
 
 //claim handler first name
-var $handler_firstName('[name=claimHandler_name]');
+var $handler_firstName=$('[name=claimHandler_name]');
 $handler_firstName.val(randClaimHandler_FName);
 $handler_firstName.blur();
 
 //claim handler phone num
-var $handler_phoneNum('[name=claimHandlerPhone]');
+var $handler_phoneNum=$('[name=claimHandlerPhone]');
 $handler_phoneNum.val(randClaimHandler_phone);
 $handler_phoneNum.blur();
 
