@@ -125,14 +125,14 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
+window.setTimeout(function() {}, 5000);
+
 //function
 var $function=$('[name=function]');
 var max_function = ($function.children('option').length) - 1;
 var random_function = Math.floor(Math.random()*(max_function) + 1);
 $function.prop('selectedIndex', random_function);
 $function.change();
-
-window.setTimeout(function() {}, 5000);
 
 //language code
 var $language_code=$('[name=languageCode]');
