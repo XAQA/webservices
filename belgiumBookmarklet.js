@@ -125,13 +125,6 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-//function
-var $functionType=$('[name=function]');
-var max_function = ($functionType.children('option').length) - 1;
-var random_function = Math.floor(Math.random()*(max_function) + 1);
-$functionType.prop('selectedIndex', random_function);
-$functionType.change();
-
 //language code
 var $language_code=$('[name=languageCode]');
 var max_langCode = ($language_code.children('option').length) - 1;
@@ -242,6 +235,12 @@ var $mobile_num=$('[name=policyHolderMobile]');
 $mobile_num.val("800555" + randMobile);
 $mobile_num.blur();
 
+//function
+var $functionType=$('[name=function]');
+var max_function = ($functionType.children('option').length) - 1;
+var random_function = Math.floor(Math.random()*(max_function) + 1);
+$functionType.prop('selectedIndex', random_function);
+$functionType.change();
 
 //Policy Summary
 //-------------------------------------------------------------------------
