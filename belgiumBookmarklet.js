@@ -339,7 +339,7 @@ $car_make.blur();
 
 //car model
 var $car_model=$('[name=riskCarModel]');
-$car_model.val(vehicleModel[rand_VehicleModel]);
+$car_model.val(vehicleModel[rand_VehicleMake][rand_VehicleModel]);
 $car_model.blur();
 
 //car plate number
