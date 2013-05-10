@@ -125,13 +125,6 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-//function
-var $function=$('[name=function]');
-var max_function = ($function.children('option').length) - 1;
-var random_function = Math.floor(Math.random()*(max_function) + 1);
-$function.prop('selectedIndex', random_function);
-$function.change();
-
 //language code
 var $language_code=$('[name=languageCode]');
 var max_langCode = ($language_code.children('option').length) - 1;
@@ -159,6 +152,14 @@ var today = new Date();
 var $received_date=$('#claimInformationReceivedDate_date_visible');
 $received_date.datepicker().datepicker('setDate',today);
 $('#ui-datepicker-div').hide();
+
+//function
+var $function=$('[name=function]');
+var max_function = ($function.children('option').length) - 1;
+var random_function = Math.floor(Math.random()*(max_function) + 1);
+$function.prop('selectedIndex', random_function);
+$function.change();
+
 
 //warranty
 var $warranty=$('[name=claimInformationWarranties1]');
