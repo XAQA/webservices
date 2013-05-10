@@ -132,7 +132,7 @@ var rand_numCars = Math.floor(Math.random()*6);
 var rand_buildingVal = Math.floor(Math.random()*(10000000-50000) + 50000);
 
 //insured contents value
-var rand_ContentsVal = Math.floor(Math.random()*10000000);
+var rand_contentsVal = Math.floor(Math.random()*10000000);
 
 //franchise amount
 var rand_fireFranchiseAmt = Math.floor(Math.random()*(100000000 - 100000) + 100000); 
