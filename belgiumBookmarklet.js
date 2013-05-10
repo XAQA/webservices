@@ -98,6 +98,7 @@ var rand_franchiseAmt = Math.floor(Math.random()*999999);
 
 
 //Auto
+//
 //make
 var vehicleMake = ["Ford", "Chevrolet", "Dodge", "Mazda", "Honda", "Toyota", "Bugatti", "Nissan", "Pagani", "Chrysler"];
 var rand_VehicleMake = Math.floor(Math.random()*vehicleMake.length);
@@ -120,6 +121,21 @@ var fullChassisNum = rand_chassisLetter + rand_chassisNums;
 
 //car power
 var rand_carPower = Math.floor(Math.random()*(999-100) + 100);
+
+
+//Fire
+//
+//number of cars
+var rand_numCars = Math.floor(Math.random()*6);
+
+//insured building value
+var rand_buildingVal = Math.floor(Math.random()*(10000000-50000) + 50000);
+
+//insured contents value
+var rand_ContentsVal = Math.floor(Math.random()*10000000);
+
+//franchise amount
+var rand_fireFranchiseAmt = Math.floor(Math.random()*(100000000 - 100000) + 100000); 
 
 
 //jQuery
@@ -373,8 +389,68 @@ else if(claimBranchType == "Auto")
 //Fire
 else if(claimBranchType == "Fire")
 {
+	//street
+	var $risk_street=$('[name=riskLocation_street]');
+	$risk_street.val(partyStreet);
+	$risk_street.blur();
 	
+	//postal code
+	var $risk_postalCode=$('[name=riskLocation_zip]');
+	$risk_postalCode.val(randomZipCity[0]);
+	$risk_postalCode.blur();
 	
+	//city
+	var $risk_city=$('[name=riskLocation_city]');
+	$risk_city.val(randomZipCity[1]);
+	$risk_city.blur();
+	
+	//num cars
+	var $num_cars=$('[name=riskNumberOfCars]');
+	$num_cars.val(rand_numCars);
+	$num_cars.blur();
+	
+	//quality
+	var $quality=$('[name=typeOfResidence]');
+	var max_quality = ($quality.children('option').length) - 1;
+	var rand_quality = Math.round(Math.random()*max_quality);
+	$quality.prop('selectedIndex', rand_quality);
+	$quality.change();
+	
+	//Sys Building/Contents
+	var $contents=$('[name=codeTypeOfCapital]');
+	var max_contents = ($contents.children('option').length) - 1;
+	var rand_contents = Math.round(Math.random()*max_contents);
+	$contents.prop('selectedIndex', rand_contents);
+	$contents.change();
+	
+	//house type
+	var $houseType=$('[name=dwellingDetail]');
+	var max_houseType = ($houseType.children('option').length) - 1;
+	var rand_houseType = Math.round(Math.random()*max_houseType);
+	$houseType.prop('selectedIndex', rand_houseType);
+	$houseType.change();
+	
+	//insured building value
+	var $buildingVal=$('[name=riskInsuredBuildingValue]');
+	$buildingVal.val(rand_buildingVal);
+	$buildingVal.blur();
+	
+	//insured contents value
+	var $contentsVal=$('[name=riskInsuredContentsValue]');
+	$contentsVal.val(rand_contentsVal);
+	$contentsVal.blur();
+	
+	//franchise amount
+	var $fire_franchiseAmt=$('[name=riskFireFranchiseAmount1]');
+	$fire_franchiseAmt.val(rand_fireFranchiseAmt);
+	$fire_franchiseAmt.blur();
+	
+	//occupation
+	var $occupation=$('[name=constructionPurposeTypeCode]');
+	var max_occupation = ($occupation.children('option').length) - 1;
+	var rand_occupation = Math.round(Math.random()*max_occupation);
+	$occupation.prop('selectedIndex', rand_occupation);
+	$occupation.change();
 }
 
 })();
