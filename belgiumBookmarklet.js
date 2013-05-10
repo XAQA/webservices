@@ -139,7 +139,7 @@ $test_date.blur();
 //claim received date
 var today = new Date();
 var $received_date=$('#claimInformationReceivedDate_date_visible');
-$loss_date.datepicker().datepicker('setDate',today);
+$received_date.datepicker().datepicker('setDate',today);
 $('#ui-datepicker-div').hide();
 
 
