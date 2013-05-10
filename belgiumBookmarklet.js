@@ -125,7 +125,7 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-window.setTimeout(setFunc(), 5000);
+window.setTimeout(setFunc, 5000);
 
 function setFunc(){
 //func
