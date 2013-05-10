@@ -82,6 +82,18 @@ var randAgreementNum = Math.floor(Math.random()*(99999999-11111111) + 11111111);
 //-------------------------------------------------------------------------
 
 
+//Risk
+//-------------------------------------------------------------------------
+//Liability and casualty name
+var rand_LandC_FName = firstnamelist[Math.floor(Math.random()*firstnamelist.length)];
+var rand_LandC_FName = lastnamelist[Math.floor(Math.random()*lastnamelist.length)];
+
+//random index type
+var rand_indexType = Math.floor(Math.random()*999999);
+
+//random franchise amount
+var rand_franchiseAmt = Math.floor(Math.random()*999999);
+
 
 //jQuery
 //=========================================================================
@@ -258,6 +270,53 @@ $agreement_num.blur();
 
 //Producer
 //-------------------------------------------------------------------------
+
+
+//Risk
+//-------------------------------------------------------------------------
+//Liability & Casualty
+//
+//risk type
+var $risk_type=$('[name=riskType]');
+var max_riskType = ($risk_type.children('option').length) - 1;
+var rand_riskType = Math.round(Math.random()*max_riskType);
+$risk_type.prop('selectedIndex', rand_riskType);
+$risk_type.change();
+
+//nature of risk
+var $risk_nature=$('[name=natureOfRisk]');
+var max_riskNature = ($risk_nature.children('option').length) - 1;
+var rand_riskNature = Math.floor(Math.random()*(max_riskNature) + 1;
+$risk_nature.prop('selectedIndex', rand_riskNature);
+$risk_nature.change();
+
+//assured victim last name
+var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
+$assuredVict_LName.val(rand_LandC_LName);
+$assuredVict_LName.blur();
+
+//assured victim first name
+var $assuredVict_FName=$('[name=riskAssuredVictimsName]');
+$assuredVict_FName.val(rand_LandC_FName);
+$assuredVict_FName.blur();
+
+//index type
+var $indexType=$('[name=riskIndexType]');
+$indexType.val(rand_indexType);
+$indexType.blur();
+
+//franchise amount
+var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
+$franchiseAmt.val(rand_franchiseAmt);
+$franchiseAmt.blur();
+
+
+//Auto
+//
+
+
+//Fire
+//
 
 })();
 
