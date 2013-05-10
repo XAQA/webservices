@@ -75,6 +75,7 @@ var birthdayDate = new Date(randYear, randMonth, randDay);
 
 //Policy Summary
 //-------------------------------------------------------------------------
+var randAgreementNum = Math.floor(Math.random()*2500);
 
 
 //Producer
@@ -237,6 +238,10 @@ $mobile_num.blur();
 
 //Policy Summary
 //-------------------------------------------------------------------------
+//agreement number
+var $agreement_num=$('[name=agreementNumber]');
+$agreement_num.val(randAgreementNum);
+$agreement_num.blur();
 
 
 //Producer
