@@ -153,14 +153,6 @@ var $received_date=$('#claimInformationReceivedDate_date_visible');
 $received_date.datepicker().datepicker('setDate',today);
 $('#ui-datepicker-div').hide();
 
-//function
-var $function=$('[name=function]');
-var max_function = ($function.children('option').length) - 1;
-var random_function = Math.floor(Math.random()*(max_function) + 1);
-$function.prop('selectedIndex', random_function);
-$function.change();
-
-
 //warranty
 var $warranty=$('[name=claimInformationWarranties1]');
 $warranty.val(randWarranty);
@@ -190,6 +182,13 @@ $handler_phoneNum.blur();
 var $handler_email=$('[name=claimInformationEmailTeam]');
 $handler_email.val("automate@automate.com");
 $handler_email.blur();
+
+//function
+var $function=$('[name=function]');
+var max_function = ($function.children('option').length) - 1;
+var random_function = Math.floor(Math.random()*(max_function) + 1);
+$function.prop('selectedIndex', random_function);
+$function.change();
 
 
 //Party/Risk Information
