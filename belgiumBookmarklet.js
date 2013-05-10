@@ -132,7 +132,7 @@ var random_function = Math.floor(Math.random()*(max_function) + 1);
 $function.prop('selectedIndex', random_function);
 $function.change();
 
-window.setTimeout(function() {}, 1000);
+window.setTimeout(function() {}, 5000);
 
 //language code
 var $language_code=$('[name=languageCode]');
