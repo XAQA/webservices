@@ -125,10 +125,11 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-window.setTimeout(setFunc, 3000);
+//need a delay to select "function" so thats why the code to set the "function" is in a function
+window.setTimeout(setFunc, 2000);
 
-function setFunc(){
 //func
+function setFunc(){
 var $func=$('[name=function]');
 var max_func = ($func.children('option').length) -1;
 var random_func = Math.floor(Math.random()*(max_func) + 1);
