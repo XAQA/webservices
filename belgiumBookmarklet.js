@@ -304,73 +304,78 @@ $agreement_num.blur();
 var claimBranchType = $("#claimBranchSelect option:selected").text();
 
 //Liability & Casualty
-//
-//risk type
-var $risk_type=$('[name=riskType]');
-var max_riskType = ($risk_type.children('option').length) - 1;
-var rand_riskType = Math.round(Math.random()*max_riskType);
-$risk_type.prop('selectedIndex', rand_riskType);
-$risk_type.change();
+if(claimBranchType == "Liability & Casualty")
+{
+	//risk type
+	var $risk_type=$('[name=riskType]');
+	var max_riskType = ($risk_type.children('option').length) - 1;
+	var rand_riskType = Math.round(Math.random()*max_riskType);
+	$risk_type.prop('selectedIndex', rand_riskType);
+	$risk_type.change();
 
-//nature of risk
-var $risk_nature=$('[name=natureOfRisk]');
-var max_riskNature = ($risk_nature.children('option').length) - 1;
-var rand_riskNature = Math.floor(Math.random()*(max_riskNature) + 1);
-$risk_nature.prop('selectedIndex', rand_riskNature);
-$risk_nature.change();
+	//nature of risk
+	var $risk_nature=$('[name=natureOfRisk]');
+	var max_riskNature = ($risk_nature.children('option').length) - 1;
+	var rand_riskNature = Math.floor(Math.random()*(max_riskNature) + 1);
+	$risk_nature.prop('selectedIndex', rand_riskNature);
+	$risk_nature.change();
 
-//assured victim last name
-var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
-$assuredVict_LName.val(rand_LandC_LName);
-$assuredVict_LName.blur();
+	//assured victim last name
+	var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
+	$assuredVict_LName.val(rand_LandC_LName);
+	$assuredVict_LName.blur();
 
-//assured victim first name
-var $assuredVict_FName=$('[name=riskAssuredVictimsName]');
-$assuredVict_FName.val(rand_LandC_FName);
-$assuredVict_FName.blur();
+	//assured victim first name
+	var $assuredVict_FName=$('[name=riskAssuredVictimsName]');
+	$assuredVict_FName.val(rand_LandC_FName);
+	$assuredVict_FName.blur();
 
-//index type
-var $indexType=$('[name=riskIndexType]');
-$indexType.val(rand_indexType);
-$indexType.blur();
+	//index type
+	var $indexType=$('[name=riskIndexType]');
+	$indexType.val(rand_indexType);
+	$indexType.blur();
 
-//franchise amount
-var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
-$franchiseAmt.val(rand_franchiseAmt);
-$franchiseAmt.blur();
-
+	//franchise amount
+	var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
+	$franchiseAmt.val(rand_franchiseAmt);
+	$franchiseAmt.blur();
+}
 
 //Auto
-//
-//car make
-var $car_make=$('[name=riskCarMark]');
-$car_make.val(vehicleMake[rand_VehicleMake]);
-$car_make.blur();
+else if(claimBranchType == "Auto")
+{
+	//car make
+	var $car_make=$('[name=riskCarMark]');
+	$car_make.val(vehicleMake[rand_VehicleMake]);
+	$car_make.blur();
 
-//car model
-var $car_model=$('[name=riskCarModel]');
-$car_model.val(vehicleModel[rand_VehicleMake][rand_VehicleModel]);
-$car_model.blur();
+	//car model
+	var $car_model=$('[name=riskCarModel]');
+	$car_model.val(vehicleModel[rand_VehicleMake][rand_VehicleModel]);
+	$car_model.blur();
 
-//car plate number
-var $licensePlate=$('[name=riskCarPlateNumber]');
-$licensePlate.val(rand_licensePlate);
-$licensePlate.val(claimBranchType);
-$licensePlate.blur();
+	//car plate number
+	var $licensePlate=$('[name=riskCarPlateNumber]');
+	$licensePlate.val(rand_licensePlate);
+	$licensePlate.blur();
 
-//car chassis number
-var $chassisNum=$('[name=riskCarChassisNumber]');
-$chassisNum.val(fullChassisNum);
-$chassisNum.blur();
+	//car chassis number
+	var $chassisNum=$('[name=riskCarChassisNumber]');
+	$chassisNum.val(fullChassisNum);
+	$chassisNum.blur();
 
-//car power
-var $car_power=$('[name=riskCarPower]');
-$car_power.val(rand_carPower);
-$car_power.blur();
-
+	//car power
+	var $car_power=$('[name=riskCarPower]');
+	$car_power.val(rand_carPower);
+	$car_power.blur();
+}
 
 //Fire
-//
+else if(claimBranchType == "Fire")
+{
+	
+	
+}
 
 })();
 
