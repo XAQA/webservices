@@ -7,7 +7,12 @@
 
 //Claim Info
 //-------------------------------------------------------------------------
+//warranty number
+var randWarranty = Math.random()*999;
 
+//observations
+var observe = ["We got a problem here!", "Its broken!", "Something bad happened"];
+var randObserve = observe[Math.random()*observe.length];  
 
 //Party/Risk Information
 //-------------------------------------------------------------------------
@@ -131,16 +136,21 @@ var $loss_date=$('#claimInformationDate_date_visible');
 $loss_date.datepicker().datepicker('setDate',yesterday);
 $('#ui-datepicker-div').hide();
 
-//test date
-var $test_date=$('[name=claimLocation_street]');
-$test_date.val(yesterday);
-$test_date.blur();
-
 //claim received date
 var today = new Date();
 var $received_date=$('#claimInformationReceivedDate_date_visible');
 $received_date.datepicker().datepicker('setDate',today);
 $('#ui-datepicker-div').hide();
+
+//warranty
+var $warranty=$('[name=claimInformationWarranties1]');
+$warranty.val(randWarranty);
+$warranty.blur();
+
+//observation
+var $observation=$('[name=claimInformationObservations]');
+$observation.val(randObserve);
+$observation.blur();
 
 
 
