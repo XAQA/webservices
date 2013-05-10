@@ -23,7 +23,7 @@ var randClaimHandler_FName = firstnamelist[Math.floor(Math.random()*firstnamelis
 var randClaimHandler_LName = lastnamelist[Math.floor(Math.random()*lastnamelist.length)];
 
 //claim handler phone
-var randClaimHandler_phone = Math.floor(Math.random()*9999999999-1111111111) + 1111111111);
+var randClaimHandler_phone = Math.floor(Math.random()*(9999999999-1111111111) + 1111111111);
 
 
 //Party/Risk Information
