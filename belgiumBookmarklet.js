@@ -304,7 +304,7 @@ $agreement_num.blur();
 var claimBranchType = $("#claimBranchSelect option:selected").text();
 
 //Liability & Casualty
-if(claimBranchType == "Liability & Casualty")
+if(claimBranchType == "Liability & casualty")
 {
 	//risk type
 	var $risk_type=$('[name=riskType]');
