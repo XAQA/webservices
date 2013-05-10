@@ -75,7 +75,7 @@ var birthdayDate = new Date(randYear, randMonth, randDay);
 
 //Policy Summary
 //-------------------------------------------------------------------------
-var randAgreementNum = Math.floor(Math.random()*2500);
+var randAgreementNum = Math.floor(Math.random()*(99999999-11111111) + 11111111);
 
 
 //Producer
@@ -124,6 +124,13 @@ var max_claimBranch = ($claim_branch.children('option').length) - 1;
 var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
+
+//function
+var $function=$('[name=claimBranch]');
+var max_function = ($function.children('option').length) - 1;
+var random_function = Math.floor(Math.random()*(max_function) + 1);
+$function.prop('selectedIndex', random_function);
+$function.change();
 
 //language code
 var $language_code=$('[name=languageCode]');
