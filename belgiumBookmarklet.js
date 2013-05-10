@@ -301,7 +301,7 @@ $agreement_num.blur();
 
 //Risk
 //-------------------------------------------------------------------------
-var claimBranchType = $claim_branch.val();
+var claimBranchType = $("#claimBranchSelect option:selected").text();
 
 //Liability & Casualty
 //
