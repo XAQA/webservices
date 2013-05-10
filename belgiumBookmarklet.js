@@ -126,7 +126,7 @@ $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
 //function
-var $function=$('[name=claimBranch]');
+var $function=$('[name=function]');
 var max_function = ($function.children('option').length) - 1;
 var random_function = Math.floor(Math.random()*(max_function) + 1);
 $function.prop('selectedIndex', random_function);
