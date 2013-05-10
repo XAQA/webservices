@@ -301,6 +301,8 @@ $agreement_num.blur();
 
 //Risk
 //-------------------------------------------------------------------------
+var claimBranchType = $claim_branch.val();
+
 //Liability & Casualty
 //
 //risk type
@@ -353,6 +355,7 @@ $car_model.blur();
 //car plate number
 var $licensePlate=$('[name=riskCarPlateNumber]');
 $licensePlate.val(rand_licensePlate);
+$licensePlate.val(claimBranchType);
 $licensePlate.blur();
 
 //car chassis number
