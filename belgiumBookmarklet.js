@@ -126,7 +126,7 @@ $claim_postalCode.blur();
 
 //claim loss date
 var yesterday = new Date();
-yesterday.setDate(yesterday.getDate()-1);
+yesterday.setDate(yesterday.getDate()-2);
 var $loss_date=$('#claimInformationDate_date_visible');
 $loss_date.datepicker().datepicker('setDate',yesterday);
 $('#ui-datepicker-div').hide();
