@@ -95,6 +95,21 @@ $branch_code.change();
 
 //Claim Info
 //-------------------------------------------------------------------------
+//mission context
+var $mission_context=$('[name=missionContext]');
+var max_missionContext = ($mission_context.children('option').length) - 1;
+var random_missionContext = Math.floor(Math.random()*(max_missionContext) + 1;
+$mission_context.prop('selectedIndex', random_missionContext);
+$misssion_context.change();
+
+//claim branch
+var $claim_branch=$('[name=missionContext]');
+var max_claimBranch = ($claim_branch.children('option').length) - 1;
+var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1;
+$claim_branch.prop('selectedIndex', random_claimBranch);
+$claim_branch.change();
+
+
 //postal code
 var $claim_postalCode=$('[name=claimPostalCode]');
 $claim_postalCode.val(max_branchCode);
