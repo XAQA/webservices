@@ -127,7 +127,9 @@ $claim_branch.change();
 
 var currentTime = new Date();
 var timeout = currentTime.getSeconds()+5;
-while(currentTime != timeout){}
+do
+{currentTime = new Date();}
+while(currentTime <= timeout);
 
 //function
 var $function=$('[name=function]');
