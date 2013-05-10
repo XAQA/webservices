@@ -86,7 +86,7 @@ var randAgreementNum = Math.floor(Math.random()*(99999999-11111111) + 11111111);
 //-------------------------------------------------------------------------
 //Liability and casualty name
 var rand_LandC_FName = firstnamelist[Math.floor(Math.random()*firstnamelist.length)];
-var rand_LandC_FName = lastnamelist[Math.floor(Math.random()*lastnamelist.length)];
+var rand_LandC_LName = lastnamelist[Math.floor(Math.random()*lastnamelist.length)];
 
 //random index type
 var rand_indexType = Math.floor(Math.random()*999999);
