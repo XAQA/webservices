@@ -286,7 +286,7 @@ $risk_type.change();
 //nature of risk
 var $risk_nature=$('[name=natureOfRisk]');
 var max_riskNature = ($risk_nature.children('option').length) - 1;
-var rand_riskNature = Math.floor(Math.random()*(max_riskNature) + 1;
+var rand_riskNature = Math.floor(Math.random()*(max_riskNature) + 1);
 $risk_nature.prop('selectedIndex', rand_riskNature);
 $risk_nature.change();
 
