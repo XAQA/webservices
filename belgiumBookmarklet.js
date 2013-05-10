@@ -124,6 +124,19 @@ $claim_postalCode.blur();
 //claim number
 //located in URL property of bookmarklet
 
+//claim loss date
+var yesterday = new Date();
+yesterday.setDate(yesterday.getDate()-1);
+var $loss_date=$('#claimInformationDate_date_visible');
+$loss_date.datepicker().datepicker('setDate',yesterday);
+$('#ui-datepicker-div').hide();
+
+//claim received date
+var today = new Date();
+var $received_date=$('#claimInformationReceivedDate_date_visible');
+$loss_date.datepicker().datepicker('setDate',today);
+$('#ui-datepicker-div').hide();
+
 
 
 //Party/Risk Information
