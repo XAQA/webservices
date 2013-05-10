@@ -177,6 +177,11 @@ var $handler_phoneNum=$('[name=claimHandlerPhone]');
 $handler_phoneNum.val(randClaimHandler_phone);
 $handler_phoneNum.blur();
 
+//claim handler email
+var $handler_email=$('[name=claimInformationEmailTeam]');
+$handler_email.val("automate@automate.com");
+$handler_email.blur();
+
 
 //Party/Risk Information
 //-------------------------------------------------------------------------
