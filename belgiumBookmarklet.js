@@ -107,7 +107,7 @@ var $claim_branch=$('[name=claimBranch]');
 var max_claimBranch = ($claim_branch.children('option').length) - 1;
 var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
-$claim_branch.change();
+//$claim_branch.change();
 
 
 //postal code
