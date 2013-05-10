@@ -116,11 +116,13 @@ var random_langCode = Math.floor(Math.random()*max_langCode);
 $language_code.prop('selectedIndex', random_langCode);
 $language_code.change(); 
 
-
 //postal code
 var $claim_postalCode=$('[name=claimPostalCode]');
-$claim_postalCode.val(max_branchCode);
+$claim_postalCode.val(randomZipCity[0]);
 $claim_postalCode.blur();
+
+//claim number
+//located in URL property of bookmarklet
 
 
 
