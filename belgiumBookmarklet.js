@@ -126,7 +126,7 @@ $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
 //need a delay to select "function" so thats why the code to set the "function" is in a function
-window.setTimeout(setFunc, 2000);
+window.setTimeout(setFunc, 1000);
 
 //func
 function setFunc(){
