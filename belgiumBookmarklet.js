@@ -104,7 +104,7 @@ var vehicleMake = ["Ford", "Chevrolet", "Dodge", "Mazda", "Honda", "Toyota", "Bu
 var rand_VehicleMake = Math.floor(Math.random()*vehicleMake.length);
 
 //model
-var vehicleModel = [["F150", "F250", "F350", "Fiesta", "Focus", "Explorer", "Escape", "Mustang", "Fushion", "Taurus", "Bronco"], ["Trailblazer", "Sonic", "Malibu", "Camaro", "Cruze", "Volt", "Spark", "Impala", "Corvette", "1500"], ["Charger", "Challenger", "Durango", "Avenger", "Dart", "Journey", "Viper", "Ram", "Nitro"], ["6", "3", "2", "MX5-Miata", "CX-5", "CX-7", "CX-9", "Mazdaspeed6", "Mazdaspeed3", "RX-7", "RX-8", "MX-6"], ["Civic", "Accord", "CR-Z", "Fit", "Ridgeline", "Pilot", "CR-V"], ["Yaris", "Corolla", "Tacoma", "Prius", "Matrix", "Camry", "RAV4", "Tundra", "Sienna", "FJ Cruiser", "Highlander", "Venza", "4Runner"], ["Veyron"], ["Altima", "Maxima", "370Z", "Armada", "Cube", "GT-R", "Juke", "Leaf", "Murano", "Pathfinder", "Quest", "Rogue", "Sentra", "Titan"], ["Zonda F", "Zonda GJ", "Zonda Uno", "Zonda HH", "Zonda PS", "Huayra"], ["300", "200", "Town & Country"]];
+var vehicleModel = [["F150", "F250", "F350", "Fiesta", "Focus", "Explorer", "Escape", "Mustang", "Fusion", "Taurus", "Bronco"], ["Trailblazer", "Sonic", "Malibu", "Camaro", "Cruze", "Volt", "Spark", "Impala", "Corvette", "1500"], ["Charger", "Challenger", "Durango", "Avenger", "Dart", "Journey", "Viper", "Ram", "Nitro"], ["6", "3", "2", "MX5-Miata", "CX-5", "CX-7", "CX-9", "Mazdaspeed6", "Mazdaspeed3", "RX-7", "RX-8", "MX-6"], ["Civic", "Accord", "CR-Z", "Fit", "Ridgeline", "Pilot", "CR-V"], ["Yaris", "Corolla", "Tacoma", "Prius", "Matrix", "Camry", "RAV4", "Tundra", "Sienna", "FJ Cruiser", "Highlander", "Venza", "4Runner"], ["Veyron"], ["Altima", "Maxima", "370Z", "Armada", "Cube", "GT-R", "Juke", "Leaf", "Murano", "Pathfinder", "Quest", "Rogue", "Sentra", "Titan"], ["Zonda F", "Zonda GJ", "Zonda Uno", "Zonda HH", "Zonda PS", "Huayra"], ["300", "200", "Town & Country"]];
 var rand_VehicleModel = Math.floor(Math.random()*(vehicleModel[rand_VehicleMake].length));
 
 //license plate
@@ -332,6 +332,7 @@ if(claimBranchType == "Liability & casualty")
 	//create delay to select the nature of the risk so that it the dropdown is populated before the selection is made
 	window.setTimeout(natureOfRisk, 2000);
 	
+	//in order to create delay, the delayed code needs to be in a function
 	function natureOfRisk()
 	{
 		//nature of risk
