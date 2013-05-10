@@ -8,11 +8,11 @@
 //Claim Info
 //-------------------------------------------------------------------------
 //warranty number
-var randWarranty = Math.random()*999;
+var randWarranty = Math.floor(Math.random()*999);
 
 //observations
 var observe = ["We got a problem here!", "Its broken!", "Something bad happened"];
-var randObserve = observe[Math.random()*observe.length];  
+var randObserve = observe[Math.floor(Math.random()*observe.length)];  
 
 //Party/Risk Information
 //-------------------------------------------------------------------------
