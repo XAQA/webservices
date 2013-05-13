@@ -208,7 +208,7 @@ if(missionContext == "Third party doctor")
 	}
 }
 
-else if(missionContext == "Insured's lawyer")
+else if(missionContext == "Insured's lawyer" || "Third party lawyer")
 {
 	//judicial code - for insured's lawyer
 	window.setTimeout(judCode, 2000);
