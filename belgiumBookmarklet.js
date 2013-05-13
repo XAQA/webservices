@@ -185,7 +185,7 @@ $claim_branch.change();
 //
 window.setTimeout(docType, 2000);
 //doctor type - for third party doctor
-func docType(){
+function docType(){
 	var $docType=$('[name=pickList1]');
 	var max_docType = ($docType.children('option').length) - 1;
 	var random_docType = Math.floor(Math.random()*(max_docType) + 1);
