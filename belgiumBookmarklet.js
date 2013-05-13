@@ -501,6 +501,20 @@ else if(claimBranchType == "Fire")
 	$houseType.prop('selectedIndex', rand_houseType);
 	$houseType.change();
 	
+	//construction
+	var $construction=$('[name=codeTypeOfConstruction]');
+	var max_construction = ($construction.children('option').length) - 1;
+	var rand_construction = Math.round(Math.random()*(max_construction);
+	$construction.prop('selectedIndex', rand_construction);
+	$construction.change();
+	
+	//contiguity
+	var $contiguity=$('[name=codeContiguitySelect]');
+	var max_contiguity = ($contiguity.children('option').length) - 1;
+	var rand_contiguity = Math.round(Math.random()*max_contiguity;
+	$contiguity.prop('selectedIndex', rand_contiguity);
+	$contiguity.change();
+	
 	//insured building value
 	var $buildingVal=$('[name=riskInsuredBuildingValue]');
 	$buildingVal.val(rand_buildingVal);
