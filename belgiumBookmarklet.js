@@ -232,7 +232,7 @@ function setFunc(){
 	var $func=$('[name=function]');
 	var max_func = ($func.children('option').length) -1;
 	var selectedFunc = "";
-
+	var random_func = "";
 	do
 	{
 		random_func = Math.floor(Math.random()*(max_func) + 1);
