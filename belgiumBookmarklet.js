@@ -224,7 +224,7 @@ function genericPick3(){
 
 
 //judicial code - for insured's lawyer
-window.setTimeout(judCode, 2000);
+window.setTimeout(judCode, 3000);
 function judCode(){
 	var $judCode=$('[name=claimPostalCode]');
 	var max_judCode = ($judCode.children('option').length) - 1;
