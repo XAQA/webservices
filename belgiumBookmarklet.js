@@ -184,7 +184,7 @@ $claim_branch.change();
 //mission context specific elements
 //
 //doctor type - for third party doctor
-window.setTimeout(docType, 2000);
+window.setTimeout(docType, 4000);
 function docType(){
 	var $docType=$('[name=pickList1]');
 	var max_docType = ($docType.children('option').length) - 1;
