@@ -129,7 +129,7 @@ var rand_carValue = Math.round(Math.random()*(100000-10000) + 10000);
 var rand_carCatValue = "";
 do{
 	rand_carCatValue = Math.round(Math.random()*(100000-10000) + 10000);
-while(rand_carCatValue < rand_carValue);
+}while(rand_carCatValue < rand_carValue);
 
 
 //Fire
