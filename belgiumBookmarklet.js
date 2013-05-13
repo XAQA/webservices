@@ -538,6 +538,12 @@ else if(claimBranchType == "Fire")
 	$fire_franchiseAmt.blur();
 	
 	//new construction
+	var $newConstruct=$('[name=codeNewConstruction]');
+	var max_newConstruct = ($newConstruct.children('option').length) - 1;
+	var rand-newConstruct = Math.round(Math.random()*max_newConstruct);
+	$newConstruct.prop('selectedIndex', rand_newConstruct);
+	$newConstruct.change();
+	
 	
 	//occupation
 	var $occupation=$('[name=constructionPurposeTypeCode]');
@@ -554,8 +560,18 @@ else if(claimBranchType == "Fire")
 	$prevention.change();
 	
 	//evaluation system(BAT)
+	var $esBat=$('[name=codeEvaluationSystem]');
+	var max_esBat = ($esBat.children('option').length) - 1;
+	var rand_esBat = Math.round(Math.random()*max_esBat);
+	$esBat.prop('selectedIndex', rand_esBat);
+	$esBat.change();
 	
 	//evaluation type(CNU)
+	var $etCnu=$('[name=codeSARPContenu]');
+	var max_etCnu = ($etCnu.children('option').length) - 1;
+	var rand_etCnu = Math.round(Math.random()*max_etCnu);
+	$etCnu.prop('selectedIndex', rand_etCnu);
+	$etCnu.change();
 	
 }
 
