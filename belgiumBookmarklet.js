@@ -540,7 +540,7 @@ else if(claimBranchType == "Fire")
 	//new construction
 	var $newConstruct=$('[name=codeNewConstruction]');
 	var max_newConstruct = ($newConstruct.children('option').length) - 1;
-	var rand-newConstruct = Math.round(Math.random()*max_newConstruct);
+	var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
 	$newConstruct.prop('selectedIndex', rand_newConstruct);
 	$newConstruct.change();
 	
