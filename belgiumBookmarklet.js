@@ -180,19 +180,21 @@ var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
 $claim_branch.prop('selectedIndex', random_claimBranch);
 $claim_branch.change();
 
-//need a delay to select "function" so thats why the code to set the "function" is in a function
-window.setTimeout(setFunc, 2000);
-
 
 //mission context specific elements
 //
+window.setTimeout(setFunc, 2000);
 //doctor type - for third party doctor
-var $docType=$('[name=pickList1]');
-var max_docType = ($docType.children('option').length) - 1;
-var random_docType = Math.floor(Math.random()*(max_docType) + 1);
-$docType.prop('selectedIndex', random_docType);
-$docType.change();
+func docType(){
+	var $docType=$('[name=pickList1]');
+	var max_docType = ($docType.children('option').length) - 1;
+	var random_docType = Math.floor(Math.random()*(max_docType) + 1);
+	$docType.prop('selectedIndex', random_docType);
+	$docType.change();
+}
 
+//need a delay to select "function" so thats why the code to set the "function" is in a function
+window.setTimeout(setFunc, 2000);
 
 //func
 function setFunc(){
