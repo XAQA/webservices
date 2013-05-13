@@ -183,7 +183,7 @@ $claim_branch.change();
 
 //mission context specific elements
 //
-//doctor type - for third party doctor
+//doctor type - seems to be generic, same name (pickList1) for multiple mission context
 window.setTimeout(docType, 2000);
 function docType(){
 	var $docType=$('[name=pickList1]');
@@ -193,7 +193,7 @@ function docType(){
 	$docType.change();
 }
 
-//extend of damage - for third party doctor
+//extend of damage - seems to be generic, same name(pickList2) for multiple mission context
 window.setTimeout(extendDamage, 3000);
 function extendDamage(){
 	var $extendDamage=$('[name=pickList2]');
@@ -203,6 +203,15 @@ function extendDamage(){
 	$extendDamage.change();
 }
 
+//generic pickList3
+window.setTimeout(extendDamage, 3000);
+function genericPick3(){
+	var $pickList3=$('[name=pickList3]');
+	var max_pickList3 = ($pickList3.children('option').length) - 1;
+	var random_pickList3 = Math.floor(Math.random()*(max_pickList3) + 1);
+	$pickList3.prop('selectedIndex', random_pickList3);
+	$pickList3.change();
+}
 
 
 //judicial code - for insured's lawyer
