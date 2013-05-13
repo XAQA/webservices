@@ -525,10 +525,19 @@ else if(claimBranchType == "Fire")
 	$contentsVal.val(rand_contentsVal);
 	$contentsVal.blur();
 	
+	//finition
+	var $finition=$('[name=codeTypeOffinition]');
+	var max_finition = ($finition.children('option').length) - 1;
+	var rand_finition = Math.round(Math.random()*max_finition);
+	$finition.prop('selectedIndex', rand_finition);
+	$finition.change();
+	
 	//franchise amount
 	var $fire_franchiseAmt=$('[name=riskFireFranchiseAmount1]');
 	$fire_franchiseAmt.val(rand_fireFranchiseAmt);
 	$fire_franchiseAmt.blur();
+	
+	//new construction
 	
 	//occupation
 	var $occupation=$('[name=constructionPurposeTypeCode]');
@@ -536,6 +545,18 @@ else if(claimBranchType == "Fire")
 	var rand_occupation = Math.round(Math.random()*max_occupation);
 	$occupation.prop('selectedIndex', rand_occupation);
 	$occupation.change();
+	
+	//prevention
+	var $prevention=$('[name=codePreventionVol]');
+	var max_prevention = ($prevention.children('option').length) - 1;
+	var rand_prevention = Math.round(Math.random()*max_prevention);
+	$prevention.prop('selectedIndex', rand_prevention);
+	$prevention.change();
+	
+	//evaluation system(BAT)
+	
+	//evaluation type(CNU)
+	
 }
 
 })();
