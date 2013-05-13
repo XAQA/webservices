@@ -447,8 +447,13 @@ else if(claimBranchType == "Auto")
 	
 	//car insured value
 	var $insuredVal=$('[name=riskCarInsuredValue]');
-	$insuredVal.val(rand_CarValue);
+	$insuredVal.val(rand_carValue);
 	$insuredVal.change();
+	
+	//car catalog value
+	var $catalogVal=$('[name=riskCarCatalogValue]');
+	$catalogVal.val(rand_carCatValue);
+	$catalogVal.blur();
 	
 }
 
