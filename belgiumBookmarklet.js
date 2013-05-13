@@ -229,11 +229,18 @@ window.setTimeout(setFunc, 2000);
 
 //func
 function setFunc(){
-var $func=$('[name=function]');
-var max_func = ($func.children('option').length) -1;
-var random_func = Math.floor(Math.random()*(max_func) + 1);
-$func.prop('selectedIndex', random_func);
-$func.change();
+	var $func=$('[name=function]');
+	var max_func = ($func.children('option').length) -1;
+	var selectedFunc = "";
+
+	do
+	{
+		random_func = Math.floor(Math.random()*(max_func) + 1);
+		$func.prop('selectedIndex', random_func);
+		$func.change();
+		
+		selectedFunc = $("#function option:selected").text();
+	}while(selectedFunc == "OTHERS");
 }
 
 //language code
