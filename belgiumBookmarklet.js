@@ -183,7 +183,7 @@ $claim_branch.change();
 
 //mission context specific elements
 //
-window.setTimeout(setFunc, 2000);
+window.setTimeout(docType, 2000);
 //doctor type - for third party doctor
 func docType(){
 	var $docType=$('[name=pickList1]');
