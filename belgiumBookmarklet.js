@@ -240,7 +240,7 @@ function setFunc(){
 		$func.change();
 		
 		selectedFunc = $("#function option:selected").text();
-	}while(selectedFunc == "OTHERS");
+	}while(selectedFunc == "OTHERS" || "OTHER");
 }
 
 //language code
