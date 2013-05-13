@@ -204,7 +204,7 @@ function extendDamage(){
 }
 
 //generic pickList3
-window.setTimeout(extendDamage, 4000);
+window.setTimeout(extendDamage, 5000);
 function genericPick3(){
 	var $pickList3=$('[name=pickList3]');
 	var max_pickList3 = ($pickList3.children('option').length) - 1;
