@@ -544,7 +544,6 @@ else if(claimBranchType == "Fire")
 	$newConstruct.prop('selectedIndex', rand_newConstruct);
 	$newConstruct.change();
 	
-	
 	//occupation
 	var $occupation=$('[name=constructionPurposeTypeCode]');
 	var max_occupation = ($occupation.children('option').length) - 1;
