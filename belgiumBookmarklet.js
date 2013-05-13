@@ -122,6 +122,15 @@ var fullChassisNum = rand_chassisLetter + rand_chassisNums;
 //car power
 var rand_carPower = Math.floor(Math.random()*(999-100) + 100);
 
+//car insured value
+var rand_carValue = Math.round(Math.random()*(100000-10000) + 10000);
+
+//car catalog value
+var rand_carCatValue = "";
+do{
+	rand_carCatValue = Math.round(Math.random()*(100000-10000) + 10000);
+while(rand_carCatValue < rand_carValue);
+
 
 //Fire
 //
@@ -435,6 +444,12 @@ else if(claimBranchType == "Auto")
 	var $car_power=$('[name=riskCarPower]');
 	$car_power.val(rand_carPower);
 	$car_power.blur();
+	
+	//car insured value
+	var $insuredVal=$('[name=riskCarInsuredValue]');
+	$insuredVal.val(rand_CarValue);
+	$insuredVal.change();
+	
 }
 
 //Fire
