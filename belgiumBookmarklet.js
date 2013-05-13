@@ -114,7 +114,7 @@ licensePlateAlpha += alpha[Math.floor(Math.random()*alpha.length)];
 var licensePlateNum = Math.floor(Math.random()*(999-111) + 111);
 var rand_licensePlate = licensePlateAlpha + licensePlateNum;
 
-//chasis number
+//chassis number
 var rand_chassisLetter = alpha[Math.floor(Math.random()*alpha.length)];
 var rand_chassisNums = Math.floor(Math.random()*(9999999999999999 - 1111111111111111) + 1111111111111111);
 var fullChassisNum = rand_chassisLetter + rand_chassisNums;
@@ -182,6 +182,17 @@ $claim_branch.change();
 
 //need a delay to select "function" so thats why the code to set the "function" is in a function
 window.setTimeout(setFunc, 2000);
+
+
+//mission context specific elements
+//
+//doctor type - for third party doctor
+var $docType=$('[name=pickList1]');
+var max_docType = ($docType.children('option').length) - 1;
+var random_docType = Math.floor(Math.random()*(max_docType) + 1);
+$docType.prop('selectedIndex', random_docType);
+$docType.change();
+
 
 //func
 function setFunc(){
