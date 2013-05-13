@@ -231,16 +231,9 @@ window.setTimeout(setFunc, 2000);
 function setFunc(){
 	var $func=$('[name=function]');
 	var max_func = ($func.children('option').length) -1;
-	var selectedFunc = "";
-	var random_func = "";
-	do
-	{
-		random_func = Math.floor(Math.random()*(max_func) + 1);
-		$func.prop('selectedIndex', random_func);
-		$func.change();
-		
-		selectedFunc = $("#function option:selected").text();
-	}while(selectedFunc == "OTHERS" && selectedFunc == "OTHER");
+	var random_func = Math.floor(Math.random()*(max_func) + 1);
+	$func.prop('selectedIndex', random_func);
+	$func.change();
 }
 
 //language code
