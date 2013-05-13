@@ -183,24 +183,42 @@ $claim_branch.change();
 
 //mission context specific elements
 //
-//doctor type - for third party doctor
-window.setTimeout(docType, 2000);
-function docType(){
-	var $docType=$('[name=pickList1]');
-	var max_docType = ($docType.children('option').length) - 1;
-	var random_docType = Math.floor(Math.random()*(max_docType) + 1);
-	$docType.prop('selectedIndex', random_docType);
-	$docType.change();
+var missionContext = $('#missionContext option:selected').text();
+
+if(missionContext == "Third party doctor")
+{
+	//doctor type - for third party doctor
+	window.setTimeout(docType, 2000);
+	function docType(){
+		var $docType=$('[name=pickList1]');
+		var max_docType = ($docType.children('option').length) - 1;
+		var random_docType = Math.floor(Math.random()*(max_docType) + 1);
+		$docType.prop('selectedIndex', random_docType);
+		$docType.change();
+	}
+
+	//extend of damage - for third party doctor
+	window.setTimeout(extendDamage, 4000);
+	function extendDamage(){
+		var $extendDamage=$('[name=pickList2]');
+		var max_extendDamage = ($extendDamage.children('option').length) - 1;
+		var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
+		$extendDamage.prop('selectedIndex', random_extendDamage);
+		$extendDamage.change();
+	}
 }
 
-//extend of damage - for third party doctor
-window.setTimeout(extendDamage, 4000);
-function extendDamage(){
-	var $extendDamage=$('[name=pickList2]');
-	var max_extendDamage = ($extendDamage.children('option').length) - 1;
-	var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
-	$extendDamage.prop('selectedIndex', random_extendDamage);
-	$extendDamage.change();
+else if(missionContext == "Insured's lawyer")
+{
+	//judicial code - for insured's lawyer
+	window.setTimeout(judCode, 2000);
+	function judCode(){
+		var $judCode=$('[name=claimPostalCode]');
+		var max_judCode = ($judCode.children('option').length) - 1;
+		var rand_judCode = Math.floor(Math.random()*(max_judCode) + 1);
+		$judCode.prop('selectedIndex', random_extendDamage);
+		$judCode.change();
+	}
 }
 
 //need a delay to select "function" so thats why the code to set the "function" is in a function
