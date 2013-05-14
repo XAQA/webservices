@@ -283,13 +283,16 @@ var $observation=$('[name=claimInformationObservations]');
 $observation.val(randObserve);
 $observation.blur();
 
-//usage
-var $usage=$('[name=codeGenreDActivite]');
-var max_usage = ($usage.children('option').length) - 1;
-var rand_usage = Math.round(Math.random()*max_usage);
-$usage.prop('selectedIndex', rand_usage);
-$usage.change();
 
+//usage
+	function usage(){
+	var $usage=$('[name=codeGenreDActivite]');
+	var max_usage = ($usage.children('option').length) - 1;
+	var rand_usage = Math.round(Math.random()*max_usage);
+	$usage.prop('selectedIndex', rand_usage);
+	$usage.change();
+}
+	
 //claim handler last name
 // var $handler_lastName=$('[name=claimHandler_last_name]');
 // $handler_lastName.val(randClaimHandler_LName);
