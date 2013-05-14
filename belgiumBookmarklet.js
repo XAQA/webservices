@@ -286,7 +286,7 @@ $observation.blur();
 //usage
 var $usage=$('[name=codeGenreDActivite]');
 var max_usage = ($usage.children('option').length) - 1;
-var rand_usage = Math.round(math.random()*max_usage);
+var rand_usage = Math.round(Math.random()*max_usage);
 $usage.prop('selectedIndex', rand_usage);
 $usage.change();
 
