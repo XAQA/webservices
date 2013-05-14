@@ -579,6 +579,7 @@ else if(claimBranchType == "Fire")
 		}
 		else{
 		var rand_newConstruct = Math.floor(Math.random()*(max_newConstruct) + 1);
+		}
 		$newConstruct.prop('selectedIndex', rand_newConstruct);
 		$newConstruct.change();
 	}
