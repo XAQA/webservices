@@ -511,20 +511,23 @@ else if(claimBranchType == "Fire")
 	var rand_houseType = Math.round(Math.random()*max_houseType);
 	$houseType.prop('selectedIndex', rand_houseType);
 	$houseType.change();
-	
-	//construction
-	var $construction=$('[name=codeTypeOfConstruction]');
-	var max_construction = ($construction.children('option').length) - 1;
-	var rand_construction = Math.round(Math.random()*max_construction);
-	$construction.prop('selectedIndex', rand_construction);
-	$construction.change();
-	
-	//contiguity
-	var $contiguity=$('[name=codeContiguitySelect]');
-	var max_contiguity = ($contiguity.children('option').length) - 1;
-	var rand_contiguity = Math.round(Math.random()*max_contiguity);
-	$contiguity.prop('selectedIndex', rand_contiguity);
-	$contiguity.change();
+
+	window.setTimeout(construction, 3000);
+	function construction(){
+		//construction
+		var $construction=$('[name=codeTypeOfConstruction]');
+		var max_construction = ($construction.children('option').length) - 1;
+		var rand_construction = Math.round(Math.random()*max_construction);
+		$construction.prop('selectedIndex', rand_construction);
+		$construction.change();
+		
+		//contiguity
+		var $contiguity=$('[name=codeContiguitySelect]');
+		var max_contiguity = ($contiguity.children('option').length) - 1;
+		var rand_contiguity = Math.round(Math.random()*max_contiguity);
+		$contiguity.prop('selectedIndex', rand_contiguity);
+		$contiguity.change();
+	}
 	
 	//insured building value
 	var $buildingVal=$('[name=riskInsuredBuildingValue]');
@@ -535,25 +538,31 @@ else if(claimBranchType == "Fire")
 	var $contentsVal=$('[name=riskInsuredContentsValue]');
 	$contentsVal.val(rand_contentsVal);
 	$contentsVal.blur();
-	
-	//finition
-	var $finition=$('[name=codeTypeOffinition]');
-	var max_finition = ($finition.children('option').length) - 1;
-	var rand_finition = Math.round(Math.random()*max_finition);
-	$finition.prop('selectedIndex', rand_finition);
-	$finition.change();
+
+	window.setTimeout(finition, 3000);
+	function finition(){
+		//finition
+		var $finition=$('[name=codeTypeOfFinition]');
+		var max_finition = ($finition.children('option').length) - 1;
+		var rand_finition = Math.round(Math.random()*max_finition);
+		$finition.prop('selectedIndex', rand_finition);
+		$finition.change();
+	}
 	
 	//franchise amount
 	var $fire_franchiseAmt=$('[name=riskFireFranchiseAmount1]');
 	$fire_franchiseAmt.val(rand_fireFranchiseAmt);
 	$fire_franchiseAmt.blur();
-	
-	//new construction
-	var $newConstruct=$('[name=codeNewConstruction]');
-	var max_newConstruct = ($newConstruct.children('option').length) - 1;
-	var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
-	$newConstruct.prop('selectedIndex', rand_newConstruct);
-	$newConstruct.change();
+
+	window.setTimeout(newConstruct, 3000);	
+	function newConstruct(){
+		//new construction
+		var $newConstruct=$('[name=codeNewConstruction]');
+		var max_newConstruct = ($newConstruct.children('option').length) - 1;
+		var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
+		$newConstruct.prop('selectedIndex', rand_newConstruct);
+		$newConstruct.change();
+	}
 	
 	//occupation
 	var $occupation=$('[name=constructionPurposeTypeCode]');
@@ -561,27 +570,30 @@ else if(claimBranchType == "Fire")
 	var rand_occupation = Math.round(Math.random()*max_occupation);
 	$occupation.prop('selectedIndex', rand_occupation);
 	$occupation.change();
-	
-	//prevention
-	var $prevention=$('[name=codePreventionVol]');
-	var max_prevention = ($prevention.children('option').length) - 1;
-	var rand_prevention = Math.round(Math.random()*max_prevention);
-	$prevention.prop('selectedIndex', rand_prevention);
-	$prevention.change();
-	
-	//evaluation system(BAT)
-	var $esBat=$('[name=codeEvaluationSystem]');
-	var max_esBat = ($esBat.children('option').length) - 1;
-	var rand_esBat = Math.round(Math.random()*max_esBat);
-	$esBat.prop('selectedIndex', rand_esBat);
-	$esBat.change();
-	
-	//evaluation type(CNU)
-	var $etCnu=$('[name=codeSARPContenu]');
-	var max_etCnu = ($etCnu.children('option').length) - 1;
-	var rand_etCnu = Math.round(Math.random()*max_etCnu);
-	$etCnu.prop('selectedIndex', rand_etCnu);
-	$etCnu.change();
+
+	window.setTimeout(fireSpecific, 3000);
+	function fireSpecific(){
+		//prevention
+		var $prevention=$('[name=codePreventionVol]');
+		var max_prevention = ($prevention.children('option').length) - 1;
+		var rand_prevention = Math.round(Math.random()*max_prevention);
+		$prevention.prop('selectedIndex', rand_prevention);
+		$prevention.change();
+		
+		//evaluation system(BAT)
+		var $esBat=$('[name=codeEvaluationSystem]');
+		var max_esBat = ($esBat.children('option').length) - 1;
+		var rand_esBat = Math.round(Math.random()*max_esBat);
+		$esBat.prop('selectedIndex', rand_esBat);
+		$esBat.change();
+		
+		//evaluation type(CNU)
+		var $etCnu=$('[name=codeSARPContenu]');
+		var max_etCnu = ($etCnu.children('option').length) - 1;
+		var rand_etCnu = Math.round(Math.random()*max_etCnu);
+		$etCnu.prop('selectedIndex', rand_etCnu);
+		$etCnu.change();
+	}
 	
 }
 
