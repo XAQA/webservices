@@ -533,7 +533,7 @@ else if(claimBranchType == "Fire")
 		var rand_contiguity = Math.round(Math.random()*max_contiguity);
 		}
 		else{
-		var rand_contiguity = Math.floor(Math.random()*(max)contiguity) + 1);
+		var rand_contiguity = Math.floor(Math.random()*(max_contiguity) + 1);
 		}
 		$contiguity.prop('selectedIndex', rand_contiguity);
 		$contiguity.change();
