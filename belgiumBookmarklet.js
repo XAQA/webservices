@@ -203,17 +203,17 @@ function docType(){
 }
 
 //extend of damage - seems to be generic, same name(pickList2) for multiple mission context
-// window.setTimeout(extendDamage, 3000);
-// function extendDamage(){
-	// var $extendDamage=$('[name=pickList2]');
-	// var max_extendDamage = ($extendDamage.children('option').length) - 1;
-	// var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
-	// $extendDamage.prop('selectedIndex', random_extendDamage);
-	// $extendDamage.change();
+window.setTimeout(extendDamage, 3000);
+function extendDamage(){
+	var $extendDamage=$('[name=pickList2]');
+	var max_extendDamage = ($extendDamage.children('option').length) - 1;
+	var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
+	$extendDamage.prop('selectedIndex', random_extendDamage);
+	$extendDamage.change();
 }
 
 //generic pickList3
-window.setTimeout(extendDamage, 5000);
+window.setTimeout(genericPick3, 5000);
 function genericPick3(){
 	var $pickList3=$('[name=pickList3]');
 	var max_pickList3 = ($pickList3.children('option').length) - 1;
