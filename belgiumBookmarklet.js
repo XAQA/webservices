@@ -527,7 +527,7 @@ else if(claimBranchType == "Fire")
 		$construction.change();
 		
 		//contiguity
-		var $contiguity=$('[name=codeContiguitySelect]');
+		var $contiguity=$('[name=codeContiguity]');
 		var max_contiguity = ($contiguity.children('option').length) - 1;
 		if(max_contiguity == 0){
 		var rand_contiguity = Math.round(Math.random()*max_contiguity);
