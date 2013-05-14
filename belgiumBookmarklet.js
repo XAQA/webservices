@@ -229,7 +229,7 @@ function judCode(){
 	var $judCode=$('[name=claimPostalCode]');
 	var max_judCode = ($judCode.children('option').length) - 1;
 	var rand_judCode = Math.floor(Math.random()*(max_judCode) + 1);
-	$judCode.prop('selectedIndex', random_extendDamage);
+	$judCode.prop('selectedIndex', rand_judCode);
 	$judCode.change();
 }
 
@@ -291,24 +291,24 @@ $usage.prop('selectedIndex', rand_usage);
 $usage.change();
 
 //claim handler last name
-var $handler_lastName=$('[name=claimHandler_last_name]');
-$handler_lastName.val(randClaimHandler_LName);
-$handler_lastName.blur();
+// var $handler_lastName=$('[name=claimHandler_last_name]');
+// $handler_lastName.val(randClaimHandler_LName);
+// $handler_lastName.blur();
 
 //claim handler first name
-var $handler_firstName=$('[name=claimHandler_name]');
-$handler_firstName.val(randClaimHandler_FName);
-$handler_firstName.blur();
+// var $handler_firstName=$('[name=claimHandler_name]');
+// $handler_firstName.val(randClaimHandler_FName);
+// $handler_firstName.blur();
 
 //claim handler phone num
-var $handler_phoneNum=$('[name=claimHandlerPhone]');
-$handler_phoneNum.val(randClaimHandler_phone);
-$handler_phoneNum.blur();
+// var $handler_phoneNum=$('[name=claimHandlerPhone]');
+// $handler_phoneNum.val(randClaimHandler_phone);
+// $handler_phoneNum.blur();
 
 //claim handler email
-var $handler_email=$('[name=claimInformationEmailTeam]');
-$handler_email.val("automate@automate.com");
-$handler_email.blur();
+// var $handler_email=$('[name=claimInformationEmailTeam]');
+// $handler_email.val("automate@automate.com");
+// $handler_email.blur();
 
 
 //Party/Risk Information
