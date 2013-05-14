@@ -512,19 +512,29 @@ else if(claimBranchType == "Fire")
 	$houseType.prop('selectedIndex', rand_houseType);
 	$houseType.change();
 
-	window.setTimeout(construction, 3000);
-	function construction(){
+	window.setTimeout(constructContig, 3000);
+	function constructContig(){
 		//construction
 		var $construction=$('[name=codeTypeOfConstruction]');
 		var max_construction = ($construction.children('option').length) - 1;
+		if(max_construct == 0){
 		var rand_construction = Math.round(Math.random()*max_construction);
+		}
+		else{
+		var rand_construction = Math.floor(Math.random()*(max_construction) + 1);
+		}
 		$construction.prop('selectedIndex', rand_construction);
 		$construction.change();
 		
 		//contiguity
 		var $contiguity=$('[name=codeContiguitySelect]');
 		var max_contiguity = ($contiguity.children('option').length) - 1;
+		if(max_contiguity == 0){
 		var rand_contiguity = Math.round(Math.random()*max_contiguity);
+		}
+		else{
+		var rand_contiguity = Math.floor(Math.random()*(max)contiguity) + 1);
+		}
 		$contiguity.prop('selectedIndex', rand_contiguity);
 		$contiguity.change();
 	}
@@ -544,7 +554,12 @@ else if(claimBranchType == "Fire")
 		//finition
 		var $finition=$('[name=codeTypeOfFinition]');
 		var max_finition = ($finition.children('option').length) - 1;
+		if(max_finition == 0){
 		var rand_finition = Math.round(Math.random()*max_finition);
+		}
+		else{
+		var rand_finition = Math.floor(Math.random()*(max_finition) + 1);
+		}
 		$finition.prop('selectedIndex', rand_finition);
 		$finition.change();
 	}
@@ -559,7 +574,11 @@ else if(claimBranchType == "Fire")
 		//new construction
 		var $newConstruct=$('[name=codeNewConstruction]');
 		var max_newConstruct = ($newConstruct.children('option').length) - 1;
+		if(max_newConstruct == 0){
 		var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
+		}
+		else{
+		var rand_newConstruct = Math.floor(Math.random()*(max_newConstruct) + 1);
 		$newConstruct.prop('selectedIndex', rand_newConstruct);
 		$newConstruct.change();
 	}
@@ -576,21 +595,36 @@ else if(claimBranchType == "Fire")
 		//prevention
 		var $prevention=$('[name=codePreventionVol]');
 		var max_prevention = ($prevention.children('option').length) - 1;
+		if(max_prevention == 0){
 		var rand_prevention = Math.round(Math.random()*max_prevention);
+		}
+		else{
+		var rand_prevention = Math.floor(Math.random()*(max_prevention) + 1);
+		}
 		$prevention.prop('selectedIndex', rand_prevention);
 		$prevention.change();
 		
 		//evaluation system(BAT)
 		var $esBat=$('[name=codeEvaluationSystem]');
 		var max_esBat = ($esBat.children('option').length) - 1;
+		if(max_esBat == 0){
 		var rand_esBat = Math.round(Math.random()*max_esBat);
+		}
+		else{
+		var rand_esBat = Math.floor(Math.random()*(max_esBat) + 1);
+		}
 		$esBat.prop('selectedIndex', rand_esBat);
 		$esBat.change();
 		
 		//evaluation type(CNU)
 		var $etCnu=$('[name=codeSARPContenu]');
 		var max_etCnu = ($etCnu.children('option').length) - 1;
+		if(max_etCnu == 0){
 		var rand_etCnu = Math.round(Math.random()*max_etCnu);
+		}
+		else{
+		var rand_etCnu = Math.floor(Math.random()*(max_etCnu) + 1);
+		}
 		$etCnu.prop('selectedIndex', rand_etCnu);
 		$etCnu.change();
 	}
