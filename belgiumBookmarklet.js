@@ -517,7 +517,7 @@ else if(claimBranchType == "Fire")
 		//construction
 		var $construction=$('[name=codeTypeOfConstruction]');
 		var max_construction = ($construction.children('option').length) - 1;
-		if(max_construct == 0){
+		if(max_construction == 0){
 		var rand_construction = Math.round(Math.random()*max_construction);
 		}
 		else{
