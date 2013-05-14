@@ -285,6 +285,7 @@ $observation.blur();
 
 
 //usage
+window.setTimeout(usage, 3000);
 	function usage(){
 	var $usage=$('[name=codeGenreDActivite]');
 	var max_usage = ($usage.children('option').length) - 1;
