@@ -512,7 +512,7 @@ else if(claimBranchType == "Fire")
 	$houseType.prop('selectedIndex', rand_houseType);
 	$houseType.change();
 
-	window.setTimeout(constructContig, 3000);
+	window.setTimeout(constructContig, 4000);
 	function constructContig(){
 		//construction
 		var $construction=$('[name=codeTypeOfConstruction]');
