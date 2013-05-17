@@ -123,10 +123,17 @@ $('[name=instructions]').val('');
 
 //policy type
 var text = $('select[name=policy_type] option:eq(0)').text();
-$('[name=instructions]').val(text);
 var $policy_type=$('select[name=policy_type]');
 var maxPolicyType = ($policy_type.children('option').length) - 1;
-var randomPolicyType = Math.floor(Math.random()*(maxPolicyType) + 1);
+var randomPolicyType = 0;
+if(text == "")
+{
+	randomPolicyType = Math.floor(Math.random()*(maxPolicyType) + 1);
+}
+else
+{
+	randomPolicyType = Math.round(Math.random()*maxPolicyType);
+}
 $policy_type.prop('selectedIndex', randomPolicyType);
 $policy_type.change();
 
