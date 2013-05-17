@@ -126,6 +126,7 @@ var text = $('select[name=policy_type] option:eq(0)').text();
 var $policy_type=$('select[name=policy_type]');
 var maxPolicyType = ($policy_type.children('option').length) - 1;
 var randomPolicyType = 0;
+//need to perform this check because depending on the dataset, some policy type dropdowns have an empty string as first element and others dont.
 if(text == "")
 {
 	randomPolicyType = Math.floor(Math.random()*(maxPolicyType) + 1);
