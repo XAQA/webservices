@@ -122,9 +122,8 @@ $('#ui-datepicker-div').hide();
 $('[name=instructions]').val('');
 
 //policy type
-var firstPolicyType = $("#policy_type option:0").text();
-var $testInput=$('[name=client_email]');
-$testInput.val(firstPolicyType);
+var firstPolicyType = $('[name=policy_type]').prop('selectedIndex', 0).text();
+var $testInput=$('[name=client_email]').val(firstPolicyType);
 var $policy_type=$('select[name=policy_type]');
 var maxPolicyType = ($policy_type.children('option').length) - 1;
 var randomPolicyType = Math.floor(Math.random()*(maxPolicyType) + 1);
