@@ -60,5 +60,13 @@ else
 }
 $postal.change();
 
+//phone number
+var phoneNum = "800555";
+var randPhone = Math.round(Math.random()*(9999-1111) + 1111);
+phoneNum += randPhone;
+var $phone=$('[name=insured_home_phone]');
+$phone.val(phoneNum);
+$phone.blur();
+
 
 })();
