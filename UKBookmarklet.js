@@ -82,6 +82,13 @@ $phone.change();
 //peril
 selectOptionPlusOne("loss_type");
 
+//Loss date
+var yesterday = new Date();
+yesterday.setDate(yesterday.getDate()-1);
+var $loss_date=$('#loss_date_visible');
+$loss_date.datepicker().datepicker('setDate',yesterday);
+$('#ui-datepicker-div').hide();
+
 //cause
 selectOptionPlusOne("cause_of_loss");
 
