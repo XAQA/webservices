@@ -24,7 +24,7 @@ var tripleValPostal = Math.round(Math.random()*(9-1) +1) + doubleValPostal;
 //this function is used to randomly select an option from a drop down whos first elemnt is either blank or says "select one"
 function selectOptionPlusOne(elementName)
 {
-	var $element=$("[name='elementName']");
+	var $element=$("[name=" + elementName +"]");
 	var maxElement = ($element.children('option').length) - 1;
 	var randElement = Math.round(Math.random()*(maxElement-1) + 1);
 	$element.prop('selectedIndex', randElement);
