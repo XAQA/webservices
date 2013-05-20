@@ -35,7 +35,7 @@ $street.blur();
 
 //city
 var randRegion = Math.floor(Math.random()*(5-1) + 1);
-var randPostalCity = postalCity[randRegion][Math.floor(Math.random()*postalCity.length)];
+var randPostalCity = postalCity[randRegion-1][Math.floor(Math.random()*postalCity.length)];
 var $city=$('[name=insured_city]');
 $city.val(randPostalCity[1]);
 $city.blur();
