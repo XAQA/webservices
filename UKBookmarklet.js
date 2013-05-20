@@ -56,7 +56,7 @@ if(randPostalCity[0].length == 5)
 }
 else
 {
-	$postal.val(randPostalCity[0] + tripleValPostal);
+	$postal.val(randPostalCity[0] + " " + tripleValPostal);
 }
 $postal.blur();
 
