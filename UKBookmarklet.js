@@ -79,5 +79,8 @@ var $phone=$('[name=insured_home_phone]');
 $phone.val(phoneNum);
 $phone.change();
 
+//peril
+selectOptionPlusOne("loss_type");
+
 
 })();
