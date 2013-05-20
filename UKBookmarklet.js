@@ -66,7 +66,7 @@ var randPhone = Math.round(Math.random()*(9999-1111) + 1111);
 phoneNum += randPhone;
 var $phone=$('[name=insured_home_phone]');
 $phone.val(phoneNum);
-$phone.blur();
+$phone.change();
 
 
 })();
