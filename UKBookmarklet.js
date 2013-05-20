@@ -24,18 +24,21 @@ var custFName = firstnamelist[Math.floor(Math.random()*(firstnamelist.length))];
 var custLName = lastnamelist[Math.floor(Math.random()*(lastnamelist.length))];
 var $custName=$('[name=insured_name]');
 $custName.val(custFName + " " + custLName);
+$custName.blur();
 
 //street
 var streetLetter = alpha[Math.floor(Math.random()*alpha.length)];
 var streetName = street[Math.floor(Math.random()*street.length)];
 var $street=$('[name=insured_street]');
 $street.val(streetLetter + ". " + streetName);
+$street.blur();
 
 //city
-var randRegion = Math.round(Math.random()*(4-1) + 1);
+var randRegion = Math.floor(Math.random()*(5-1) + 1);
 var randPostalCity = postalCity[randRegion][Math.floor(Math.random()*postalCity.length)];
 var $city=$('[name=insured_city]');
 $city.val(randPostalCity[1]);
+$city.blur();
 
 //country/region
 var $region=$('[name=insured_state]');
