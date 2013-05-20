@@ -20,5 +20,6 @@ var custFName = firstnamelist[Math.floor(Math.random()*(firstnamelist.length))];
 var custLName = lastnamelist[Math.floor(Math.random()*(lastnamelist.length))];
 var $custName=$('[name=insured_name]');
 $custName.val(custFName + " " + custLName);
+$custName.blur();
 
 })();
