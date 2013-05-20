@@ -11,6 +11,11 @@ var alpha = ("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z").split(",");
 //generic street names
 var street = ["Drive", "Avenue", "Street", "Boulevard", "Road", "Lane", "Heights", "Bend", "Bay", "Alley"];
 
+//first half of postal codes
+var postalCity = [[["NW6", "Killburn"], ["IG1 1", "Barking"], ["E11", "Leytonstone"], ["E14", "Poplar"], ["NW1 0", "Willesden"], ["SE1", "Southwark"], ["SW4", "Clapham"], ["EN2", "Enfield"], ["N12", "North Finchley"], ["TW3", "Hounslow"], ["DA1 5", "Bexley"], ["GL1", "Gloucester"], ["CR8", "Purley"]], 
+
+
+
 
 
 //jQuery
@@ -25,7 +30,9 @@ $custName.val(custFName + " " + custLName);
 var streetLetter = alpha[Math.floor(Math.random()*alpha.length)];
 var streetName = street[Math.floor(Math.random()*street.length)];
 var $street=$('[name=insured_street]');
-$street.val(streetLetter + " " + streetName);
+$street.val(streetLetter + ". " + streetName);
+
+//postal code
 
 
 })();
