@@ -32,7 +32,7 @@ var $street=$('[name=insured_street]');
 $street.val(streetLetter + ". " + streetName);
 
 //city
-var randRegion = Math.round(Math.random()*(5-1) + 1);
+var randRegion = Math.round(Math.random()*(4-1) + 1);
 var randPostalCity = postalCity[randRegion][Math.floor(Math.random()*postalCity.length)];
 var $city=$('[name=insured_city]');
 $city.val(randPostalCity[1]);
