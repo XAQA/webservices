@@ -21,5 +21,11 @@ var custLName = lastnamelist[Math.floor(Math.random()*(lastnamelist.length))];
 var $custName=$('[name=insured_name]');
 $custName.val(custFName + " " + custLName);
 
+//street
+var streetLetter = alpha[Math.floor(Math.random()*alpha.length)];
+var streetName = street[Math.floor(Math.random()*street.length)];
+var $street=$('[name=insured_street]');
+$street.val(streetLetter + " " + streetName);
+
 
 })();
