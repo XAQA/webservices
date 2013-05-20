@@ -158,478 +158,482 @@ var random_dataset = Math.round(Math.random()*max_dataset);
 $dataset.prop('selectedIndex', random_dataset);
 $dataset.change();
 
-//company code
-var $company_code=$('[name=companyCode]');
-var max_companyCode = ($company_code.children('option').length) - 1;
-var random_companyCode = Math.floor(Math.random()*(max_companyCode) + 1);
-$company_code.prop('selectedIndex', random_companyCode);
-$company_code.change();
+//note - dataset causes refresh, so a delay is needed after random dataset is chosen.
+window.setTimeout(postDataset, 3000);
+function postDataset(){
+	//company code
+	var $company_code=$('[name=companyCode]');
+	var max_companyCode = ($company_code.children('option').length) - 1;
+	var random_companyCode = Math.floor(Math.random()*(max_companyCode) + 1);
+	$company_code.prop('selectedIndex', random_companyCode);
+	$company_code.change();
 
-//agreement branch code
-var $branch_code=$('[name=agreementBranch]');
-var max_branchCode = ($branch_code.children('option').length) - 1;
-var random_branchCode = Math.floor(Math.random()*(max_branchCode) + 1);
-$branch_code.prop('selectedIndex', random_branchCode);
-$branch_code.change();
-
-
-//Claim Info
-//-------------------------------------------------------------------------
-//mission context
-var $mission_context=$('[name=missionContext]');
-var max_missionContext = ($mission_context.children('option').length) - 1;
-var random_missionContext = Math.floor(Math.random()*(max_missionContext) + 1);
-$mission_context.prop('selectedIndex', random_missionContext);
-$mission_context.change();
-
-//claim branch
-var $claim_branch=$('[name=claimBranch]');
-var max_claimBranch = ($claim_branch.children('option').length) - 1;
-var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
-$claim_branch.prop('selectedIndex', random_claimBranch);
-$claim_branch.change();
+	//agreement branch code
+	var $branch_code=$('[name=agreementBranch]');
+	var max_branchCode = ($branch_code.children('option').length) - 1;
+	var random_branchCode = Math.floor(Math.random()*(max_branchCode) + 1);
+	$branch_code.prop('selectedIndex', random_branchCode);
+	$branch_code.change();
 
 
-//mission context specific elements
-//
-//doctor type - seems to be generic, same name (pickList1) for multiple mission context
-window.setTimeout(docType, 2000);
-function docType(){
-	var $docType=$('[name=pickList1]');
-	var max_docType = ($docType.children('option').length) - 1;
-	var random_docType = Math.floor(Math.random()*(max_docType) + 1);
-	$docType.prop('selectedIndex', random_docType);
-	$docType.change();
-}
+	//Claim Info
+	//-------------------------------------------------------------------------
+	//mission context
+	var $mission_context=$('[name=missionContext]');
+	var max_missionContext = ($mission_context.children('option').length) - 1;
+	var random_missionContext = Math.floor(Math.random()*(max_missionContext) + 1);
+	$mission_context.prop('selectedIndex', random_missionContext);
+	$mission_context.change();
 
-//extend of damage - seems to be generic, same name(pickList2) for multiple mission context
-window.setTimeout(extendDamage, 3000);
-function extendDamage(){
-	var $extendDamage=$('[name=pickList2]');
-	var max_extendDamage = ($extendDamage.children('option').length) - 1;
-	var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
-	$extendDamage.prop('selectedIndex', random_extendDamage);
-	$extendDamage.change();
-}
-
-//generic pickList3
-window.setTimeout(genericPick3, 5000);
-function genericPick3(){
-	var $pickList3=$('[name=pickList3]');
-	var max_pickList3 = ($pickList3.children('option').length) - 1;
-	var random_pickList3 = Math.floor(Math.random()*(max_pickList3) + 1);
-	$pickList3.prop('selectedIndex', random_pickList3);
-	$pickList3.change();
-}
+	//claim branch
+	var $claim_branch=$('[name=claimBranch]');
+	var max_claimBranch = ($claim_branch.children('option').length) - 1;
+	var random_claimBranch = Math.floor(Math.random()*(max_claimBranch) + 1);
+	$claim_branch.prop('selectedIndex', random_claimBranch);
+	$claim_branch.change();
 
 
-//judicial code - for insured's lawyer
-window.setTimeout(judCode, 3000);
-function judCode(){
-	var $judCode=$('[name=claimPostalCode]');
-	var max_judCode = ($judCode.children('option').length) - 1;
-	var rand_judCode = Math.floor(Math.random()*(max_judCode) + 1);
-	$judCode.prop('selectedIndex', rand_judCode);
-	$judCode.change();
-}
-
-//need a delay to select "function" so thats why the code to set the "function" is in a function
-window.setTimeout(setFunc, 2000);
-
-//func
-function setFunc(){
-	var $func=$('[name=function]');
-	var max_func = ($func.children('option').length) -1;
-	var random_func = Math.floor(Math.random()*(max_func) + 1);
-	$func.prop('selectedIndex', random_func);
-	$func.change();
-}
-
-//language code
-var $language_code=$('[name=languageCode]');
-var max_langCode = ($language_code.children('option').length) - 1;
-var random_langCode = Math.floor(Math.random()*max_langCode);
-$language_code.prop('selectedIndex', random_langCode);
-$language_code.change(); 
-
-//postal code
-var $claim_postalCode=$('[name=claimPostalCode]');
-$claim_postalCode.val(randomZipCity[0]);
-$claim_postalCode.blur();
-
-//claim number
-//located in URL property of bookmarklet
-
-//claim loss date
-var yesterday = new Date();
-yesterday.setDate(yesterday.getDate()-1);
-var $loss_date=$('#claimInformationDate_date_visible');
-$loss_date.datepicker().datepicker('setDate',yesterday);
-$('#ui-datepicker-div').hide();
-
-//claim received date
-var today = new Date();
-var $received_date=$('#claimInformationReceivedDate_date_visible');
-$received_date.datepicker().datepicker('setDate',today);
-$('#ui-datepicker-div').hide();
-
-//warranty
-var $warranty=$('[name=claimInformationWarranties1]');
-$warranty.val(randWarranty);
-$warranty.blur();
-
-//observation
-var $observation=$('[name=claimInformationObservations]');
-$observation.val(randObserve);
-$observation.blur();
-
-
-//usage
-window.setTimeout(usage, 3000);
-	function usage(){
-	var $usage=$('[name=codeGenreDActivite]');
-	var max_usage = ($usage.children('option').length) - 1;
-	var rand_usage = Math.round(Math.random()*max_usage);
-	$usage.prop('selectedIndex', rand_usage);
-	$usage.change();
-}
-	
-//claim handler last name
-// var $handler_lastName=$('[name=claimHandler_last_name]');
-// $handler_lastName.val(randClaimHandler_LName);
-// $handler_lastName.blur();
-
-//claim handler first name
-// var $handler_firstName=$('[name=claimHandler_name]');
-// $handler_firstName.val(randClaimHandler_FName);
-// $handler_firstName.blur();
-
-//claim handler phone num
-// var $handler_phoneNum=$('[name=claimHandlerPhone]');
-// $handler_phoneNum.val(randClaimHandler_phone);
-// $handler_phoneNum.blur();
-
-//claim handler email
-// var $handler_email=$('[name=claimInformationEmailTeam]');
-// $handler_email.val("automate@automate.com");
-// $handler_email.blur();
-
-
-//Party/Risk Information
-//-------------------------------------------------------------------------
-//last name
-var $last_name=$('[name=policyHolder_last_name]');
-$last_name.val(randomLName);
-$last_name.blur();
-
-//first name
-var $first_name=$('[name=policyHolder_name]');
-$first_name.val(randomFName);
-$first_name.blur();
-
-//street
-var $street=$('[name=policyHolder_street]');
-$street.val(partyStreet);
-$street.blur();
-
-//street num
-var $street_num=$('[name=policyHolder_street2]');
-$street_num.val(streetNum);
-$street_num.blur();
-
-//box number
-var $box_num=$('[name=policyHolder_street3]');
-$box_num.val(streetBox);
-$box_num.blur();
-
-//postal code
-var $postal_code=$('[name=policyHolder_zip]');
-$postal_code.val(randomZipCity[0]);
-$postal_code.blur();
-
-//city
-var $city=$('[name=policyHolder_city]');
-$city.val(randomZipCity[1]);
-$city.blur();
-
-//birthday
-var $birthday=$('#policyHolderBirthday_date_visible');
-$birthday.datepicker().datepicker('setDate', birthdayDate);
-
-//phone
-var $phone_num=$('[name=policyHolderPhone]');
-$phone_num.val("800555" + randPhone);
-$phone_num.blur();
-
-//mobile
-var $mobile_num=$('[name=policyHolderMobile]');
-$mobile_num.val("800555" + randMobile);
-$mobile_num.blur();
-
-
-//Policy Summary
-//-------------------------------------------------------------------------
-//agreement number
-var $agreement_num=$('[name=agreementNumber]');
-$agreement_num.val(randAgreementNum);
-$agreement_num.blur();
-
-
-//Producer
-//-------------------------------------------------------------------------
-
-
-//Risk
-//-------------------------------------------------------------------------
-var claimBranchType = $("#claimBranchSelect option:selected").text();
-
-//Liability & Casualty
-if(claimBranchType == "Liability & casualty")
-{
-	//risk type
-	var $risk_type=$('[name=riskType]');
-	var max_riskType = ($risk_type.children('option').length) - 1;
-	var rand_riskType = Math.round(Math.random()*max_riskType);
-	$risk_type.prop('selectedIndex', rand_riskType);
-	$risk_type.change();
-
-	//create delay to select the nature of the risk so that it the dropdown is populated before the selection is made
-	window.setTimeout(natureOfRisk, 2000);
-	
-	//in order to create delay, the delayed code needs to be in a function
-	function natureOfRisk()
-	{
-		//nature of risk
-		var $risk_nature=$('[name=natureOfRisk]');
-		var max_riskNature = ($risk_nature.children('option').length) - 1;
-		var rand_riskNature = Math.round(Math.random()*max_riskNature);
-		$risk_nature.prop('selectedIndex', rand_riskNature);
-		$risk_nature.change();
+	//mission context specific elements
+	//
+	//doctor type - seems to be generic, same name (pickList1) for multiple mission context
+	window.setTimeout(docType, 2000);
+	function docType(){
+		var $docType=$('[name=pickList1]');
+		var max_docType = ($docType.children('option').length) - 1;
+		var random_docType = Math.floor(Math.random()*(max_docType) + 1);
+		$docType.prop('selectedIndex', random_docType);
+		$docType.change();
 	}
-	
-	//assured victim last name
-	var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
-	$assuredVict_LName.val(rand_LandC_LName);
-	$assuredVict_LName.blur();
 
-	//assured victim first name
-	var $assuredVict_FName=$('[name=riskAssuredVictimsName]');
-	$assuredVict_FName.val(rand_LandC_FName);
-	$assuredVict_FName.blur();
+	//extend of damage - seems to be generic, same name(pickList2) for multiple mission context
+	window.setTimeout(extendDamage, 3000);
+	function extendDamage(){
+		var $extendDamage=$('[name=pickList2]');
+		var max_extendDamage = ($extendDamage.children('option').length) - 1;
+		var random_extendDamage = Math.floor(Math.random()*(max_extendDamage) + 1);
+		$extendDamage.prop('selectedIndex', random_extendDamage);
+		$extendDamage.change();
+	}
 
-	//index type
-	var $indexType=$('[name=riskIndexType]');
-	$indexType.val(rand_indexType);
-	$indexType.blur();
+	//generic pickList3
+	window.setTimeout(genericPick3, 5000);
+	function genericPick3(){
+		var $pickList3=$('[name=pickList3]');
+		var max_pickList3 = ($pickList3.children('option').length) - 1;
+		var random_pickList3 = Math.floor(Math.random()*(max_pickList3) + 1);
+		$pickList3.prop('selectedIndex', random_pickList3);
+		$pickList3.change();
+	}
 
-	//franchise amount
-	var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
-	$franchiseAmt.val(rand_franchiseAmt);
-	$franchiseAmt.blur();
-}
 
-//Auto
-else if(claimBranchType == "Auto")
-{
-	//car make
-	var $car_make=$('[name=riskCarMark]');
-	$car_make.val(vehicleMake[rand_VehicleMake]);
-	$car_make.blur();
+	//judicial code - for insured's lawyer
+	window.setTimeout(judCode, 3000);
+	function judCode(){
+		var $judCode=$('[name=claimPostalCode]');
+		var max_judCode = ($judCode.children('option').length) - 1;
+		var rand_judCode = Math.floor(Math.random()*(max_judCode) + 1);
+		$judCode.prop('selectedIndex', rand_judCode);
+		$judCode.change();
+	}
 
-	//car model
-	var $car_model=$('[name=riskCarModel]');
-	$car_model.val(vehicleModel[rand_VehicleMake][rand_VehicleModel]);
-	$car_model.blur();
+	//need a delay to select "function" so thats why the code to set the "function" is in a function
+	window.setTimeout(setFunc, 2000);
 
-	//car plate number
-	var $licensePlate=$('[name=riskCarPlateNumber]');
-	$licensePlate.val(rand_licensePlate);
-	$licensePlate.blur();
+	//func
+	function setFunc(){
+		var $func=$('[name=function]');
+		var max_func = ($func.children('option').length) -1;
+		var random_func = Math.floor(Math.random()*(max_func) + 1);
+		$func.prop('selectedIndex', random_func);
+		$func.change();
+	}
 
-	//car chassis number
-	var $chassisNum=$('[name=riskCarChassisNumber]');
-	$chassisNum.val(fullChassisNum);
-	$chassisNum.blur();
+	//language code
+	var $language_code=$('[name=languageCode]');
+	var max_langCode = ($language_code.children('option').length) - 1;
+	var random_langCode = Math.floor(Math.random()*max_langCode);
+	$language_code.prop('selectedIndex', random_langCode);
+	$language_code.change(); 
 
-	//car power
-	var $car_power=$('[name=riskCarPower]');
-	$car_power.val(rand_carPower);
-	$car_power.blur();
-	
-	//car insured value
-	var $insuredVal=$('[name=riskCarInsuredValue]');
-	$insuredVal.val(rand_carValue);
-	$insuredVal.change();
-	
-	//car catalog value
-	var $catalogVal=$('[name=riskCarCatalogValue]');
-	$catalogVal.val(rand_carCatValue);
-	$catalogVal.blur();
-	
-}
-
-//Fire
-else if(claimBranchType == "Fire")
-{
-	//street
-	var $risk_street=$('[name=riskLocation_street]');
-	$risk_street.val(partyStreet);
-	$risk_street.blur();
-	
 	//postal code
-	var $risk_postalCode=$('[name=riskLocation_zip]');
-	$risk_postalCode.val(randomZipCity[0]);
-	$risk_postalCode.blur();
-	
+	var $claim_postalCode=$('[name=claimPostalCode]');
+	$claim_postalCode.val(randomZipCity[0]);
+	$claim_postalCode.blur();
+
+	//claim number
+	//located in URL property of bookmarklet
+
+	//claim loss date
+	var yesterday = new Date();
+	yesterday.setDate(yesterday.getDate()-1);
+	var $loss_date=$('#claimInformationDate_date_visible');
+	$loss_date.datepicker().datepicker('setDate',yesterday);
+	$('#ui-datepicker-div').hide();
+
+	//claim received date
+	var today = new Date();
+	var $received_date=$('#claimInformationReceivedDate_date_visible');
+	$received_date.datepicker().datepicker('setDate',today);
+	$('#ui-datepicker-div').hide();
+
+	//warranty
+	var $warranty=$('[name=claimInformationWarranties1]');
+	$warranty.val(randWarranty);
+	$warranty.blur();
+
+	//observation
+	var $observation=$('[name=claimInformationObservations]');
+	$observation.val(randObserve);
+	$observation.blur();
+
+
+	//usage
+	window.setTimeout(usage, 3000);
+		function usage(){
+		var $usage=$('[name=codeGenreDActivite]');
+		var max_usage = ($usage.children('option').length) - 1;
+		var rand_usage = Math.round(Math.random()*max_usage);
+		$usage.prop('selectedIndex', rand_usage);
+		$usage.change();
+	}
+		
+	//claim handler last name
+	// var $handler_lastName=$('[name=claimHandler_last_name]');
+	// $handler_lastName.val(randClaimHandler_LName);
+	// $handler_lastName.blur();
+
+	//claim handler first name
+	// var $handler_firstName=$('[name=claimHandler_name]');
+	// $handler_firstName.val(randClaimHandler_FName);
+	// $handler_firstName.blur();
+
+	//claim handler phone num
+	// var $handler_phoneNum=$('[name=claimHandlerPhone]');
+	// $handler_phoneNum.val(randClaimHandler_phone);
+	// $handler_phoneNum.blur();
+
+	//claim handler email
+	// var $handler_email=$('[name=claimInformationEmailTeam]');
+	// $handler_email.val("automate@automate.com");
+	// $handler_email.blur();
+
+
+	//Party/Risk Information
+	//-------------------------------------------------------------------------
+	//last name
+	var $last_name=$('[name=policyHolder_last_name]');
+	$last_name.val(randomLName);
+	$last_name.blur();
+
+	//first name
+	var $first_name=$('[name=policyHolder_name]');
+	$first_name.val(randomFName);
+	$first_name.blur();
+
+	//street
+	var $street=$('[name=policyHolder_street]');
+	$street.val(partyStreet);
+	$street.blur();
+
+	//street num
+	var $street_num=$('[name=policyHolder_street2]');
+	$street_num.val(streetNum);
+	$street_num.blur();
+
+	//box number
+	var $box_num=$('[name=policyHolder_street3]');
+	$box_num.val(streetBox);
+	$box_num.blur();
+
+	//postal code
+	var $postal_code=$('[name=policyHolder_zip]');
+	$postal_code.val(randomZipCity[0]);
+	$postal_code.blur();
+
 	//city
-	var $risk_city=$('[name=riskLocation_city]');
-	$risk_city.val(randomZipCity[1]);
-	$risk_city.blur();
-	
-	//num cars
-	var $num_cars=$('[name=riskNumberOfCars]');
-	$num_cars.val(rand_numCars);
-	$num_cars.blur();
-	
-	//quality
-	var $quality=$('[name=typeOfResidence]');
-	var max_quality = ($quality.children('option').length) - 1;
-	var rand_quality = Math.round(Math.random()*max_quality);
-	$quality.prop('selectedIndex', rand_quality);
-	$quality.change();
-	
-	//Sys Building/Contents
-	var $contents=$('[name=codeTypeOfCapital]');
-	var max_contents = ($contents.children('option').length) - 1;
-	var rand_contents = Math.round(Math.random()*max_contents);
-	$contents.prop('selectedIndex', rand_contents);
-	$contents.change();
-	
-	//house type
-	var $houseType=$('[name=dwellingDetail]');
-	var max_houseType = ($houseType.children('option').length) - 1;
-	var rand_houseType = Math.round(Math.random()*max_houseType);
-	$houseType.prop('selectedIndex', rand_houseType);
-	$houseType.change();
+	var $city=$('[name=policyHolder_city]');
+	$city.val(randomZipCity[1]);
+	$city.blur();
 
-	window.setTimeout(constructContig, 4000);
-	function constructContig(){
-		//construction
-		var $construction=$('[name=codeTypeOfConstruction]');
-		var max_construction = ($construction.children('option').length) - 1;
-		if(max_construction == 0){
-		var rand_construction = Math.round(Math.random()*max_construction);
-		}
-		else{
-		var rand_construction = Math.floor(Math.random()*(max_construction) + 1);
-		}
-		$construction.prop('selectedIndex', rand_construction);
-		$construction.change();
+	//birthday
+	var $birthday=$('#policyHolderBirthday_date_visible');
+	$birthday.datepicker().datepicker('setDate', birthdayDate);
+
+	//phone
+	var $phone_num=$('[name=policyHolderPhone]');
+	$phone_num.val("800555" + randPhone);
+	$phone_num.blur();
+
+	//mobile
+	var $mobile_num=$('[name=policyHolderMobile]');
+	$mobile_num.val("800555" + randMobile);
+	$mobile_num.blur();
+
+
+	//Policy Summary
+	//-------------------------------------------------------------------------
+	//agreement number
+	var $agreement_num=$('[name=agreementNumber]');
+	$agreement_num.val(randAgreementNum);
+	$agreement_num.blur();
+
+
+	//Producer
+	//-------------------------------------------------------------------------
+
+
+	//Risk
+	//-------------------------------------------------------------------------
+	var claimBranchType = $("#claimBranchSelect option:selected").text();
+
+	//Liability & Casualty
+	if(claimBranchType == "Liability & casualty")
+	{
+		//risk type
+		var $risk_type=$('[name=riskType]');
+		var max_riskType = ($risk_type.children('option').length) - 1;
+		var rand_riskType = Math.round(Math.random()*max_riskType);
+		$risk_type.prop('selectedIndex', rand_riskType);
+		$risk_type.change();
+
+		//create delay to select the nature of the risk so that it the dropdown is populated before the selection is made
+		window.setTimeout(natureOfRisk, 2000);
 		
-		//contiguity
-		var $contiguity=$('[name=codeContiguity]');
-		var max_contiguity = ($contiguity.children('option').length) - 1;
-		if(max_contiguity == 0){
-		var rand_contiguity = Math.round(Math.random()*max_contiguity);
+		//in order to create delay, the delayed code needs to be in a function
+		function natureOfRisk()
+		{
+			//nature of risk
+			var $risk_nature=$('[name=natureOfRisk]');
+			var max_riskNature = ($risk_nature.children('option').length) - 1;
+			var rand_riskNature = Math.round(Math.random()*max_riskNature);
+			$risk_nature.prop('selectedIndex', rand_riskNature);
+			$risk_nature.change();
 		}
-		else{
-		var rand_contiguity = Math.floor(Math.random()*(max_contiguity) + 1);
-		}
-		$contiguity.prop('selectedIndex', rand_contiguity);
-		$contiguity.change();
-	}
-	
-	//insured building value
-	var $buildingVal=$('[name=riskInsuredBuildingValue]');
-	$buildingVal.val(rand_buildingVal);
-	$buildingVal.blur();
-	
-	//insured contents value
-	var $contentsVal=$('[name=riskInsuredContentsValue]');
-	$contentsVal.val(rand_contentsVal);
-	$contentsVal.blur();
-
-	window.setTimeout(finition, 3000);
-	function finition(){
-		//finition
-		var $finition=$('[name=codeTypeOfFinition]');
-		var max_finition = ($finition.children('option').length) - 1;
-		if(max_finition == 0){
-		var rand_finition = Math.round(Math.random()*max_finition);
-		}
-		else{
-		var rand_finition = Math.floor(Math.random()*(max_finition) + 1);
-		}
-		$finition.prop('selectedIndex', rand_finition);
-		$finition.change();
-	}
-	
-	//franchise amount
-	var $fire_franchiseAmt=$('[name=riskFireFranchiseAmount1]');
-	$fire_franchiseAmt.val(rand_fireFranchiseAmt);
-	$fire_franchiseAmt.blur();
-
-	window.setTimeout(newConstruct, 3000);	
-	function newConstruct(){
-		//new construction
-		var $newConstruct=$('[name=codeNewConstruction]');
-		var max_newConstruct = ($newConstruct.children('option').length) - 1;
-		if(max_newConstruct == 0){
-		var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
-		}
-		else{
-		var rand_newConstruct = Math.floor(Math.random()*(max_newConstruct) + 1);
-		}
-		$newConstruct.prop('selectedIndex', rand_newConstruct);
-		$newConstruct.change();
-	}
-	
-	//occupation
-	var $occupation=$('[name=constructionPurposeTypeCode]');
-	var max_occupation = ($occupation.children('option').length) - 1;
-	var rand_occupation = Math.round(Math.random()*max_occupation);
-	$occupation.prop('selectedIndex', rand_occupation);
-	$occupation.change();
-
-	window.setTimeout(fireSpecific, 3000);
-	function fireSpecific(){
-		//prevention
-		var $prevention=$('[name=codePreventionVol]');
-		var max_prevention = ($prevention.children('option').length) - 1;
-		if(max_prevention == 0){
-		var rand_prevention = Math.round(Math.random()*max_prevention);
-		}
-		else{
-		var rand_prevention = Math.floor(Math.random()*(max_prevention) + 1);
-		}
-		$prevention.prop('selectedIndex', rand_prevention);
-		$prevention.change();
 		
-		//evaluation system(BAT)
-		var $esBat=$('[name=codeEvaluationSystem]');
-		var max_esBat = ($esBat.children('option').length) - 1;
-		if(max_esBat == 0){
-		var rand_esBat = Math.round(Math.random()*max_esBat);
-		}
-		else{
-		var rand_esBat = Math.floor(Math.random()*(max_esBat) + 1);
-		}
-		$esBat.prop('selectedIndex', rand_esBat);
-		$esBat.change();
-		
-		//evaluation type(CNU)
-		var $etCnu=$('[name=codeSARPContenu]');
-		var max_etCnu = ($etCnu.children('option').length) - 1;
-		if(max_etCnu == 0){
-		var rand_etCnu = Math.round(Math.random()*max_etCnu);
-		}
-		else{
-		var rand_etCnu = Math.floor(Math.random()*(max_etCnu) + 1);
-		}
-		$etCnu.prop('selectedIndex', rand_etCnu);
-		$etCnu.change();
+		//assured victim last name
+		var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
+		$assuredVict_LName.val(rand_LandC_LName);
+		$assuredVict_LName.blur();
+
+		//assured victim first name
+		var $assuredVict_FName=$('[name=riskAssuredVictimsName]');
+		$assuredVict_FName.val(rand_LandC_FName);
+		$assuredVict_FName.blur();
+
+		//index type
+		var $indexType=$('[name=riskIndexType]');
+		$indexType.val(rand_indexType);
+		$indexType.blur();
+
+		//franchise amount
+		var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
+		$franchiseAmt.val(rand_franchiseAmt);
+		$franchiseAmt.blur();
 	}
-	
+
+	//Auto
+	else if(claimBranchType == "Auto")
+	{
+		//car make
+		var $car_make=$('[name=riskCarMark]');
+		$car_make.val(vehicleMake[rand_VehicleMake]);
+		$car_make.blur();
+
+		//car model
+		var $car_model=$('[name=riskCarModel]');
+		$car_model.val(vehicleModel[rand_VehicleMake][rand_VehicleModel]);
+		$car_model.blur();
+
+		//car plate number
+		var $licensePlate=$('[name=riskCarPlateNumber]');
+		$licensePlate.val(rand_licensePlate);
+		$licensePlate.blur();
+
+		//car chassis number
+		var $chassisNum=$('[name=riskCarChassisNumber]');
+		$chassisNum.val(fullChassisNum);
+		$chassisNum.blur();
+
+		//car power
+		var $car_power=$('[name=riskCarPower]');
+		$car_power.val(rand_carPower);
+		$car_power.blur();
+		
+		//car insured value
+		var $insuredVal=$('[name=riskCarInsuredValue]');
+		$insuredVal.val(rand_carValue);
+		$insuredVal.change();
+		
+		//car catalog value
+		var $catalogVal=$('[name=riskCarCatalogValue]');
+		$catalogVal.val(rand_carCatValue);
+		$catalogVal.blur();
+		
+	}
+
+	//Fire
+	else if(claimBranchType == "Fire")
+	{
+		//street
+		var $risk_street=$('[name=riskLocation_street]');
+		$risk_street.val(partyStreet);
+		$risk_street.blur();
+		
+		//postal code
+		var $risk_postalCode=$('[name=riskLocation_zip]');
+		$risk_postalCode.val(randomZipCity[0]);
+		$risk_postalCode.blur();
+		
+		//city
+		var $risk_city=$('[name=riskLocation_city]');
+		$risk_city.val(randomZipCity[1]);
+		$risk_city.blur();
+		
+		//num cars
+		var $num_cars=$('[name=riskNumberOfCars]');
+		$num_cars.val(rand_numCars);
+		$num_cars.blur();
+		
+		//quality
+		var $quality=$('[name=typeOfResidence]');
+		var max_quality = ($quality.children('option').length) - 1;
+		var rand_quality = Math.round(Math.random()*max_quality);
+		$quality.prop('selectedIndex', rand_quality);
+		$quality.change();
+		
+		//Sys Building/Contents
+		var $contents=$('[name=codeTypeOfCapital]');
+		var max_contents = ($contents.children('option').length) - 1;
+		var rand_contents = Math.round(Math.random()*max_contents);
+		$contents.prop('selectedIndex', rand_contents);
+		$contents.change();
+		
+		//house type
+		var $houseType=$('[name=dwellingDetail]');
+		var max_houseType = ($houseType.children('option').length) - 1;
+		var rand_houseType = Math.round(Math.random()*max_houseType);
+		$houseType.prop('selectedIndex', rand_houseType);
+		$houseType.change();
+
+		window.setTimeout(constructContig, 4000);
+		function constructContig(){
+			//construction
+			var $construction=$('[name=codeTypeOfConstruction]');
+			var max_construction = ($construction.children('option').length) - 1;
+			if(max_construction == 0){
+			var rand_construction = Math.round(Math.random()*max_construction);
+			}
+			else{
+			var rand_construction = Math.floor(Math.random()*(max_construction) + 1);
+			}
+			$construction.prop('selectedIndex', rand_construction);
+			$construction.change();
+			
+			//contiguity
+			var $contiguity=$('[name=codeContiguity]');
+			var max_contiguity = ($contiguity.children('option').length) - 1;
+			if(max_contiguity == 0){
+			var rand_contiguity = Math.round(Math.random()*max_contiguity);
+			}
+			else{
+			var rand_contiguity = Math.floor(Math.random()*(max_contiguity) + 1);
+			}
+			$contiguity.prop('selectedIndex', rand_contiguity);
+			$contiguity.change();
+		}
+		
+		//insured building value
+		var $buildingVal=$('[name=riskInsuredBuildingValue]');
+		$buildingVal.val(rand_buildingVal);
+		$buildingVal.blur();
+		
+		//insured contents value
+		var $contentsVal=$('[name=riskInsuredContentsValue]');
+		$contentsVal.val(rand_contentsVal);
+		$contentsVal.blur();
+
+		window.setTimeout(finition, 3000);
+		function finition(){
+			//finition
+			var $finition=$('[name=codeTypeOfFinition]');
+			var max_finition = ($finition.children('option').length) - 1;
+			if(max_finition == 0){
+			var rand_finition = Math.round(Math.random()*max_finition);
+			}
+			else{
+			var rand_finition = Math.floor(Math.random()*(max_finition) + 1);
+			}
+			$finition.prop('selectedIndex', rand_finition);
+			$finition.change();
+		}
+		
+		//franchise amount
+		var $fire_franchiseAmt=$('[name=riskFireFranchiseAmount1]');
+		$fire_franchiseAmt.val(rand_fireFranchiseAmt);
+		$fire_franchiseAmt.blur();
+
+		window.setTimeout(newConstruct, 3000);	
+		function newConstruct(){
+			//new construction
+			var $newConstruct=$('[name=codeNewConstruction]');
+			var max_newConstruct = ($newConstruct.children('option').length) - 1;
+			if(max_newConstruct == 0){
+			var rand_newConstruct = Math.round(Math.random()*max_newConstruct);
+			}
+			else{
+			var rand_newConstruct = Math.floor(Math.random()*(max_newConstruct) + 1);
+			}
+			$newConstruct.prop('selectedIndex', rand_newConstruct);
+			$newConstruct.change();
+		}
+		
+		//occupation
+		var $occupation=$('[name=constructionPurposeTypeCode]');
+		var max_occupation = ($occupation.children('option').length) - 1;
+		var rand_occupation = Math.round(Math.random()*max_occupation);
+		$occupation.prop('selectedIndex', rand_occupation);
+		$occupation.change();
+
+		window.setTimeout(fireSpecific, 3000);
+		function fireSpecific(){
+			//prevention
+			var $prevention=$('[name=codePreventionVol]');
+			var max_prevention = ($prevention.children('option').length) - 1;
+			if(max_prevention == 0){
+			var rand_prevention = Math.round(Math.random()*max_prevention);
+			}
+			else{
+			var rand_prevention = Math.floor(Math.random()*(max_prevention) + 1);
+			}
+			$prevention.prop('selectedIndex', rand_prevention);
+			$prevention.change();
+			
+			//evaluation system(BAT)
+			var $esBat=$('[name=codeEvaluationSystem]');
+			var max_esBat = ($esBat.children('option').length) - 1;
+			if(max_esBat == 0){
+			var rand_esBat = Math.round(Math.random()*max_esBat);
+			}
+			else{
+			var rand_esBat = Math.floor(Math.random()*(max_esBat) + 1);
+			}
+			$esBat.prop('selectedIndex', rand_esBat);
+			$esBat.change();
+			
+			//evaluation type(CNU)
+			var $etCnu=$('[name=codeSARPContenu]');
+			var max_etCnu = ($etCnu.children('option').length) - 1;
+			if(max_etCnu == 0){
+			var rand_etCnu = Math.round(Math.random()*max_etCnu);
+			}
+			else{
+			var rand_etCnu = Math.floor(Math.random()*(max_etCnu) + 1);
+			}
+			$etCnu.prop('selectedIndex', rand_etCnu);
+			$etCnu.change();
+		}
+		
+	}
 }
 
 })();
