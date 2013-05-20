@@ -82,5 +82,17 @@ $phone.change();
 //peril
 selectOptionPlusOne("loss_type");
 
+//cause
+selectOptionPlusOne("cause_of_loss");
+
+//job type
+selectOptionPlusOne("job_type");
+
+//job size
+selectOptionPlusOne("job_size");
+
+selectOptionPlusOne("business_unit");
+
+
 
 })();
