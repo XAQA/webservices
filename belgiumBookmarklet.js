@@ -151,6 +151,8 @@ var rand_fireFranchiseAmt = Math.floor(Math.random()*(100000000 - 100000) + 1000
 //=========================================================================
 //Beginning
 //-------------------------------------------------------------------------
+
+//note - user needs to select dataset prior to running bookmarklet because when a dataset is chosen it causes the page to refresh. 
 //dataset
 // var $dataset=$('[name=Carrier_ID]');
 // var max_dataset = ($dataset.children('option').length) - 1;
