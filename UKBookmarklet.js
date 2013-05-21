@@ -35,7 +35,7 @@ function selectOptionPlusOne(elementName)
 //this function is used to input a string to a textbox. it takes the textbox name and the string to be input as parameters.
 function inputTextToTextbox(elementName, inputText)
 {
-	var $element=$("name=" + elementName + "]");
+	var $element=$("[name=" + elementName + "]");
 	$element.val(inputText);
 	$element.blur();
 }
