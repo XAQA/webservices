@@ -251,7 +251,7 @@ function setFunc(){
 //language code
 var $language_code=$('[name=languageCode]');
 var max_langCode = ($language_code.children('option').length) - 1;
-var random_langCode = Math.floor(Math.random()*max_langCode);
+var random_langCode = Math.round(Math.random()*(max_langCode-1) + 1);
 $language_code.prop('selectedIndex', random_langCode);
 $language_code.change(); 
 
