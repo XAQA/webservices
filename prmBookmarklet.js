@@ -68,6 +68,27 @@ inputTextToTextbox("insured_zip", randomZip);
 //city
 inputTextToTextbox("insured_city", zipCodes[randomState-1][randomZipIndex][1]);
 
+//name
+var randFName = firstnamelist[Math.floor(Math.random()*firstnamelist.length)];
+var randLName = lastnamelist[Math.floor(Math.random()*lastnamelist.length)];
+inputTextToTextbox("property_access_contact_name", randFName + " " + randLName);
+
+//phone
+var randPhone = Math.floor(Math.random()*(9999-1111) + 1111);
+inputTextToTextbox("property_access_contact_phone", "800555" + randPhone);
+
+//job type
+selectOptionPlusOne("job_type");
+
+//job size
+selectOptionPlusOne("job_size");
+
+//business unit
+selectOptionPlusOne("business_unit");
+
+
+
+
 
 
 
