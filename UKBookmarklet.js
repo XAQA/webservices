@@ -115,11 +115,11 @@ inputTextToTextbox("coverage_name_i_1", "Basic Coverage");
 selectOptionPlusOne("coverage_type_1");
 
 //sums insured
-var randSumsInsured = Math.round(Math.random(160000-50000) + 50000);
+var randSumsInsured = Math.round(Math.random()*(160000-50000) + 50000);
 inputTextToTextbox("policy_limit_1", randSumsInsured);
 
 //excess
-var randExcess = Math.round(Math.random(50000));
+var randExcess = Math.round(Math.random()*5000);
 inputTextToTextbox("deductible_1", randExcess);
 
 //ITV
