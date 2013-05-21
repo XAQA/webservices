@@ -1,21 +1,156 @@
-Fri 04/26/2013 
-11:00:35.03 
+Tue 05/21/2013 
+13:16:25.57 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:35 GMT
-set-cookie: JSESSIONID: 3F5C1629A382F8EF5D92963299B15EF6.xaeutestapp1;
+date: Tue, 21 May 2013 19:16:26 GMT
+set-cookie: JSESSIONID: 290595A368FA56EE8C8C74ADEB0C29DD.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
 None
+
+
+================ GET Documentation (/right) ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:27 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/right</url><name>Rights Management</name><description>All of the services in this area manage rights for XactAnalysis users and user types.</description><operations/><children><child>/userType</child><child>/role</child><child>/dataset</child><child>/org</child><child>/specific</child></children></endpoint>
+
+
+============= GET Documentation (/right/role) ==============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:28 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><endpoint><url>/apps/xa/ws/right/role</url><name>User Roles</name><description>This endpoint handles the following: create a role, modify a role, delete a role, get a role, assign role to user type, remove role from user type, and whether a user has a role. If you do not have rights to perform these operations the service will return a '401 Forbidden' response. If the operation is unsuccessful the service will return a '500 Internal Error' response. </description><operations><operation><uri></uri><method>POST</method><description>This endpoint will create a role. If the creation was successful the service will return a '200 OK' response.</description><inputs/><availableTypes/><output>Role is Created.</output></operation><operation><uri>{role ID}</uri><method>GET</method><description>This endpoint will get a role and return a role object. If the role does not exist the service will return a '404 Not Found' response.</description><inputs/><availableTypes/><output>Role Object.</output></operation><operation><uri>{role ID}</uri><method>POST</method><description>This endpoint will modify a role. It takes a role object as a parameter. If the role is modified successfully the service will return a '200 OK' reponse. If the role does not exist the service will return a '404 Not Found' response.</description><inputs/><availableTypes/><output>Role is modified.</output></operation><operation><uri>{role ID}</uri><method>DELETE</method><description>This endpoint will delete a role. If the role is deleted successfully the service will return a '200 OK' reponse. If the role does not exist the service will return a '404 Not Found' response.</description><inputs/><availableTypes/><output>Role is deleted.</output></operation><operation><uri>{role ID}/user/{user number}</uri><method>GET</method><description>This endpoint is used to find out if a user has a specific role. It will return true or false whether the user has the specified role.</description><inputs/><availableTypes/><output>True or False.</output></operation><operation><uri>{role ID}/userType/{user type ID}</uri><method>POST</method><description>This endpoint will assign a role to a user type. If the role was assigned successfully the service will return a '200 OK' response. If the role does not exist the service will return a '404 Not Found' response.</description><inputs/><availableTypes/><output>Role is assigned to user type.</output></operation><operation><uri>{role ID}/userType/{user type ID}</uri><method>DELETE</method><description>This endpoint will remove a role from a user type. If the role was removed successfully the service will return a '200 OK' response. If the role does not exist the service will return a '404 Not Found' response.</description><inputs/><availableTypes/><output>Role is removed from user type.</output></operation></operations><children><child>/example</child></children></endpoint>
+
+
+============== GET role object documentation ===============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:28 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Role</name><description>A representation of an XactAnalysis role.</description><properties><property><propName>account</propName><type>string</type><description>This is account associated with the role. This property is required to create a role and modify a role	but is not required when performing other actions to a role.</description><isRequired>false</isRequired></property><property><propName>description</propName><type>string</type><description>This is the description of the role. This property is required to create a role and modify a role but is not required when performing other actions to a role.</description><isRequired>false</isRequired></property></properties><example>&lt;role&gt;&lt;roleId&gt;555&lt;/roleId&gt;&lt;account&gt;Safe Haven&lt;/account&gt;&lt;description&gt;Default&lt;/description&gt;&lt;/role&gt;</example></model>
+
+
+======================= Create Role ========================
+status = 201 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:29 GMT
+vary: Accept-Encoding
+content-length: 59
+content-type: text/plain;charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://apps.g1.xactanalysis.com/apps/xa/ws/right/role/109
+
+
+
+------------------------------------------------------------
+NEW ROLE ID
+------------------------------------------------------------
+109
+=================== Verify Role Creation ===================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:30 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>109</roleId><account>AXA-Belgium</account><description>This role was created automatically</description></role>
+
+
+======================= Modify Role ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:30 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================= Verify Role Modification =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:31 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>109</roleId><account>AXA-Belgium</account><description>This role was created aUtOmAtIcAlLy</description></role>
 
 
 =========== GET Documentation (/right/userType) ============
@@ -25,10 +160,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:35 GMT
+date: Tue, 21 May 2013 19:16:32 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -44,16 +179,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:35 GMT
+date: Tue, 21 May 2013 19:16:32 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>User !!! Aaaaaah!! This should be 'User Type!'</name><description>A representation of an XactAnalysis user.</description><properties><property><propName>userId</propName><type>string</type><description>This is the username that will be used when logging in to XactAnalysis. This property is required when creating a user, but is not required when updating a user.</description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description>A user number uniquely identifies an XactAnalysis user. This value cannot be modified, and is automatically generated when creating a user.</description><isRequired>false</isRequired></property><property><propName>lastName</propName><type>string</type><description>The last name of the user.</description><isRequired>false</isRequired></property><property><propName>firstName</propName><type>string</type><description>The first name of the user.</description><isRequired>false</isRequired></property><property><propName>account</propName><type>string</type><description>Users in XactAnalysis are created inside accounts. For example, the account 'SafeHaven' is used to store test users. This property is required when creating a user, but this property cannot be modified after a user is created.</description><isRequired>false</isRequired></property><property><propName>password</propName><type>string</type><description>A user's password. This property will not be sent back to the user; it is included in the user object so that web service clients can modify a user's password.</description><isRequired>false</isRequired></property><property><propName>passwordExpireDate</propName><type>date/time - in the format 'yyyy-MM-dd HH:mm:ss'; 'MM' is the month in the range 01-12, HH is the hour in the range 00-23 with 23 being 11:00 PM</type><description>The password expiration date. After this date has passed, the system will prompt the user to change their password.</description><isRequired>false</isRequired></property><property><propName>email</propName><type>string</type><description>The primary email address of the user. This property will be used if a password is forgotten; a recovery email will be sent to this address. If you wish to create more email addresses for a user, see the /contact endpoint.</description><isRequired>false</isRequired></property></properties><example>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;user&gt;&lt;userId&gt;sh-user&lt;/userId&gt;&lt;userNumber&gt;2348A97231&lt;/userNumber&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;firstName&gt;Peter&lt;/firstName&gt;&lt;account&gt;SafeHaven&lt;/account&gt;&lt;passwordExpireDate&gt;2013-04-04 16:12:33&lt;/passwordExpireDate&gt;&lt;email&gt;user@xactware.fake.com&lt;/email&gt;&lt;/user&gt;</example></model>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>User !!! Aaaaaah!! This should be 'User Type!'</name><description>A representation of an XactAnalysis user.</description><properties><property><propName>userId</propName><type>string</type><description>This is the username that will be used when logging in to XactAnalysis. This property is required when creating a user, but is not required when updating a user.</description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>string</type><description>A user number uniquely identifies an XactAnalysis user. This value cannot be modified, and is automatically generated when creating a user.</description><isRequired>false</isRequired></property><property><propName>lastName</propName><type>string</type><description>The last name of the user.</description><isRequired>false</isRequired></property><property><propName>firstName</propName><type>string</type><description>The first name of the user.</description><isRequired>false</isRequired></property><property><propName>account</propName><type>string</type><description>Users in XactAnalysis are created inside accounts. For example, the account 'SafeHaven' is used to store test users. This property is required when creating a user, but this property cannot be modified after a user is created.</description><isRequired>false</isRequired></property><property><propName>password</propName><type>string</type><description>A user's password. This property will not be sent back to the user; it is included in the user object so that web service clients can modify a user's password.</description><isRequired>false</isRequired></property><property><propName>passwordExpireDate</propName><type>date/time - in the format 'yyyy-MM-dd HH:mm:ss'; 'MM' is the month in the range 01-12, HH is the hour in the range 00-23 with 23 being 11:00 PM</type><description>The password expiration date. After this date has passed, the system will prompt the user to change their password.</description><isRequired>false</isRequired></property><property><propName>email</propName><type>string</type><description>The primary email address of the user. This property will be used if a password is forgotten; a recovery email will be sent to this address. If you wish to create more email addresses for a user, see the /contact endpoint.</description><isRequired>false</isRequired></property></properties><example>&lt;user&gt;&lt;userId&gt;sh-user&lt;/userId&gt;&lt;userNumber&gt;2348A97231&lt;/userNumber&gt;&lt;lastName&gt;Smith&lt;/lastName&gt;&lt;firstName&gt;Peter&lt;/firstName&gt;&lt;account&gt;SafeHaven&lt;/account&gt;&lt;passwordExpireDate&gt;2013-04-04 16:12:33&lt;/passwordExpireDate&gt;&lt;email&gt;user@xactware.fake.com&lt;/email&gt;&lt;/user&gt;</example></model>
 
 
 ===================== Create userType ======================
@@ -62,23 +197,23 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:35 GMT
+date: Tue, 21 May 2013 19:16:33 GMT
 vary: Accept-Encoding
-content-length: 57
+content-length: 63
 content-type: text/plain;charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/right/userType/51
+https://apps.g1.xactanalysis.com/apps/xa/ws/right/userType/165
 
 
 
 ------------------------------------------------------------
 NEW USERTYPE ID
 ------------------------------------------------------------
-51
+165
 =============== Verify userType was created ================
 status = 200 
 
@@ -86,16 +221,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:36 GMT
+date: Tue, 21 May 2013 19:16:34 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>51</id><account>SafeHavenRein</account><name>AUTO Test User</name><description>This user type was created AuToMaTiCaLlY</description><readOnly>false</readOnly></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>165</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was created automatically</description><readOnly>false</readOnly></userType>
 
 
 =================== Modify new userType ====================
@@ -104,10 +239,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:36 GMT
+date: Tue, 21 May 2013 19:16:34 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -122,16 +257,33 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:36 GMT
+date: Tue, 21 May 2013 19:16:35 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>51</id><account>SafeHavenRein</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description><readOnly>false</readOnly></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>165</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description><readOnly>false</readOnly></userType>
+
+
+================= Assign role to userType ==================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:36 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
 
 
 ============== Add dataset right to userType ===============
@@ -140,10 +292,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:36 GMT
+date: Tue, 21 May 2013 19:16:36 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -151,42 +303,40 @@ data
 None
 
 
-================ Add org right to userType =================
-status = 400 
+============== Company-specific right example ==============
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-content-length: 1121
-vary: Accept-Encoding
-server: Apache/2.2.15 (Red Hat)
-connection: close
-date: Fri, 26 Apr 2013 17:00:36 GMT
-content-type: text/html;charset=utf-8
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:37 GMT
+content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - The request cannot be fulfilled due to bad syntax.</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>The request cannot be fulfilled due to bad syntax.</u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect (The request cannot be fulfilled due to bad syntax.).</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
+None
 
 
 ========== Add company-specific right to userType ==========
-status = 400 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-content-length: 1121
-vary: Accept-Encoding
-server: Apache/2.2.15 (Red Hat)
-connection: close
-date: Fri, 26 Apr 2013 17:00:36 GMT
-content-type: text/html;charset=utf-8
+date: Tue, 21 May 2013 19:16:38 GMT
+content-length: 0
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 400 - The request cannot be fulfilled due to bad syntax.</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>The request cannot be fulfilled due to bad syntax.</u></p><p><b>description</b> <u>The request sent by the client was syntactically incorrect (The request cannot be fulfilled due to bad syntax.).</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
+None
 
 
 =================== Add userType to user ===================
@@ -195,10 +345,88 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:36 GMT
+date: Tue, 21 May 2013 19:16:39 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+=================== Does user have role? ===================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 5
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+vary: Accept-Encoding
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:39 GMT
+content-type: text/plain;charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+true
+
+
+
+================ Remove userType from user =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:40 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================ Remove role from usertype =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:41 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+======================= Delete Role ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:41 GMT
+content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
@@ -213,10 +441,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:37 GMT
+date: Tue, 21 May 2013 19:16:42 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -231,17 +459,37 @@ status = 404
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+content-length: 319
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+vary: Accept-Encoding
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:37 GMT
-content-type: text/plain; charset=ISO-8859-1
+date: Tue, 21 May 2013 19:16:43 GMT
+content-type: text/html;charset=UTF-8
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+        <title>Web Service Error</title>
+    </head>
+    <body>
+        <div>
+			Error code: 404
+		</div>
+        <div>
+			Message: The requested resource could not be found.
+		</div>
+    </body>
+</html>
+
 
 
 ========================== Logout ==========================
@@ -250,10 +498,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:37 GMT
+date: Tue, 21 May 2013 19:16:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data

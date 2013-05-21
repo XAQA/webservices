@@ -1,16 +1,16 @@
-Fri 04/26/2013 
-11:00:05.33 
+Tue 05/21/2013 
+13:16:25.59 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:05 GMT
-set-cookie: JSESSIONID: C8CC638B0C0B8E52153EB0FB3067E33F.xaeutestapp1;
+date: Tue, 21 May 2013 19:16:26 GMT
+set-cookie: JSESSIONID: 777F85CE719A417FA62088847182A0F1.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -25,10 +25,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:05 GMT
+date: Tue, 21 May 2013 19:16:27 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -43,10 +43,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:05 GMT
+date: Tue, 21 May 2013 19:16:28 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -61,10 +61,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:05 GMT
+date: Tue, 21 May 2013 19:16:28 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -79,10 +79,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:06 GMT
+date: Tue, 21 May 2013 19:16:29 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data

@@ -1,5 +1,5 @@
-Fri 04/26/2013 
-11:00:41.03 
+Tue 05/21/2013 
+13:16:25.55 
 ==================== GET Documentation =====================
 status = 200 
 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=472B7D3E2994E230418D394FB53F955B.xaeutestapp1; Path=/apps/; Secure; HttpOnly
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+set-cookie: JSESSIONID=D27348188AB19C921D7392EEA697F2BE.xaukprodapp1; Path=/apps/; Secure; HttpOnly
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:41 GMT
+date: Tue, 21 May 2013 19:16:26 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -26,11 +26,11 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:41 GMT
-set-cookie: JSESSIONID: C6ABB776F846D16E0A066FAEA1CF2278.xaeutestapp1;
+date: Tue, 21 May 2013 19:16:27 GMT
+set-cookie: JSESSIONID: 58621D90E90BBA2F0F2C048405C46FC7.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -45,10 +45,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 34
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:41 GMT
+date: Tue, 21 May 2013 19:16:28 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -64,10 +64,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:41 GMT
+date: Tue, 21 May 2013 19:16:28 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -82,11 +82,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=DC49088A29AFAB9895A184A782039FDA.xaeutestapp1; Path=/apps/; Secure; HttpOnly
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+set-cookie: JSESSIONID=1798DF9E0E016B2F8245CEC05562575E.xaukprodapp1; Path=/apps/; Secure; HttpOnly
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:41 GMT
+date: Tue, 21 May 2013 19:16:29 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -102,15 +102,15 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:41 GMT
-content-length: 84
+date: Tue, 21 May 2013 19:16:30 GMT
+content-length: 20
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-This account has been locked because of too many consecutive failed login attempts.
+Incorrect password.
 
 
 

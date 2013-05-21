@@ -1,16 +1,16 @@
-Fri 04/26/2013 
-11:00:44.03 
+Tue 05/21/2013 
+13:16:25.56 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:44 GMT
-set-cookie: JSESSIONID: 8E9E817A050EE358955E096CD56E4360.xaeutestapp1;
+date: Tue, 21 May 2013 19:16:26 GMT
+set-cookie: JSESSIONID: FC652BE2EBA1995A066D2DB088CE4BF2.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
@@ -25,10 +25,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:44 GMT
+date: Tue, 21 May 2013 19:16:27 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -44,10 +44,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:44 GMT
+date: Tue, 21 May 2013 19:16:28 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,76 +62,307 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:44 GMT
-content-length: 59
+date: Tue, 21 May 2013 19:16:28 GMT
+content-length: 64
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://test.xactware.co.uk/apps/xa/ws/contact/phone/3139
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6679
 
 
 
 
 ------------------------------------------------------------
-NEW RECORD ID
+NEW PHONE NUM RECORD ID
 ------------------------------------------------------------
-3139
+6679
 ============== Verify Phone Number Was Added ===============
-status = 404 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:44 GMT
+date: Tue, 21 May 2013 19:16:29 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551212</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6679</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
 
 
 ================ Modify Users Phone Number =================
-status = 404 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:44 GMT
-transfer-encoding: chunked
+date: Tue, 21 May 2013 19:16:30 GMT
+content-length: 63
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-None
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6679
+
+
+
+========== Verify users phone number was modified ==========
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:30 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551313</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6679</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
 
 
 ================ Delete Users Phone Number =================
-status = 403 
+status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-transfer-encoding: chunked
-expires: Wed, 31 Dec 1969 17:00:00 MST
-server: Apache/2.2.15 (Red Hat)
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
 cache-control: private
-date: Fri, 26 Apr 2013 17:00:44 GMT
+date: Tue, 21 May 2013 19:16:31 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
 None
+
+
+=========== Verify deletion of user phone number ===========
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:32 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+=============== GET add email documentation ================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:33 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Email</name><description>A representation of an email address.</description><properties><property><propName>recordId</propName><type>Long</type><description>The unique identifier for an Email entry</description><isRequired>false</isRequired></property><property><propName>contactCode</propName><type>String</type><description>Displayed to the user in a row with the email address. Can not be longer than 30 characters.</description><isRequired>false</isRequired></property><property><propName>emailType</propName><type>String</type><description>The type of email address. Valid options are: EMAIL and BUSINESS_EMAIL. Default is EMAIL.</description><isRequired>false</isRequired></property><property><propName>emailAddress</propName><type>String</type><description>The email address. Typical email address restrictions apply. The email address may be no longer than 50 characters.</description><isRequired>false</isRequired></property><property><propName>contractorId</propName><type>Long</type><description>A unique id for the contractor. This field is required if and only if a userNumber is NOT supplied.</description><isRequired>false</isRequired></property><property><propName>userNumber</propName><type>String</type><description>A unique id for the user. This field is required if and only if a contractorId is NOT supplied.</description><isRequired>false</isRequired></property><property><propName>xnAddress</propName><type>String</type><description>The xnAddress has two parts, the xm8UserId and the companyXnAddress, delimited by an '@'. (e.g. john@CPY.XN.ADDR) The xm8UserId portion must be less than 9 characters and may only contain numerics, upper case alphas, '_' and '.'. If there is no xm8UserId, then the companyXnAddress portion may be supplied by itself with no '@' symbol. (e.g. CPY.XN.ADDR) The companyXnAddress portion must be less than 32 characters and may not contain the symbols '@', '|', ''', or ';'.</description><isRequired>false</isRequired></property></properties><example>&lt;email&gt;&lt;emailType&gt;EMAIL&lt;/emailType&gt;&lt;emailAddress&gt;john.doe@example.com&lt;/emailAddress&gt;&lt;userNumber&gt;09388I9487&lt;/userNumber&gt;&lt;xnAddress&gt;john@CPY.XN.ADDR&lt;/xnAddress&gt;&lt;/email&gt;</example></model>
+
+
+======================== Add email =========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:33 GMT
+content-length: 64
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6680
+
+
+
+
+------------------------------------------------------------
+NEW EMAIL RECORD ID
+------------------------------------------------------------
+6680
+============== Verify email was added to user ==============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:34 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>testEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6680</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
+
+
+======================= Modify email =======================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:35 GMT
+content-length: 63
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6680
+
+
+
+================ Verify email was modified =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:35 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>tEsTEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6680</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
+
+
+======================= Delete email =======================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:36 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+================= Verify email was deleted =================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+content-length: 0
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:36 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+None
+
+
+=============== GET add street documentation ===============
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:37 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><model><name>Street</name><description>A representation of a user's street address.</description><properties><property><propName>userNumber</propName><type>String</type><description>This is the unique identifier for a user and the identifier for the address as well. There is currently a 1-1 relationship between a user and his/her street address.</description><isRequired>false</isRequired></property><property><propName>addressLine1</propName><type>String</type><description>Line one of three of the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>addressLine2</propName><type>String</type><description>Line one of three of the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>addressLine3</propName><type>String</type><description>Line one of three of the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>city</propName><type>String</type><description>The city for the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>state</propName><type>String</type><description>The state for the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>zipCode</propName><type>String</type><description>The postal code for the street address. Maximum length is 10 characters.</description><isRequired>false</isRequired></property><property><propName>county</propName><type>String</type><description>The county for the street address. Maximum length is 60 characters.</description><isRequired>false</isRequired></property><property><propName>country</propName><type>String</type><description>The two letter country code for the street address. Maximum length is 2 characters and it must be upper case.</description><isRequired>false</isRequired></property></properties><example>&lt;street&gt;&lt;addressLine1&gt;ATTN: Harry Potter&lt;/addressLine1&gt;&lt;addressLine2&gt;Door Under the Stairs&lt;/addressLine2&gt;&lt;addressLine3&gt;Privet Drive&lt;/addressLine3&gt;&lt;city&gt;Forks&lt;/city&gt;&lt;state&gt;WA&lt;/state&gt;&lt;zipCode&gt;98311&lt;/zipCode&gt;&lt;country&gt;BR&lt;/country&gt;&lt;/street&gt;</example></model>
+
+
+======================== Add street ========================
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+date: Tue, 21 May 2013 19:16:38 GMT
+content-length: 73
+content-type: text/plain; charset=ISO-8859-1
+server: Apache
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/street/EU_29432G1036
+
+
+
+========== GET street info for user EU_29432G1036 ==========
+status = 200 
+
+------------------------------------------------------------
+headers
+------------------------------------------------------------
+transfer-encoding: chunked
+expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+server: Apache
+cache-control: private
+date: Tue, 21 May 2013 19:16:38 GMT
+content-type: text/plain; charset=ISO-8859-1
+
+------------------------------------------------------------
+data
+------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><street><addressLine1>Harry Potter</addressLine1><addressLine2>Door Under the Stairs</addressLine2><addressLine3>Privet Drive</addressLine3><city>Pitchfork</city><country>BR</country><state>WA</state><userNumber>EU_29432G1036</userNumber><zipCode>98311</zipCode></street>
 
 
 ========================== Logout ==========================
@@ -140,10 +371,10 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Fri, 26 Apr 2013 17:00:44 GMT
+date: Tue, 21 May 2013 19:16:39 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
-server: Apache/2.2.15 (Red Hat)
+server: Apache
 
 ------------------------------------------------------------
 data
