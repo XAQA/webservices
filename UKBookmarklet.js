@@ -136,7 +136,7 @@ inputTextToTextbox("mortgage_holder_1", randMorFName + " " + randMorLName);
 //loan number
 var loanNumFirst = Math.round(Math.random()*(999-111) + 111);
 var loanNumLast = Math.round(Math.random()*(999999-111111) + 111111);
-inputTextToTextbox("loan_number_1", loanNumFirst + " " + loanNumLast);
+inputTextToTextbox("loan_number_1", loanNumFirst + "-" + loanNumLast);
 
 
 
