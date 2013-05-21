@@ -1,7 +1,8 @@
-(function(){var today=new Date();
+(function(){
 
 //data
 //-----------------------------------------------------------------------------------------------------------------
+var today=new Date();
 var dateString = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear()+'_'+today.toTimeString();
 var x = Math.ceil((2500*Math.random()-1));
 var y = Math.ceil((2500*Math.random()-1));
