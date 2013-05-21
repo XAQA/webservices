@@ -41,7 +41,7 @@ function inputTextToTextbox(elementName, inputText)
 //street
 var randLetter = alpha[Math.floor(Math.random()*alpha.length)];
 var randStreet = street[Math.floor(Math.random()*street.length)];
-inputTextToTextBox("insured_street", randLetter + ". " + randStreet);
+inputTextToTextbox("insured_street", randLetter + ". " + randStreet);
 
 //state
 var $insured_state=$('[name=insured_state]');
