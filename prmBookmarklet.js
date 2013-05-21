@@ -86,6 +86,8 @@ selectOptionPlusOne("job_size");
 //business unit
 selectOptionPlusOne("business_unit");
 
+//description of property
+inputTextToTextbox("instructions", "This property needs some serious attention!");
 
 
 
