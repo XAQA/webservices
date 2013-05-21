@@ -38,7 +38,7 @@ function inputTextToTextbox(elementName, inputText)
 	var $element=$("[name=" + elementName + "]");
 	$element.val(inputText);
 	$element.blur();
-	$element.change();
+	//$element.change();
 }
 
 
@@ -105,6 +105,30 @@ selectOptionPlusOne("business_unit");
 
 //segmentation
 selectOptionPlusOne("carrier_attribute_1");
+
+//deductible stuff
+//
+//coverage
+inputTextToTextbox("coverage_name_i_1", "Basic Coverage");
+
+//type
+selectOptionPlusOne("coverage_type_1");
+
+//sums insured
+var randSumsInsured = Math.round(Math.random(160000-50000) + 50000);
+inputTextToTextbox("policy_limit_1", randSumsInsured);
+
+//excess
+var randExcess = Math.round(Math.random(50000));
+inputTextToTextbox("deductible_1", randExcess);
+
+//ITV
+inputTextToTextbox("coinsurance_1", "25");
+
+//reserve
+var randReserve = Math.round(Math.random()*2000);
+inputTextToTextbox("reserv_amount_1", randReserve);
+
 
 
 })();
