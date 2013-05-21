@@ -101,6 +101,8 @@ selectOptionPlusOne("job_size");
 //business unit
 selectOptionPlusOne("business_unit");
 
+//segmentation
+selectOptionPlusOne("carrier_attribute_1");
 
 
 })();
