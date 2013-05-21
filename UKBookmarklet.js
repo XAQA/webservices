@@ -38,7 +38,6 @@ function inputTextToTextbox(elementName, inputText)
 	var $element=$("[name=" + elementName + "]");
 	$element.val(inputText);
 	$element.blur();
-	//$element.change();
 }
 
 
@@ -128,6 +127,16 @@ inputTextToTextbox("coinsurance_1", "25");
 //reserve
 var randReserve = Math.round(Math.random()*2000);
 inputTextToTextbox("reserv_amount_1", randReserve);
+
+//mortgage holder name
+var randMorFName = firstnamelist[Math.round(Math.random()*firstnamelist.length)];
+var randMorLName = lastnamelist[Math.round(Math.random()*lastnamelist.length)];
+inputTextToTextbox("mortgage_holder_1", randMorFName + " " + randMorLName);
+
+//loan number
+var loanNumFirst = Math.round(Math.random()*(999-111) + 111);
+var loanNumLast = Math.round(Math.random()*(999999-111111) + 111111);
+inputTextToTextbox("loan_number_1", loanNumFirst + " " + loanNumLast);
 
 
 
