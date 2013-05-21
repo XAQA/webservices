@@ -38,6 +38,7 @@ function inputTextToTextbox(elementName, inputText)
 	var $element=$("[name=" + elementName + "]");
 	$element.val(inputText);
 	$element.blur();
+	$element.change();
 }
 
 
