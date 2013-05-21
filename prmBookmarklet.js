@@ -92,11 +92,4 @@ inputTextToTextbox("location", zipCodes[randomState-1][randomZipIndex][1] + " Ar
 //description of property
 inputTextToTextbox("instructions", "This property needs some serious attention!");
 
-
-
-
-
-
-
-
 })();
