@@ -32,6 +32,14 @@ function selectOptionPlusOne(elementName)
 }
 
 
+//this function is used to input a string to a textbox. it takes the textbox name and the string to be input as parameters.
+function inputTextToTextbox(elementName, inputText)
+{
+	var $element=$("name=" + elementName + "]");
+	$element.val(inputText);
+	$element.blur();
+}
+
 //customer name
 var custFName = firstnamelist[Math.floor(Math.random()*(firstnamelist.length))];
 var custLName = lastnamelist[Math.floor(Math.random()*(lastnamelist.length))];
@@ -97,6 +105,11 @@ selectOptionPlusOne("job_type");
 
 //job size
 selectOptionPlusOne("job_size");
+
+//CAT code
+var randCAT = Math.round(Math.random()*999);
+inputTextToTextbox("cat_code", "CAT " + randCAT);
+
 
 //business unit
 selectOptionPlusOne("business_unit");
