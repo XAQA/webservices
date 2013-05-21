@@ -62,7 +62,7 @@ var randMobile = Math.floor(Math.random()* (9999-1111) + 1111);
 
 //random birthday
 //random day
-var randDay = Math.floor(Math.random()* (28-1) + 1);
+var randDay = Math.round(Math.random()* (28-1) + 1);
 
 //random month
 var randMonth = Math.floor(Math.random()* 12);
