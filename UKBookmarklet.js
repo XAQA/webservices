@@ -40,32 +40,25 @@ function inputTextToTextbox(elementName, inputText)
 	$element.blur();
 }
 
+
 //customer name
 var custFName = firstnamelist[Math.floor(Math.random()*(firstnamelist.length))];
 var custLName = lastnamelist[Math.floor(Math.random()*(lastnamelist.length))];
-var $custName=$('[name=insured_name]');
-$custName.val(custFName + " " + custLName);
-$custName.blur();
+inputTextToTextbox("insured_name", custFName + " " + custLName);
 
 //street
 var streetLetter = alpha[Math.floor(Math.random()*alpha.length)];
 var streetName = street[Math.floor(Math.random()*street.length)];
-var $street=$('[name=insured_street]');
-$street.val(streetLetter + ". " + streetName);
-$street.blur();
+inputTextToTextbox("insured_street", streetLetter + ". " + streetName);
 
 //city
 var randRegion = Math.floor(Math.random()*(5-1) + 1);
 //note - need to subtract 1 from randRegion in postalCity index because drop down starts at index 1 and postalCity starts at 0
 var randPostalCity = postalCity[randRegion-1][Math.floor(Math.random()*postalCity[randRegion-1].length)];
-var $city=$('[name=insured_city]');
-$city.val(randPostalCity[1]);
-$city.blur();
+inputTextToTextbox("insured_city", randPostalCity[1]);
 
 //country/region
-var $region=$('[name=insured_state]');
-$region.prop('selectedIndex', randRegion);
-$region.change();
+selectOptionPlusOne("insured_state", randRegion);
 
 //postal code
 var $postal=$('[name=insured_zip]');
@@ -80,12 +73,8 @@ else
 $postal.change();
 
 //phone number
-var phoneNum = "800555";
 var randPhone = Math.round(Math.random()*(9999-1111) + 1111);
-phoneNum += randPhone;
-var $phone=$('[name=insured_home_phone]');
-$phone.val(phoneNum);
-$phone.change();
+inputTextToTextbox("insured_home_phone", "800555" + randPhone);
 
 //peril
 selectOptionPlusOne("loss_type");
@@ -109,7 +98,6 @@ selectOptionPlusOne("job_size");
 //CAT code
 var randCAT = Math.round(Math.random()*999);
 inputTextToTextbox("cat_code", "CAT" + randCAT);
-
 
 //business unit
 selectOptionPlusOne("business_unit");
