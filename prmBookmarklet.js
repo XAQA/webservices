@@ -86,6 +86,9 @@ selectOptionPlusOne("job_size");
 //business unit
 selectOptionPlusOne("business_unit");
 
+//location
+inputTextToTextbox("location", zipCodes[randomState-1][randomZipIndex][1] + " Area");
+
 //description of property
 inputTextToTextbox("instructions", "This property needs some serious attention!");
 
