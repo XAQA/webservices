@@ -108,7 +108,7 @@ selectOptionPlusOne("job_size");
 
 //CAT code
 var randCAT = Math.round(Math.random()*999);
-inputTextToTextbox("cat_code", "CAT " + randCAT);
+inputTextToTextbox("cat_code", "CAT" + randCAT);
 
 
 //business unit
