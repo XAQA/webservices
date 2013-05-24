@@ -1,13 +1,13 @@
-Thu 05/23/2013 
-11:00:45.03 
+Fri 05/24/2013 
+11:00:45.04 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:46 GMT
-set-cookie: JSESSIONID: 5F2989AA901086D7078459469C56A57D.xaukprodapp2;
+date: Fri, 24 May 2013 17:00:46 GMT
+set-cookie: JSESSIONID: 5E5EE5A0D4BCE5A4F1BED529C176BFE3.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:47 GMT
+date: Fri, 24 May 2013 17:00:47 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:47 GMT
+date: Fri, 24 May 2013 17:00:48 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,205 +62,39 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:48 GMT
-content-length: 63
+date: Fri, 24 May 2013 17:00:48 GMT
+content-length: 54
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/user/EU_73351A8581
+https://apps.g1.xactanalysis.com/apps/xa/ws/user/null
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_73351A8581
+null
 ==================== Details About User ====================
-status = 200 
+status = 404 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-transfer-encoding: chunked
+content-length: 952
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+vary: Accept-Encoding
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:49 GMT
-content-type: text/plain; charset=ISO-8859-1
+date: Fri, 24 May 2013 17:00:49 GMT
+content-type: text/html;charset=utf-8
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_73351A8581</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
-
-
-=============== Modify New Users first name ================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:49 GMT
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
-server: Apache
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
-
-
-======================== Verify Mod ========================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:50 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_73351A8581</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
-
-
-======================= Delete User ========================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:51 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
-
-
-================= Verify user was deleted ==================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:52 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users/></searchResults>
-
-
-================ Search For User By UserId =================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:52 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-=============== Search For User By Last Name ===============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:53 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-============== Search For User By First Name ===============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:54 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-============= Search For User By Email Address =============
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
-server: Apache
-cache-control: private
-date: Thu, 23 May 2013 17:00:54 GMT
-content-type: text/plain; charset=ISO-8859-1
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><searchResults><users><user><userId>op-sh-ws</userId><firstName>Optimus</firstName><lastName>Prime</lastName><userNumber>EU_73487B6595</userNumber><email>oprime@xactware.com</email></user></users></searchResults>
-
-
-========================== Logout ==========================
-status = 200 
-
-------------------------------------------------------------
-headers
-------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:55 GMT
-content-length: 0
-content-type: text/plain; charset=ISO-8859-1
-server: Apache
-
-------------------------------------------------------------
-data
-------------------------------------------------------------
-None
+<html><head><title>Apache Tomcat/7.0.29 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u></u></p><p><b>description</b> <u>The requested resource () is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.29</h3></body></html>
 
 

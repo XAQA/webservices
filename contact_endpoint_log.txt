@@ -1,4 +1,4 @@
-Thu 05/23/2013 
+Fri 05/24/2013 
 11:00:44.03 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:45 GMT
-set-cookie: JSESSIONID: D3870E5C267B75342BA24331BB4B8A63.xaukprodapp1;
+date: Fri, 24 May 2013 17:00:45 GMT
+set-cookie: JSESSIONID: D64279BD62FC1AA861642259D87AD30A.xaukprodapp2;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:45 GMT
+date: Fri, 24 May 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:46 GMT
+date: Fri, 24 May 2013 17:00:47 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:47 GMT
+date: Fri, 24 May 2013 17:00:47 GMT
 content-length: 64
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -70,7 +70,7 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6724
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6727
 
 
 
@@ -78,7 +78,7 @@ https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6724
 ------------------------------------------------------------
 NEW PHONE NUM RECORD ID
 ------------------------------------------------------------
-6724
+6727
 ============== Verify Phone Number Was Added ===============
 status = 200 
 
@@ -89,13 +89,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:47 GMT
+date: Fri, 24 May 2013 17:00:48 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551212</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6724</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551212</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6727</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
 
 
 ================ Modify Users Phone Number =================
@@ -104,7 +104,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:48 GMT
+date: Fri, 24 May 2013 17:00:49 GMT
 content-length: 63
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -112,7 +112,7 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6724
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/phone/6727
 
 
 
@@ -126,13 +126,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:49 GMT
+date: Fri, 24 May 2013 17:00:49 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551313</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6724</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><phone><contactCode> </contactCode><contractorId>-8</contractorId><pagerId> </pagerId><phoneExtension>121</phoneExtension><phoneNumber>8015551313</phoneNumber><phoneNumberCtry>506</phoneNumberCtry><phoneType>MOBILE</phoneType><recordId>6727</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></phone>
 
 
 ================ Delete Users Phone Number =================
@@ -145,7 +145,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:49 GMT
+date: Fri, 24 May 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -164,7 +164,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:50 GMT
+date: Fri, 24 May 2013 17:00:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -183,7 +183,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:51 GMT
+date: Fri, 24 May 2013 17:00:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -198,7 +198,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:51 GMT
+date: Fri, 24 May 2013 17:00:52 GMT
 content-length: 64
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -206,7 +206,7 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6725
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6728
 
 
 
@@ -214,7 +214,7 @@ https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6725
 ------------------------------------------------------------
 NEW EMAIL RECORD ID
 ------------------------------------------------------------
-6725
+6728
 ============== Verify email was added to user ==============
 status = 200 
 
@@ -225,13 +225,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:52 GMT
+date: Fri, 24 May 2013 17:00:53 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>testEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6725</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>testEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6728</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
 
 
 ======================= Modify email =======================
@@ -240,7 +240,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:53 GMT
+date: Fri, 24 May 2013 17:00:53 GMT
 content-length: 63
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -248,7 +248,7 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6725
+https://apps.g1.xactanalysis.com/apps/xa/ws/contact/email/6728
 
 
 
@@ -262,13 +262,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:53 GMT
+date: Fri, 24 May 2013 17:00:54 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>tEsTEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6725</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><email><contactCode> </contactCode><contractorId>-8</contractorId><emailAddress>tEsTEmail@tester.com</emailAddress><emailType>EMAIL</emailType><recordId>6728</recordId><userNumber>EU_29432G1036</userNumber><xnAddress>JGM.XWR.TST.UK</xnAddress></email>
 
 
 ======================= Delete email =======================
@@ -281,7 +281,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:54 GMT
+date: Fri, 24 May 2013 17:00:55 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -300,7 +300,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:55 GMT
+date: Fri, 24 May 2013 17:00:55 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -319,7 +319,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:56 GMT
+date: Fri, 24 May 2013 17:00:56 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -334,7 +334,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:56 GMT
+date: Fri, 24 May 2013 17:00:57 GMT
 content-length: 73
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -356,7 +356,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:57 GMT
+date: Fri, 24 May 2013 17:00:57 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -371,7 +371,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:58 GMT
+date: Fri, 24 May 2013 17:00:58 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

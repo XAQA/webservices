@@ -1,4 +1,4 @@
-Thu 05/23/2013 
+Fri 05/24/2013 
 11:00:41.03 
 ==================== GET Documentation =====================
 status = 200 
@@ -7,11 +7,11 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-set-cookie: JSESSIONID=E54E81FBA827015DBF3D7B75D13FBBCA.xaukprodapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=E76B024555948593B166BD0BDF2E4CA2.xaukprodapp2; Path=/apps/; Secure; HttpOnly
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:42 GMT
+date: Fri, 24 May 2013 17:00:42 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -26,8 +26,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:42 GMT
-set-cookie: JSESSIONID: DE784320427D9FC4BE77B3B2E76EFA82.xaukprodapp1;
+date: Fri, 24 May 2013 17:00:43 GMT
+set-cookie: JSESSIONID: E193183264F86B079F2B5CCA5CDE6504.xaukprodapp2;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -48,7 +48,7 @@ content-length: 34
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:43 GMT
+date: Fri, 24 May 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -64,7 +64,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:44 GMT
+date: Fri, 24 May 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -82,11 +82,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 22
-set-cookie: JSESSIONID=080709580C013A2C6889AE7750EBCCEF.xaukprodapp1; Path=/apps/; Secure; HttpOnly
+set-cookie: JSESSIONID=3179A0CDF10B674EBA20F7A2EFF12F7D.xaukprodapp2; Path=/apps/; Secure; HttpOnly
 expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
 server: Apache
 cache-control: private
-date: Thu, 23 May 2013 17:00:44 GMT
+date: Fri, 24 May 2013 17:00:45 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -102,7 +102,7 @@ status = 403
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 23 May 2013 17:00:45 GMT
+date: Fri, 24 May 2013 17:00:45 GMT
 content-length: 84
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
