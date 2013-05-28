@@ -276,6 +276,11 @@ var $received_date=$('#claimInformationReceivedDate_date_visible');
 $received_date.datepicker().datepicker('setDate',today);
 $('#ui-datepicker-div').hide();
 
+//claim origin
+var $origin=$('[name=claimInformationClaimOrigin]');
+$origin.val("Generic Origin");
+$origin.blur();
+
 //warranty
 var $warranty=$('[name=claimInformationWarranties1]');
 $warranty.val(randWarranty);
