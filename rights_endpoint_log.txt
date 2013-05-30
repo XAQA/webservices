@@ -1,4 +1,4 @@
-Wed 05/29/2013 
+Thu 05/30/2013 
 11:00:35.04 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:37 GMT
-set-cookie: JSESSIONID: 3CA8A8529EFF1C5F592A770549758583.xaukprodapp2;
+date: Thu, 30 May 2013 17:00:36 GMT
+set-cookie: JSESSIONID: 9A731186362DE76ECDFBA6F23EDC2768.xaukprodapp2;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -25,10 +25,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:37 GMT
+date: Thu, 30 May 2013 17:00:36 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -44,10 +44,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:38 GMT
+date: Thu, 30 May 2013 17:00:37 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -63,10 +63,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:39 GMT
+date: Thu, 30 May 2013 17:00:38 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -81,7 +81,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:39 GMT
+date: Thu, 30 May 2013 17:00:38 GMT
 vary: Accept-Encoding
 content-length: 59
 content-type: text/plain;charset=ISO-8859-1
@@ -90,14 +90,14 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/right/role/115
+https://apps.g1.xactanalysis.com/apps/xa/ws/right/role/116
 
 
 
 ------------------------------------------------------------
 NEW ROLE ID
 ------------------------------------------------------------
-115
+116
 =================== Verify Role Creation ===================
 status = 200 
 
@@ -105,16 +105,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:40 GMT
+date: Thu, 30 May 2013 17:00:39 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>115</roleId><account>AXA-Belgium</account><description>This role was created automatically</description></role>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>116</roleId><account>AXA-Belgium</account><description>This role was created automatically</description></role>
 
 
 ======================= Modify Role ========================
@@ -123,7 +123,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:41 GMT
+date: Thu, 30 May 2013 17:00:40 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -141,16 +141,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:41 GMT
+date: Thu, 30 May 2013 17:00:40 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>115</roleId><account>AXA-Belgium</account><description>This role was created aUtOmAtIcAlLy</description></role>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><role><roleId>116</roleId><account>AXA-Belgium</account><description>This role was created aUtOmAtIcAlLy</description></role>
 
 
 =========== GET Documentation (/right/userType) ============
@@ -160,10 +160,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:42 GMT
+date: Thu, 30 May 2013 17:00:41 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -179,10 +179,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:43 GMT
+date: Thu, 30 May 2013 17:00:42 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -197,7 +197,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:43 GMT
+date: Thu, 30 May 2013 17:00:42 GMT
 vary: Accept-Encoding
 content-length: 63
 content-type: text/plain;charset=ISO-8859-1
@@ -206,14 +206,14 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/right/userType/227
+https://apps.g1.xactanalysis.com/apps/xa/ws/right/userType/245
 
 
 
 ------------------------------------------------------------
 NEW USERTYPE ID
 ------------------------------------------------------------
-227
+245
 =============== Verify userType was created ================
 status = 200 
 
@@ -221,16 +221,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:44 GMT
+date: Thu, 30 May 2013 17:00:43 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>227</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was created automatically</description><readOnly>false</readOnly></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>245</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was created automatically</description><readOnly>false</readOnly></userType>
 
 
 =================== Modify new userType ====================
@@ -239,7 +239,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:45 GMT
+date: Thu, 30 May 2013 17:00:44 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -257,16 +257,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:45 GMT
+date: Thu, 30 May 2013 17:00:44 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>227</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description><readOnly>false</readOnly></userType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><userType><id>245</id><account>AXA-Belgium</account><name>AUTO Test User</name><description>This user type was modified AuToMaTiCaLlY</description><readOnly>false</readOnly></userType>
 
 
 ================= Assign role to userType ==================
@@ -275,7 +275,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:46 GMT
+date: Thu, 30 May 2013 17:00:45 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -292,7 +292,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:46 GMT
+date: Thu, 30 May 2013 17:00:46 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -310,10 +310,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:47 GMT
+date: Thu, 30 May 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -328,7 +328,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:48 GMT
+date: Thu, 30 May 2013 17:00:47 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -345,7 +345,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:48 GMT
+date: Thu, 30 May 2013 17:00:48 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -363,11 +363,11 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 5
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 vary: Accept-Encoding
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:49 GMT
+date: Thu, 30 May 2013 17:00:48 GMT
 content-type: text/plain;charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -384,10 +384,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:50 GMT
+date: Thu, 30 May 2013 17:00:49 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -403,10 +403,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:50 GMT
+date: Thu, 30 May 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -422,10 +422,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:51 GMT
+date: Thu, 30 May 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -441,10 +441,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:52 GMT
+date: Thu, 30 May 2013 17:00:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -460,11 +460,11 @@ status = 404
 headers
 ------------------------------------------------------------
 content-length: 319
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 vary: Accept-Encoding
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:52 GMT
+date: Thu, 30 May 2013 17:00:52 GMT
 content-type: text/html;charset=UTF-8
 
 ------------------------------------------------------------
@@ -498,7 +498,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:53 GMT
+date: Thu, 30 May 2013 17:00:53 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache

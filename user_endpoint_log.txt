@@ -1,13 +1,13 @@
-Wed 05/29/2013 
-11:00:45.03 
+Thu 05/30/2013 
+11:00:45.04 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:46 GMT
-set-cookie: JSESSIONID: 289896565BCCB20ADC4E84C38049FF7F.xaukprodapp1;
+date: Thu, 30 May 2013 17:00:46 GMT
+set-cookie: JSESSIONID: 8A9822B71FCE1EB4E7257340A7415D72.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -25,10 +25,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:47 GMT
+date: Thu, 30 May 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -44,10 +44,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:48 GMT
+date: Thu, 30 May 2013 17:00:47 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:48 GMT
+date: Thu, 30 May 2013 17:00:48 GMT
 content-length: 63
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -70,14 +70,14 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/user/EU_70074A0804
+https://apps.g1.xactanalysis.com/apps/xa/ws/user/EU_79629A6360
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_70074A0804
+EU_79629A6360
 ==================== Details About User ====================
 status = 200 
 
@@ -85,16 +85,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:49 GMT
+date: Thu, 30 May 2013 17:00:48 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_70074A0804</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_79629A6360</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 =============== Modify New Users first name ================
@@ -103,7 +103,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:50 GMT
+date: Thu, 30 May 2013 17:00:49 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -121,16 +121,16 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:50 GMT
+date: Thu, 30 May 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_70074A0804</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_79629A6360</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -140,10 +140,10 @@ status = 200
 headers
 ------------------------------------------------------------
 content-length: 0
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:51 GMT
+date: Thu, 30 May 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -159,10 +159,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:52 GMT
+date: Thu, 30 May 2013 17:00:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -178,10 +178,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:52 GMT
+date: Thu, 30 May 2013 17:00:52 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -197,10 +197,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:53 GMT
+date: Thu, 30 May 2013 17:00:52 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -216,10 +216,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:54 GMT
+date: Thu, 30 May 2013 17:00:53 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -235,10 +235,10 @@ status = 200
 headers
 ------------------------------------------------------------
 transfer-encoding: chunked
-expires: Thu, 01 Jan 1970 00:00:00 GMT+00:00
+expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Wed, 29 May 2013 17:00:54 GMT
+date: Thu, 30 May 2013 17:00:54 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -253,7 +253,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Wed, 29 May 2013 17:00:55 GMT
+date: Thu, 30 May 2013 17:00:54 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
