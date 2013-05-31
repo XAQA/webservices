@@ -1,4 +1,4 @@
-Thu 05/30/2013 
+Fri 05/31/2013 
 11:00:05.38 
 ========================== Login ===========================
 status = 200 
@@ -6,8 +6,8 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 30 May 2013 17:00:06 GMT
-set-cookie: JSESSIONID: ADA6D4814E8A680B9FD26E7B3CFE9403.xaukprodapp2;
+date: Fri, 31 May 2013 17:00:07 GMT
+set-cookie: JSESSIONID: 310A803B2AF59BCD8BE4F52107A5796C.xaukprodapp1;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Thu, 30 May 2013 17:00:07 GMT
+date: Fri, 31 May 2013 17:00:08 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -43,7 +43,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 30 May 2013 17:00:08 GMT
+date: Fri, 31 May 2013 17:00:09 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -64,7 +64,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Thu, 30 May 2013 17:00:08 GMT
+date: Fri, 31 May 2013 17:00:09 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -79,7 +79,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Thu, 30 May 2013 17:00:09 GMT
+date: Fri, 31 May 2013 17:00:10 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
