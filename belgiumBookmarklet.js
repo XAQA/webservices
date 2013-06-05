@@ -465,7 +465,8 @@ else if(claimBranchType == "Auto")
 		var max_usage = ($usage.children('option').length) - 1;
 		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		alert(rand_usage);
-		$usage.prop('selectedIndex', rand_usage);
+		$('[name=codeGenreDActiviteCar] option').eq(rand_usage).attr('selected', 'selected');
+		//$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
 	}
 	
