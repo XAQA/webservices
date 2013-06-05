@@ -409,7 +409,7 @@ if(claimBranchType == "Liability & casualty")
 	
 	function usage(){
 		//usage
-		var $usage=$('[name=codeGenreDActiviteFire]');
+		var $usage=$('[name=codeGenreDActiviteLiability]');
 		var max_usage = ($usage.children('option').length) - 1;
 		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
@@ -455,11 +455,11 @@ else if(claimBranchType == "Auto")
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
 	
-	window.setTimeout(usage, 2000);
+	window.setTimeout(usage, 5000);
 	
 	function usage(){
 		//usage
-		var $usage=$('[name=codeGenreDActiviteFire]');
+		var $usage=$('[name=codeGenreDActiviteCar]');
 		var max_usage = ($usage.children('option').length) - 1;
 		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
@@ -491,7 +491,7 @@ else if(claimBranchType == "Fire")
 	$num_cars.val(rand_numCars);
 	$num_cars.blur();
 	
-	window.setTimeout(usage, 1000);
+	window.setTimeout(usage, 5000);
 	
 	function usage(){
 		//usage
