@@ -509,12 +509,16 @@ else if(claimBranchType == "Fire")
 	$quality.prop('selectedIndex', rand_quality);
 	$quality.change();
 	
-	//SARP
-	var $sarp=$('[name=codeSARPBatiment]');
-	var max_sarp = ($sarp.children('option').length) - 1;
-	var rand_sarp = Math.floor(Math.random()*(max_sarp) + 1);
-	$sarp.prop('selectedIndex', rand_sarp);
-	$sarp.change();
+	window.SetTimeout(SARP, 1000);
+	
+	function SARP(){
+		//SARP
+		var $sarp=$('[name=codeSARPBatiment]');
+		var max_sarp = ($sarp.children('option').length) - 1;
+		var rand_sarp = Math.floor(Math.random()*(max_sarp) + 1);
+		$sarp.prop('selectedIndex', rand_sarp);
+		$sarp.change();
+	}
 	
 	//Sys Building/Contents
 	var $contents=$('[name=codeTypeOfCapital]');
