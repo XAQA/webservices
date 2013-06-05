@@ -415,6 +415,7 @@ if(claimBranchType == "Liability & casualty")
 		alert(rand_usage);
 		$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
+		$usage.blur();
 	}
 }
 
