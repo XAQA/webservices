@@ -510,7 +510,7 @@ else if(claimBranchType == "Fire")
 	$quality.change();
 	
 	//SARP
-	var $sarp=$('[codeSARPBatiment]');
+	var $sarp=$('[name=codeSARPBatiment]');
 	var max_sarp = ($sarp.children('option').length) - 1;
 	var rand_sarp = Math.floor(Math.random()*(max_sarp) + 1);
 	$sarp.prop('selectedIndex', rand_sarp);
