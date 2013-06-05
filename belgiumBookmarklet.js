@@ -292,16 +292,6 @@ $observation.val(randObserve);
 $observation.blur();
 
 
-//usage
-window.setTimeout(usage, 3000);
-	function usage(){
-	var $usage=$('[name=codeGenreDActivite]');
-	var max_usage = ($usage.children('option').length) - 1;
-	var rand_usage = Math.round(Math.random()*max_usage);
-	$usage.prop('selectedIndex', rand_usage);
-	$usage.change();
-}
-
 
 //Party/Risk Information
 //-------------------------------------------------------------------------
@@ -414,6 +404,13 @@ if(claimBranchType == "Liability & casualty")
 	var $franchiseAmt=$('[name=riskLiabilityFranchiseAmount1]');
 	$franchiseAmt.val(rand_franchiseAmt);
 	$franchiseAmt.blur();
+	
+	//usage
+	var $usage=$('[name=codeGenreDActiviteLiability]');
+	var max_usage = ($usage.children('option').length) - 1;
+	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+	$usage.prop('selectedIndex', rand_usage);
+	$usage.change();
 }
 
 //Auto
@@ -454,6 +451,13 @@ else if(claimBranchType == "Auto")
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
 	
+	//usage
+	var $usage=$('[name=codeGenreDActiviteCar]');
+	var max_usage = ($usage.children('option').length) - 1;
+	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+	$usage.prop('selectedIndex', rand_usage);
+	$usage.change();
+	
 }
 
 //Fire
@@ -479,12 +483,26 @@ else if(claimBranchType == "Fire")
 	$num_cars.val(rand_numCars);
 	$num_cars.blur();
 	
+	//usage
+	var $usage=$('[name=codeGenreDActiviteFire]');
+	var max_usage = ($usage.children('option').length) - 1;
+	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+	$usage.prop('selectedIndex', rand_usage);
+	$usage.change();
+	
 	//quality
 	var $quality=$('[name=typeOfResidence]');
 	var max_quality = ($quality.children('option').length) - 1;
 	var rand_quality = Math.round(Math.random()*max_quality);
 	$quality.prop('selectedIndex', rand_quality);
 	$quality.change();
+	
+	//SARP
+	var $sarp=$('[codeSARPBatiment]');
+	var max_sarp = ($sarp.children('option').length) - 1;
+	var rand_sarp = Math.floor(Math.random()*(max_sarp) + 1);
+	$sarp.prop('selectedIndex', rand_sarp);
+	$sarp.change();
 	
 	//Sys Building/Contents
 	var $contents=$('[name=codeTypeOfCapital]');
