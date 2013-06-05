@@ -405,12 +405,16 @@ if(claimBranchType == "Liability & casualty")
 	$franchiseAmt.val(rand_franchiseAmt);
 	$franchiseAmt.blur();
 	
-	//usage
-	var $usage=$('[name=codeGenreDActiviteLiability]');
-	var max_usage = ($usage.children('option').length) - 1;
-	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
-	$usage.prop('selectedIndex', rand_usage);
-	$usage.change();
+	setTimeout(usage, 1000);
+	
+	function usage(){
+		//usage
+		var $usage=$('[name=codeGenreDActiviteLiability]');
+		var max_usage = ($usage.children('option').length) - 1;
+		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		$usage.prop('selectedIndex', rand_usage);
+		$usage.change();
+	}
 }
 
 //Auto
@@ -451,12 +455,16 @@ else if(claimBranchType == "Auto")
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
 	
-	//usage
-	var $usage=$('[name=codeGenreDActiviteCar]');
-	var max_usage = ($usage.children('option').length) - 1;
-	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
-	$usage.prop('selectedIndex', rand_usage);
-	$usage.change();
+	setTimeout(usage, 1000);
+	
+	function usage(){
+		//usage
+		var $usage=$('[name=codeGenreDActiviteCar]');
+		var max_usage = ($usage.children('option').length) - 1;
+		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		$usage.prop('selectedIndex', rand_usage);
+		$usage.change();
+	}
 	
 }
 
@@ -483,12 +491,16 @@ else if(claimBranchType == "Fire")
 	$num_cars.val(rand_numCars);
 	$num_cars.blur();
 	
-	//usage
-	var $usage=$('[name=codeGenreDActiviteFire]');
-	var max_usage = ($usage.children('option').length) - 1;
-	var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
-	$usage.prop('selectedIndex', rand_usage);
-	$usage.change();
+	setTimeout(usage, 1000);
+	
+	function usage(){
+		//usage
+		var $usage=$('[name=codeGenreDActiviteFire]');
+		var max_usage = ($usage.children('option').length) - 1;
+		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		$usage.prop('selectedIndex', rand_usage);
+		$usage.change();
+	}
 	
 	//quality
 	var $quality=$('[name=typeOfResidence]');
