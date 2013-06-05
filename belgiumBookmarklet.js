@@ -455,7 +455,7 @@ else if(claimBranchType == "Auto")
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
 	
-	setTimeout(usage, 1000);
+	setTimeout(usage, 2000);
 	
 	function usage(){
 		//usage
