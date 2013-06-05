@@ -405,7 +405,7 @@ if(claimBranchType == "Liability & casualty")
 	$franchiseAmt.val(rand_franchiseAmt);
 	$franchiseAmt.blur();
 	
-	setTimeout(usage, 1000);
+	setTimeout(usage, 5000);
 	
 	function usage(){
 		//usage
@@ -455,7 +455,7 @@ else if(claimBranchType == "Auto")
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
 	
-	setTimeout(usage, 8000);
+	setTimeout(usage, 5000);
 	
 	function usage(){
 		//usage
