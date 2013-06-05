@@ -411,6 +411,7 @@ if(claimBranchType == "Liability & casualty")
 		//usage
 		var $usage=$('[name=codeGenreDActiviteLiability]');
 		var max_usage = ($usage.children('option').length) - 1;
+		alert(max_usage);
 		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
