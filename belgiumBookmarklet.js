@@ -509,7 +509,7 @@ else if(claimBranchType == "Fire")
 	$quality.prop('selectedIndex', rand_quality);
 	$quality.change();
 	
-	window.SetTimeout(SARP, 3000);
+	window.setTimeout(SARP, 3000);
 	
 	function SARP(){
 		//SARP
