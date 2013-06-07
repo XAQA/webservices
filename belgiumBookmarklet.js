@@ -537,7 +537,7 @@ else if(claimBranchType == "Fire")
 	//Sys Building/Contents
 	var $contents=$('[name=codeTypeOfCapital]');
 	var max_contents = ($contents.children('option').length) - 1;
-	var rand_contents = Math.round(Math.random()*max_contents);
+	var rand_contents = Math.floor(Math.random()*(max_contents) + 1);
 	$contents.prop('selectedIndex', rand_contents);
 	$contents.change();
 	
