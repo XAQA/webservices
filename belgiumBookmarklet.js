@@ -497,7 +497,11 @@ else if(claimBranchType == "Fire")
 		//usage
 		var $usage=$('[name=codeGenreDActiviteFire]');
 		var max_usage = ($usage.children('option').length) - 1;
-		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		var rand_usage;
+		if(max_usage == 0)
+			rand_usage = 0;
+		else
+			rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
 	}
@@ -516,7 +520,7 @@ else if(claimBranchType == "Fire")
 		var $sarp=$('[name=codeSARPBatiment]');
 		var max_sarp = ($sarp.children('option').length) - 1;
 		var rand_sarp;
-		if(max_sarp == 1)
+		if(max_sarp == 0)
 			rand_sarp = 0
 		else
 			rand_sarp = Math.floor(Math.random()*(max_sarp) + 1);
