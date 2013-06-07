@@ -454,6 +454,7 @@ else if(claimBranchType == "Auto")
 	var $catalogVal=$('[name=riskCarCatalogValue]');
 	$catalogVal.val(rand_carCatValue);
 	$catalogVal.blur();
+	alert(rand_carCatValue);
 	
 	window.setTimeout(usageCar, 5000);
 	
