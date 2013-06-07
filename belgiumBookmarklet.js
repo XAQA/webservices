@@ -515,7 +515,7 @@ else if(claimBranchType == "Fire")
 	//quality
 	var $quality=$('[name=typeOfResidence]');
 	var max_quality = ($quality.children('option').length) - 1;
-	var rand_quality = Math.round(Math.random()*max_quality);
+	var rand_quality = Math.floor(Math.random()*(max_quality) + 1);
 	$quality.prop('selectedIndex', rand_quality);
 	$quality.change();
 	
