@@ -405,7 +405,7 @@ if(claimBranchType == "Liability & casualty")
 	$franchiseAmt.val(rand_franchiseAmt);
 	$franchiseAmt.blur();
 	
-	window.setTimeout(usageLiability, 5000);
+	window.setTimeout(usageLiability, 2000);
 	
 	function usageLiability(){
 		//usage
@@ -497,7 +497,7 @@ else if(claimBranchType == "Fire")
 	$num_cars.val(rand_numCars);
 	$num_cars.blur();
 	
-	window.setTimeout(usageFire, 5000);
+	window.setTimeout(usageFire, 2000);
 	
 	function usageFire(){
 		//usage
@@ -519,7 +519,7 @@ else if(claimBranchType == "Fire")
 	$quality.prop('selectedIndex', rand_quality);
 	$quality.change();
 	
-	window.setTimeout(SARP, 3000);
+	window.setTimeout(SARP, 2000);
 	
 	function SARP(){
 		//SARP
