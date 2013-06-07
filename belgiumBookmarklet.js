@@ -459,9 +459,14 @@ else if(claimBranchType == "Auto")
 	
 	function usage(){
 		//usage
-		var $usage=$('[name=codeGenreDActiviteCar]');
+		//var $usage=$('[name=codeGenreDActiviteCar]');
+		var $usage=$("#codeGenreDActiviteCarSelect');
 		var max_usage = ($usage.children('option').length) - 1;
-		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		var rand_usage;
+		if(max_usage == 0)
+			rand_usage = 0;
+		else
+			rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
 	}
