@@ -367,7 +367,11 @@ if(claimBranchType == "Liability & casualty")
 	//risk type
 	var $risk_type=$('[name=riskType]');
 	var max_riskType = ($risk_type.children('option').length) - 1;
-	var rand_riskType = Math.round(Math.random()*max_riskType);
+	var rand_riskType
+	if(max_riskType == 0)
+		rand_riskType = 0;
+	else
+		rand_riskType = Math.floor(Math.random()*(max_riskType) + 1);
 	$risk_type.prop('selectedIndex', rand_riskType);
 	$risk_type.change();
 
@@ -411,7 +415,11 @@ if(claimBranchType == "Liability & casualty")
 		//usage
 		var $usage=$('[name=codeGenreDActiviteLiability]');
 		var max_usage = ($usage.children('option').length) - 1;
-		var rand_usage = Math.floor(Math.random()*(max_usage) + 1);
+		var rand_usage;
+		if(max_usage == 0)
+			rand_usage = 0;
+		else
+			rand_usage = Math.floor(Math.random()*(max_usage) + 1);
 		$usage.prop('selectedIndex', rand_usage);
 		$usage.change();
 	}
