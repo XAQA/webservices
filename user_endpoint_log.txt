@@ -1,13 +1,13 @@
-Mon 06/10/2013 
-11:00:45.05 
+Tue 06/11/2013 
+11:00:45.02 
 ========================== Login ===========================
 status = 200 
 
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 10 Jun 2013 17:00:45 GMT
-set-cookie: JSESSIONID: 0013CBFDC4E95DCB9FC25DB1EE4F4F39.xaukprodapp1;
+date: Tue, 11 Jun 2013 17:00:46 GMT
+set-cookie: JSESSIONID: 396E8B5BA145F203501F9A5A2A0C197D.xaukprodapp2;
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -28,7 +28,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:46 GMT
+date: Tue, 11 Jun 2013 17:00:46 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -47,7 +47,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:47 GMT
+date: Tue, 11 Jun 2013 17:00:47 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -62,7 +62,7 @@ status = 201
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 10 Jun 2013 17:00:47 GMT
+date: Tue, 11 Jun 2013 17:00:48 GMT
 content-length: 63
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -70,14 +70,14 @@ server: Apache
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-https://apps.g1.xactanalysis.com/apps/xa/ws/user/EU_61925A9324
+https://apps.g1.xactanalysis.com/apps/xa/ws/user/EU_72191A3645
 
 
 
 ------------------------------------------------------------
 NEW USER NUMBER
 ------------------------------------------------------------
-EU_61925A9324
+EU_72191A3645
 ==================== Details About User ====================
 status = 200 
 
@@ -88,13 +88,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:48 GMT
+date: Tue, 11 Jun 2013 17:00:48 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_61925A9324</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_72191A3645</userNumber><lastName>Prime</lastName><firstName>Optimus</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 =============== Modify New Users first name ================
@@ -103,7 +103,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 10 Jun 2013 17:00:49 GMT
+date: Tue, 11 Jun 2013 17:00:49 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
@@ -124,13 +124,13 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:49 GMT
+date: Tue, 11 Jun 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
 data
 ------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_61925A9324</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><user><userId>test!us3r</userId><userNumber>EU_72191A3645</userNumber><lastName>Prime</lastName><firstName>Starscream</firstName><account>SafeHaven</account><passwordExpireDate>2013-04-20 00:00:00</passwordExpireDate><email>oprime@xactware.com</email></user>
 
 
 ======================= Delete User ========================
@@ -143,7 +143,7 @@ content-length: 0
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:50 GMT
+date: Tue, 11 Jun 2013 17:00:50 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -162,7 +162,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:51 GMT
+date: Tue, 11 Jun 2013 17:00:51 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -181,7 +181,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:52 GMT
+date: Tue, 11 Jun 2013 17:00:52 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -200,7 +200,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:52 GMT
+date: Tue, 11 Jun 2013 17:00:52 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -219,7 +219,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:53 GMT
+date: Tue, 11 Jun 2013 17:00:53 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -238,7 +238,7 @@ transfer-encoding: chunked
 expires: Thu, 01 Jan 1970 01:00:00 GMT
 server: Apache
 cache-control: private
-date: Mon, 10 Jun 2013 17:00:54 GMT
+date: Tue, 11 Jun 2013 17:00:54 GMT
 content-type: text/plain; charset=ISO-8859-1
 
 ------------------------------------------------------------
@@ -253,7 +253,7 @@ status = 200
 ------------------------------------------------------------
 headers
 ------------------------------------------------------------
-date: Mon, 10 Jun 2013 17:00:54 GMT
+date: Tue, 11 Jun 2013 17:00:54 GMT
 content-length: 0
 content-type: text/plain; charset=ISO-8859-1
 server: Apache
