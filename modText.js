@@ -83,9 +83,9 @@ $email.blur();
 
 //loss type
 var $loss_type=$('select[name=loss_type]');
-var randomLossType = Math.floor(Math.random()*(18) + 1);
+var maxLossType = ($loss_type.children('option').length) - 1;
+var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
 $loss_type.prop('selectedIndex', randomLossType);
-$loss_type.blur();
 $loss_type.change();
 
 //job type
