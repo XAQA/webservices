@@ -88,10 +88,14 @@ var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
 $loss_type.prop('selectedIndex', randomLossType);
 $loss_type.change();
 
-/* //job type
+//job type
 var $job_type=$('select[name=job_type]');
 var maxJobType = ($job_type.children('option').length) - 1;
-var randomJobType = Math.floor(Math.random()*(maxJobType) + 1);
+var randomJobType;
+if(maxJobType == 0)
+	randomJobType = 0;
+else
+	randomJobType = Math.floor(Math.random()*(maxJobType) + 1);
 $job_type.prop('selectedIndex', randomJobType);
 $job_type.change();
 
@@ -101,7 +105,7 @@ var max_jobSize = ($job_size.children('option').length) - 1;
 var randomJobSize = Math.floor(Math.random()*(max_jobSize) + 1);
 $job_size.prop('selectedIndex', randomJobSize);
 $job_size.change();
- */
+
 //cat code
 var $cat_code=$('[name=cat_code]');
 $cat_code.val('CAT'+y);
