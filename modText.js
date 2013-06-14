@@ -146,7 +146,6 @@ $policy_type.change();
 //property type
 var $property_type=$('select[name=property_type]');
 var maxPropType = ($property_type.children('option').length) - 1;
-alert(maxPropType);
 var randomPropType = Math.floor(Math.random()*(maxPropType) + 1);
 $property_type.prop('selectedIndex', randomPropType);
 $property_type.change();
