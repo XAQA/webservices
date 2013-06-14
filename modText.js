@@ -97,9 +97,9 @@ $job_type.change();
 
 //job size
 var $job_size=$('select[name=job_size]');
-var randomJobSize = Math.floor(Math.random()*(6) + 1);
+var max_jobSize = ($job_size.children('option').length) - 1;
+var randomJobSize = Math.floor(Math.random()*(max_jobSize) + 1);
 $job_size.prop('selectedIndex', randomJobSize);
-$job_size.blur();
 $job_size.change();
 
 //cat code
@@ -140,8 +140,9 @@ $policy_type.prop('selectedIndex', randomPolicyType);
 $policy_type.change();
 
 //property type
-var randomPropType = Math.floor(Math.random()*(5) + 1);
 var $property_type=$('select[name=property_type]');
+var maxPropType = ($property_type.children('option').length) - 1;
+var randomPropType = Math.floor(Math.random()*(maxPropType) + 1);
 $property_type.prop('selectedIndex', randomPropType);
 $property_type.change();
 
