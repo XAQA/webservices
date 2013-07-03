@@ -534,8 +534,8 @@ else if(claimBranchType == "Fire")
 	window.setTimeout(SARP, 2000);
 	
 	function SARP(){
-		//SARP
-		var $sarp=$('[name=codeSARPBatiment]');
+		//Evaluation System (BAT)
+		var $sarp=$('[name=codeEvaluationSystem]');
 		var max_sarp = ($sarp.children('option').length) - 1;
 		var rand_sarp;
 		if(max_sarp == 0)
