@@ -376,7 +376,7 @@ if(claimBranchType == "Liability & casualty")
 	$risk_type.change();
 
 	//create delay to select the nature of the risk so that it the dropdown is populated before the selection is made
-	window.setTimeout(natureOfRisk, 2000);
+	window.setTimeout(natureOfRisk, 4000);
 	
 	//in order to create delay, the delayed code needs to be in a function
 	function natureOfRisk()
@@ -413,7 +413,7 @@ if(claimBranchType == "Liability & casualty")
 	$franchiseAmt.val(rand_franchiseAmt);
 	$franchiseAmt.blur();
 	
-	window.setTimeout(usageLiability, 2000);
+	window.setTimeout(usageLiability, 4000);
 	
 	function usageLiability(){
 		//usage
