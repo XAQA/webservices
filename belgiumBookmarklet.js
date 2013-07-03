@@ -376,18 +376,18 @@ if(claimBranchType == "Liability & casualty")
 	$risk_type.change();
 
 	//create delay to select the nature of the risk so that it the dropdown is populated before the selection is made
-	//window.setTimeout(natureOfRisk, 2000);
+	window.setTimeout(natureOfRisk, 2000);
 	
 	//in order to create delay, the delayed code needs to be in a function
-	//function natureOfRisk()
-	//{
+	function natureOfRisk()
+	{
 		//nature of risk
 		var $risk_nature=$('[name=natureOfRisk]');
 		var max_riskNature = ($risk_nature.children('option').length) - 1;
 		var rand_riskNature = Math.round(Math.random()*max_riskNature);
 		$risk_nature.prop('selectedIndex', rand_riskNature);
 		$risk_nature.change();
-	//}
+	}
 	
 	//assured victim last name
 	var $assuredVict_LName=$('[name=riskAssuredVictimsLastName]');
