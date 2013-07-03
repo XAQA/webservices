@@ -384,7 +384,11 @@ if(claimBranchType == "Liability & casualty")
 		//nature of risk
 		var $risk_nature=$('[name=natureOfRisk]');
 		var max_riskNature = ($risk_nature.children('option').length) - 1;
-		var rand_riskNature = Math.round(Math.random()*max_riskNature);
+		var rand_riskNature;
+		if(max_riskNature == 1)
+			rand_riskNature = 1;
+		else
+			rand_riskNature = Math.round(Math.random()*max_riskNature);
 		$risk_nature.prop('selectedIndex', rand_riskNature);
 		$risk_nature.change();
 	}
