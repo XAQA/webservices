@@ -88,6 +88,21 @@ var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
 $loss_type.prop('selectedIndex', randomLossType);
 $loss_type.change();
 
+//cause of loss
+var $causeOLoss=$('select[name=cause_of_loss]');
+if($causeOLoss.length)
+{
+	var maxCOL = ($causeOLoss.children('option').length) - 1;
+	var randCOL;
+	if(maxCOL == 0)
+		randCOL = 0;
+	else
+		randCOL = Math.floor(Math.random()*(maxCOL) + 1);
+	$causeOLoss.prop('selectedIndex', randCOL);
+	$causeOLoss.change();
+}
+
+
 //job type
 var $job_type=$('select[name=job_type]');
 var maxJobType = ($job_type.children('option').length) - 1;
