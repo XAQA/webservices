@@ -88,7 +88,7 @@ var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
 $loss_type.prop('selectedIndex', randomLossType);
 $loss_type.change();
 
-window.setTimeout(causeLoss, 2000);
+window.setTimeout(causeLoss, 1000);
 
 //cause of loss
 function causeLoss()
