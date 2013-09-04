@@ -135,8 +135,12 @@ $cat_code.blur();
 var $business_unit=$('[name=business_unit]');
 var maxBusUnit = ($business_unit.children('option').length) - 1;
 var randomBusUnit = Math.floor(Math.random()*(maxBusUnit) + 1);
-$business_unit.prop('selectedIndex', randomBusUnit);
-$business_unit.change();
+if(maxBusUnit > 0)
+{
+	$business_unit.prop('selectedIndex', randomBusUnit);
+	$business_unit.change();
+}
+
 
 //loss date
 var yesterday=new Date();
