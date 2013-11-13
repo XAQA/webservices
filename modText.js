@@ -133,7 +133,8 @@ if(enterCat == 1)
 {
 	$cat_code.val('CAT'+y);
 }
-$cat_code.val('');
+else
+	$cat_code.val('');
 $cat_code.blur();
 
 //business unit
