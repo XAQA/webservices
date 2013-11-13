@@ -97,7 +97,12 @@ selectOptionPlusOne("job_size");
 
 //CAT code
 var randCAT = Math.round(Math.random()*999);
-inputTextToTextbox("cat_code", "CAT" + randCAT);
+var enterCAT = Math.floor(Math.random()*4);
+if(enterCAT == 1)
+	inputTextToTextbox("cat_code", "CAT" + randCAT);
+else
+	inputTextToTextbox("cat_code", "");
+
 
 //business unit
 selectOptionPlusOne("business_unit");
