@@ -40,8 +40,8 @@ $('[name=test]').attr('checked',false);
 $('[name=insured_name]').val(fullName);
 
 //street
-var latNum = Math.floor(Math.random()*9999)
-var longNum = Math.floor(Math.random()*9999)
+var latNum = Math.floor(Math.random()*9999);
+var longNum = Math.floor(Math.random()*9999);
 var lat = Array('N', 'S');
 var longi = Array('W', 'E');
 $('[name=insured_street]').val(latNum + " " + lat[Math.floor(Math.random()*lat.length)] + " " + longNum + " " + longi[Math.floor(Math.random()*longi.length)]);
@@ -128,7 +128,12 @@ $job_size.change();
 
 //cat code
 var $cat_code=$('[name=cat_code]');
-$cat_code.val('CAT'+y);
+var enterCat = Math.floor(Math.random()*4);
+if(enterCat == 1)
+{
+	$cat_code.val('CAT'+y);
+}
+$cat_code.val('');
 $cat_code.blur();
 
 //business unit
