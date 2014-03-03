@@ -228,7 +228,7 @@ function genericPick3(){
 //Function
 window.setTimeout(functionSelect, 2000);
 function functionSelect() {
-	var $functionList=$('[name=functionSelect]');
+	var $functionList=$('[name=functionCode]');
 	var max_functionList = ($functionList.children('option').length) -1;
 	var random_functionList = Math.floor(Math.random()*(max_functionList) + 1);
 	$functionList.prop('selectedIndex', random_functionList);
