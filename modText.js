@@ -33,6 +33,11 @@ if (RandomPhone < 1000 && RandomPhone > 100){RandomPhone =  "0" + RandomPhone;
 
 //jQuery
 //----------------------------------------------------------------------
+function setText(locator, text) {
+	$(locator).val(text);
+}
+
+
 //test checkbox
 $('[name=test]').attr('checked',false);
 
@@ -57,10 +62,11 @@ $insured_state.change();
 //zip code
 var randomZipIndex = Math.floor(Math.random()*(10));
 var randomZip = zipCodes[randomState-1][randomZipIndex][0];
-if(String(randomZip).length == 4)
-{temp = randomZip;
-randomZip = "0" + temp;
-}var $zip=$('[name=insured_zip]');
+if(String(randomZip).length == 4) {
+	temp = randomZip;
+	randomZip = "0" + temp;
+}
+var $zip=$('[name=insured_zip]');
 $zip.val(randomZip);
 $zip.blur();
 $zip.change();
@@ -149,12 +155,24 @@ if(maxBusUnit > 0)
 
 
 //loss date
-var yesterday=new Date();
+var yesterday = new Date();
 yesterday.setDate(yesterday.getDate()-1);
 var $loss_date=$('#loss_date_visible');
-$loss_date.datepicker().datepicker('setDate',yesterday);
+$loss_date.datepicker().datepicker('setDate', yesterday);
 $('#ui-datepicker-div').hide();
 $('[name=instructions]').val('');
+
+//time of loss
+var timeOfLoss = new Time(new Date(), -3);
+setText("input[name='loss_hour']", timeOfLoss.hours);
+setText("input[name='loss_min']", timeOfLoss.minutes);
+setText("select[name='loss_ampm']", timeOfLoss.ampm);
+
+//time received
+var timeReceived = new Time(new Date(), -2);
+setText("input[name='loss_received_hour']", timeReceived.hours);
+setText("input[name='loss_received_min']", timeReceived.minutes);
+setText("input[name='loss_received_ampm']", timeReceived.ampm);
 
 //policy type
 var text = $('select[name=policy_type] option:eq(0)').text();
@@ -198,4 +216,43 @@ $('[name=reserv_amount_1]').val(y);
 $('[name=mortgage_holder_1]').val('Mortgage Holder Name');
 $('[name=loan_number_1]').val(x+'-'+z+y);
 window.location=$('#mortgage_add').attr("href");
+
+
+//code for time objects in 12 hour format
+//you can supply hour, minute, and second offsets if you would like
+function Time(date, dHours, dMinutes, dSeconds) {
+	dHours = typeof dHours !== 'undefined' ? dHours : 0;
+	dMinutes = typeof dMinutes !== 'undefined' ? dMinutes : 0;
+	dSeconds = typeof dSeconds !== 'undefined' ? dSeconds : 0;
+
+	this.hours = 0;
+	this.minutes = 0;
+	this.seconds = 0;
+	this.ampm = "am";
+	
+	//apply offsets
+	date.setHours(date.getHours() + dHours);
+	date.setMinutes(date.getMinutes() + dMinutes);
+	date.setSeconds(date.getSeconds() + dSeconds);
+	
+	//get time in 12 hour format
+	this.minutes = date.getMinutes();
+	this.seconds = date.getSeconds();
+	var tempHour = date.getHours();
+	
+	if(tempHour == 0)
+		this.hours = 12;
+	else if(tempHour > 0 && tempHour <= 12)
+		this.hours = tempHour;
+	else {
+		this.hours = tempHour % 12;
+		this.ampm = "pm";
+	}
+}
+
+Time.prototype.toString = function()
+{
+	return (this.hours + ":" + this.minutes + ":" + this.seconds + " " + this.ampm);
+}
+
 })();
