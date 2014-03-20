@@ -28,7 +28,7 @@ var randPhone = "";
 for(var i = 0; i < 4; i++)
 	randPhone += getRandomInt(0, 9);
 
-var phoneNum = "800555" + RandomPhone;
+var phoneNum = "800555" + randPhone;
 
 
 //jQuery
