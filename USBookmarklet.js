@@ -47,7 +47,9 @@ var latNum = getRandomInt(0, 9999);
 var longNum = getRandomInt(0, 9999);
 var lat = Array('N', 'S');
 var longi = Array('W', 'E');
-$('[name=insured_street]').val(latNum + " " + lat[getRandomInt(0, lat.length - 1] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1]);
+var streetAddress = latNum + " " + lat[getRandomInt(0, lat.length - 1)] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1)];
+setText("[name=insured_street]", streetAddress);
+//$('[name=insured_street]').val(latNum + " " + lat[getRandomInt(0, lat.length - 1)] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1)]);
 
 //state
 //var $insured_state=$('[name=insured_state]');
@@ -73,10 +75,11 @@ if(String(randomZip).length == 4) {
 	//temp = randomZip;
 	//randomZip = "0" + temp;
 }
-var $zip=$('[name=insured_zip]');
-$zip.val(randomZip);
-$zip.blur();
-$zip.change();
+setText("[name=insured_zip]", randomZip);
+//var $zip=$('[name=insured_zip]');
+//$zip.val(randomZip);
+//$zip.blur();
+//$zip.change();
 
 //city
 var $insured_city=$('[name=insured_city]');
