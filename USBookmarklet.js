@@ -33,38 +33,45 @@ var phoneNum = "800555" + randPhone;
 
 //jQuery
 //----------------------------------------------------------------------
-function setText(locator, text) {
-	$(locator).val(text);
-}
-
-
 //test checkbox
 $('[name=test]').attr('checked',false);
 
 //name
-$('[name=insured_name]').val(fullName);
+setText("[name=insured_name]", fullName);
+//$('[name=insured_name]').val(fullName);
 
 //street
-var latNum = Math.floor(Math.random()*9999);
-var longNum = Math.floor(Math.random()*9999);
+//var latNum = Math.floor(Math.random()*9999);
+var latNum = getRandomInt(0, 9999);
+//var longNum = Math.floor(Math.random()*9999);
+var longNum = getRandomInt(0, 9999);
 var lat = Array('N', 'S');
 var longi = Array('W', 'E');
-$('[name=insured_street]').val(latNum + " " + lat[Math.floor(Math.random()*lat.length)] + " " + longNum + " " + longi[Math.floor(Math.random()*longi.length)]);
+$('[name=insured_street]').val(latNum + " " + lat[getRandomInt(0, lat.length - 1] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1]);
 
 //state
-var $insured_state=$('[name=insured_state]');
-var randomState = Math.floor(Math.random()*(64) + 1);
-while(zipCodes[randomState-1][0][0] == 1){randomState = Math.floor(Math.random()*(64) + 1);
-}$insured_state.prop('selectedIndex', randomState);
-$insured_state.blur();
-$insured_state.change();
+//var $insured_state=$('[name=insured_state]');
+//var randomState = Math.floor(Math.random()*(64) + 1);
+var randomState = getRandomInt(0, zipCodes.length - 1);
+while(zipCodes[randomState-1][0][0] == 1)
+{
+	//randomState = Math.floor(Math.random()*(64) + 1);
+	randomState = getRandomInt(0, zipCodes.length - 1);
+}
+
+selectOptionByIndex("[name=insured_state]", randomState);
+//$insured_state.prop('selectedIndex', randomState);
+//$insured_state.blur();
+//$insured_state.change();
 
 //zip code
-var randomZipIndex = Math.floor(Math.random()*(10));
+//var randomZipIndex = Math.floor(Math.random()*(10));
+var randomZipIndex = getRandomInt(0, 9);
 var randomZip = zipCodes[randomState-1][randomZipIndex][0];
 if(String(randomZip).length == 4) {
-	temp = randomZip;
-	randomZip = "0" + temp;
+	randomZip = "0" + randomZip;
+	//temp = randomZip;
+	//randomZip = "0" + temp;
 }
 var $zip=$('[name=insured_zip]');
 $zip.val(randomZip);
@@ -270,9 +277,13 @@ function selectRandomOption(selectLocator) {
 		var minOption = getFirstValidOption(selectLocator);
 		var maxOption = getSelectOptionsCount(selectLocator);
 		if(maxOption > 0) {
-			$(selectLocator).prop("selectedIndex", getRandomInt(minOption, maxOption));
+			selectOptionByIndex(selectLocator, getRandomInt(minOption, maxOption));
 		}
 	}
+}
+
+function selectOptionByIndex(selectLocator, index) {
+	$(selectLocator).prop("selectedIndex", index);
 }
 
 function getFirstValidOption(selectLocator) {
@@ -290,8 +301,14 @@ function getSelectOptionsCount(selectLocator) {
 	return $(selectLocator).children().length;
 }
 
+//get random integer between min (inclusive) and max (inclusive)
 function getRandomInt(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
+}
+
+//sets the text of the element at the locator with the text supplied
+function setText(locator, text) {
+	$(locator).val(text);
 }
 
 })();
