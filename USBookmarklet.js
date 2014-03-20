@@ -314,6 +314,7 @@ function getRandomInt(min, max) {
 //sets the text of the element at the locator with the text supplied
 function setText(locator, text) {
 	$(locator).val(text);
+	$(locator).change();
 	$(locator).blur();
 }
 
