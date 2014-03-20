@@ -54,8 +54,9 @@ setText("[name=insured_street]", streetAddress);
 //state
 //var $insured_state=$('[name=insured_state]');
 //var randomState = Math.floor(Math.random()*(64) + 1);
-var randomState = getRandomInt(0, zipCodes.length - 1);
-while(zipCodes[randomState][0][0] == 1)
+alert(zipCodes.length);
+var randomState = getRandomInt(1, zipCodes.length - 1);
+while(zipCodes[randomState-1][0][0] == 1)
 {
 	//randomState = Math.floor(Math.random()*(64) + 1);
 	randomState = getRandomInt(0, zipCodes.length - 1);
