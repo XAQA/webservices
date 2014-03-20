@@ -54,7 +54,7 @@ setText("[name=insured_street]", streetAddress);
 //state
 //var $insured_state=$('[name=insured_state]');
 //var randomState = Math.floor(Math.random()*(64) + 1);
-var randomState = getRandomInt(1, zipCodes.length - 1);
+var randomState = getRandomInt(0, zipCodes.length - 1);
 while(zipCodes[randomState][0][0] == 1)
 {
 	//randomState = Math.floor(Math.random()*(64) + 1);
@@ -69,7 +69,7 @@ selectOptionByIndex("[name=insured_state]", randomState);
 //zip code
 //var randomZipIndex = Math.floor(Math.random()*(10));
 var randomZipIndex = getRandomInt(0, 9);
-var randomZip = zipCodes[randomState-1][randomZipIndex][0];
+var randomZip = zipCodes[randomState][randomZipIndex][0];
 if(String(randomZip).length == 4) {
 	randomZip = "0" + randomZip;
 	//temp = randomZip;
@@ -83,7 +83,7 @@ setText("[name=insured_zip]", randomZip);
 
 //city
 var $insured_city=$('[name=insured_city]');
-$insured_city.val(zipCodes[randomState-1][randomZipIndex][1]);
+$insured_city.val(zipCodes[randomState][randomZipIndex][1]);
 $insured_city.blur();
 $insured_city.change();
 
