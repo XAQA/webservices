@@ -287,6 +287,8 @@ function selectRandomOption(selectLocator) {
 
 function selectOptionByIndex(selectLocator, index) {
 	$(selectLocator).prop("selectedIndex", index);
+	$(selectLocator).change();
+	$(selectLocator).blur();
 }
 
 function getFirstValidOption(selectLocator) {
@@ -312,6 +314,7 @@ function getRandomInt(min, max) {
 //sets the text of the element at the locator with the text supplied
 function setText(locator, text) {
 	$(locator).val(text);
+	$(locator).blur();
 }
 
 })();
