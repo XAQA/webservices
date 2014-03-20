@@ -61,7 +61,7 @@ while(zipCodes[randomState][0][0] == 1)
 	randomState = getRandomInt(0, zipCodes.length - 1);
 }
 
-selectOptionByIndex("[name=insured_state]", randomState);
+selectOptionByIndex("[name=insured_state]", randomState - 1);
 //$insured_state.prop('selectedIndex', randomState);
 //$insured_state.blur();
 //$insured_state.change();
