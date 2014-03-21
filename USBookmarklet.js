@@ -2,7 +2,7 @@
 
 //add utility functions to page
 var utilityScriptSource = "https://rawgithub.com/XAQA/webservices/master/formUtilityFunctions.js";
-if($("script[src=" + utilityScriptSource + "]").length == 0) {
+if($("script[src='" + utilityScriptSource + "']").length == 0) {
 	var utilityScript = document.createElement("script");
 	utilityScript.src = utilityScriptSource;
 	document.getElementsByTagName("head")[0].appendChild(utilityScript);
