@@ -83,10 +83,7 @@ window.setTimeout(causeLoss, 1000);
 //cause of loss
 function causeLoss()
 {
-	if(isElementValid("select[name=cause_of_loss]"))
-	{
-		selectRandomOption("select[name=cause_of_loss]");
-	}
+	selectRandomOption("select[name=cause_of_loss]");
 }
 
 //job type
@@ -125,16 +122,10 @@ setText("input[name='loss_received_min']", timeReceived.minutes);
 setText("input[name='loss_received_ampm']", timeReceived.ampm);
 
 //policy type
-if(isElementValid("select[name=policy_type]"))
-{
-	selectRandomOption("select[name=policy_type]");
-}
+selectRandomOption("select[name=policy_type]");
 
 //property type
-if(isElementValid("select[name=property_type]"))
-{
-	selectRandomOption("select[name=policy_type]");
-}
+selectRandomOption("select[name=property_type]");
 
 //coverage name
 setText("[name=coverage_name_i_1]", "Example Coverage Name");
@@ -146,7 +137,7 @@ selectRandomOption("select[name=coverage_type_1]");
 setText("[name=policy_limit_1]", "15" + z);
 
 //coverage deductible
-setText("[name=dedeuctible_1]", "3" + y);
+setText("[name=deductible_1]", "3" + y);
 
 //coverage apply to
 selectRandomOption("select[name=apply_to_1]");
@@ -217,7 +208,7 @@ function isElementValid(locator) {
 function selectRandomOption(selectLocator) {
 	if(isElementValid(selectLocator)) {
 		var minOption = getFirstValidOption(selectLocator);
-		var maxOption = getSelectOptionsCount(selectLocator);
+		var maxOption = getSelectOptionsCount(selectLocator) - 1;
 		if(maxOption > 0) {
 			selectOptionByIndex(selectLocator, getRandomInt(minOption, maxOption));
 		}
@@ -235,8 +226,11 @@ function getFirstValidOption(selectLocator) {
 	var selectElement = $(selectLocator);
 	var selectOptions = selectElement.children();
 	
-	if($(selectOptions[0]).val() === "")
-		selectedOption = 1;
+	var i = 0;
+	while($(selectOptions[i]).val() === "") {
+		selectedOption += 1;
+		i++;
+	}
 		
 	return selectedOption
 }
