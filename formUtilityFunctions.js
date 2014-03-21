@@ -50,7 +50,7 @@ function isElementValid(locator) {
 function selectRandomOption(selectLocator) {
 	if(isElementValid(selectLocator)) {
 		var minOption = getFirstValidOption(selectLocator);
-		var maxOption = getSelectOptionsCount(selectLocator);
+		var maxOption = getSelectOptionsCount(selectLocator) - 1;
 		if(maxOption > 0) {
 			selectOptionByIndex(selectLocator, getRandomInt(minOption, maxOption));
 		}
@@ -68,8 +68,11 @@ function getFirstValidOption(selectLocator) {
 	var selectElement = $(selectLocator);
 	var selectOptions = selectElement.children();
 	
-	if($(selectOptions[0]).val() === "")
-		selectedOption = 1;
+	var i = 0;
+	while($(selectOptions[i]).text() === "") {
+		selectedOption += 1;
+		i++;
+	}
 		
 	return selectedOption
 }
