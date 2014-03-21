@@ -6,7 +6,7 @@ var utilityScriptSource = "https://rawgithub.com/XAQA/webservices/master/formUti
 if($("script[src='" + utilityScriptSource + "']").length == 0) {
 	var utilityScript = document.createElement("script");
 	utilityScript.src = utilityScriptSource;
-	$("script[src='" + autofillScriptSource + "']").insertBefore(utilityScript);
+	$(utilityScript).insertBefore($("script[src='" + autofillScriptSource + "']"));
 }
 
 
