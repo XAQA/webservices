@@ -38,71 +38,49 @@ $('[name=test]').attr('checked',false);
 
 //name
 setText("[name=insured_name]", fullName);
-//$('[name=insured_name]').val(fullName);
 
 //street
-//var latNum = Math.floor(Math.random()*9999);
 var latNum = getRandomInt(0, 9999);
-//var longNum = Math.floor(Math.random()*9999);
 var longNum = getRandomInt(0, 9999);
 var lat = Array('N', 'S');
 var longi = Array('W', 'E');
 var streetAddress = latNum + " " + lat[getRandomInt(0, lat.length - 1)] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1)];
 setText("[name=insured_street]", streetAddress);
-//$('[name=insured_street]').val(latNum + " " + lat[getRandomInt(0, lat.length - 1)] + " " + longNum + " " + longi[getRandomInt(0, longi.length - 1)]);
 
 //state
-//var $insured_state=$('[name=insured_state]');
-//var randomState = Math.floor(Math.random()*(64) + 1);
 var randomState = getRandomInt(1, zipCodes.length - 1);
 while(zipCodes[randomState][0][0] == 1)
 {
-	//randomState = Math.floor(Math.random()*(64) + 1);
 	randomState = getRandomInt(1, zipCodes.length - 1);
 }
-
 selectOptionByIndex("[name=insured_state]", randomState);
-//$insured_state.prop('selectedIndex', randomState);
-//$insured_state.blur();
-//$insured_state.change();
+
 
 //zip code
-//var randomZipIndex = Math.floor(Math.random()*(10));
 var randomZipIndex = getRandomInt(0, 9);
 var randomZip = zipCodes[randomState][randomZipIndex][0];
 if(String(randomZip).length == 4) {
 	randomZip = "0" + randomZip;
-	//temp = randomZip;
-	//randomZip = "0" + temp;
 }
 setText("[name=insured_zip]", randomZip);
-//var $zip=$('[name=insured_zip]');
-//$zip.val(randomZip);
-//$zip.blur();
-//$zip.change();
 
 //city
-var $insured_city=$('[name=insured_city]');
-$insured_city.val(zipCodes[randomState][randomZipIndex][1]);
-$insured_city.blur();
-$insured_city.change();
+setText("[name=insured_city]", zipCodes[randomState][randomZipIndex][1]);
 
 //phone
-var $phone=$('[name=insured_home_phone]');
-$phone.val(phoneNum);
-$phone.blur();
+setText("[name=insured_home_phone]", phoneNum);
 
 //email
-var $email=$('[name=insured_email]');
-$email.val('email'+y+'@email.com');
-$email.blur();
+setText("[name=insured_email]", "email" + y + "@email.com");
 
 //loss type
-var $loss_type=$('select[name=loss_type]');
-var maxLossType = ($loss_type.children('option').length) - 1;
-var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
-$loss_type.prop('selectedIndex', randomLossType);
-$loss_type.change();
+selectRandomOption("select[name=loss_type]");
+
+//var $loss_type=$('select[name=loss_type]');
+//var maxLossType = ($loss_type.children('option').length) - 1;
+//var randomLossType = Math.floor(Math.random()*(maxLossType) + 1);
+//$loss_type.prop('selectedIndex', randomLossType);
+//$loss_type.change();
 
 window.setTimeout(causeLoss, 1000);
 
