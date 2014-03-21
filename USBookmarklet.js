@@ -224,10 +224,8 @@ function getFirstValidOption(selectLocator) {
 	var selectElement = $(selectLocator);
 	var selectOptions = selectElement.children();
 	
-	var i = 0;
-	while($(selectOptions[i]).text().trim() === "") {
-		selectedOption += 1;
-		i++;
+	if($(selectOptions[i]).text().trim() === "") {
+		selectedOption = 1;
 	}
 		
 	return selectedOption
