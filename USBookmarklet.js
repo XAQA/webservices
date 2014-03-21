@@ -224,7 +224,7 @@ function getFirstValidOption(selectLocator) {
 	var selectElement = $(selectLocator);
 	var selectOptions = selectElement.children();
 	
-	if($(selectOptions[i]).text().trim() === "") {
+	if($(selectOptions[0]).text().trim() === "") {
 		selectedOption = 1;
 	}
 		
