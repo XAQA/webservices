@@ -134,13 +134,13 @@ setText("input[name='loss_received_min']", timeReceived.minutes);
 setText("input[name='loss_received_ampm']", timeReceived.ampm);
 
 //policy type
-if(isElementValid("select[name=policy_type]")
+if(isElementValid("select[name=policy_type]"))
 {
 	selectRandomOption("select[name=policy_type]");
 }
 
 //property type
-if(isElementValid("select[name=property_type]")
+if(isElementValid("select[name=property_type]"))
 {
 	selectRandomOption("select[name=policy_type]");
 }
