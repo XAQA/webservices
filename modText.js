@@ -205,7 +205,7 @@ function isElementValid(locator) {
 
 function selectRandomOption(selectLocator) {
 	if(isElementValid(selectLocator)) {
-		var $select=$("[name=" + elementName +"]");
+		var $select=$(selectLocator);
 		var filteredOptions = $select.children('option').toArray()
 			.filter(function(opt) { return !!opt.value});
 		var randomOption = filteredOptions[Math.floor(Math.random() * filteredOptions.length)];
