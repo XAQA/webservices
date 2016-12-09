@@ -21,14 +21,18 @@ var tripleValPostal = Math.round(Math.random()*(9-1) +1) + doubleValPostal;
 
 //jQuery
 //=========================================================================
-//this function is used to randomly select an option from a drop down whos first elemnt is either blank or says "select one"
-function selectOptionPlusOne(elementName)
+//this function is used to randomly select an option from a drop down
+function selectRandomOption(elementName)
 {
-	var $element=$("[name=" + elementName +"]");
-	var maxElement = ($element.children('option').length) - 1;
-	var randElement = Math.round(Math.random()*(maxElement-1) + 1);
-	$element.prop('selectedIndex', randElement);
-	$element.change();
+	var $select=$("[name=" + elementName +"]");
+	var filteredOptions = $select.children('option').toArray()
+		.filter(function(opt) { return !!opt.value});
+	var randomOption = filteredOptions[Math.floor(Math.random() * filteredOptions.length)];
+
+	if(randomOption && randomOption.value) {
+		$select.val(randomOption.value);
+		$select.change();
+	}
 }
 
 
@@ -58,7 +62,7 @@ var randPostalCity = postalCity[randRegion-1][Math.floor(Math.random()*postalCit
 inputTextToTextbox("insured_city", randPostalCity[1]);
 
 //country/region
-selectOptionPlusOne("insured_state", randRegion);
+selectRandomOption("insured_state", randRegion);
 
 //postal code
 var $postal=$('[name=insured_zip]');
@@ -77,7 +81,7 @@ var randPhone = Math.round(Math.random()*(9999-1111) + 1111);
 inputTextToTextbox("insured_home_phone", "800555" + randPhone);
 
 //peril
-selectOptionPlusOne("loss_type");
+selectRandomOption("loss_type");
 
 //Loss date
 var yesterday = new Date();
@@ -87,13 +91,13 @@ $loss_date.datepicker().datepicker('setDate',yesterday);
 $('#ui-datepicker-div').hide();
 
 //cause
-selectOptionPlusOne("cause_of_loss");
+selectRandomOption("cause_of_loss");
 
 //job type
-selectOptionPlusOne("job_type");
+selectRandomOption("job_type");
 
 //job size
-selectOptionPlusOne("job_size");
+selectRandomOption("job_size");
 
 //CAT code
 var randCAT = Math.round(Math.random()*999);
@@ -105,10 +109,10 @@ else
 
 
 //business unit
-selectOptionPlusOne("business_unit");
+selectRandomOption("business_unit");
 
 //segmentation
-selectOptionPlusOne("carrier_attribute_1");
+selectRandomOption("carrier_attribute_1");
 
 //deductible stuff
 //
@@ -116,7 +120,7 @@ selectOptionPlusOne("carrier_attribute_1");
 inputTextToTextbox("coverage_name_i_1", "Basic Coverage");
 
 //type
-selectOptionPlusOne("coverage_type_1");
+selectRandomOption("coverage_type_1");
 
 //sums insured
 var randSumsInsured = Math.round(Math.random()*(160000-50000) + 50000);
