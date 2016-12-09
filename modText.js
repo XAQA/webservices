@@ -205,10 +205,14 @@ function isElementValid(locator) {
 
 function selectRandomOption(selectLocator) {
 	if(isElementValid(selectLocator)) {
-		var minOption = getFirstValidOption(selectLocator);
-		var maxOption = getSelectOptionsCount(selectLocator) - 1;
-		if(maxOption > 0) {
-			selectOptionByIndex(selectLocator, getRandomInt(minOption, maxOption));
+		var $select=$("[name=" + elementName +"]");
+		var filteredOptions = $select.children('option').toArray()
+			.filter(function(opt) { return !!opt.value});
+		var randomOption = filteredOptions[Math.floor(Math.random() * filteredOptions.length)];
+
+		if(randomOption && randomOption.value) {
+			$select.val(randomOption.value);
+			$select.change();
 		}
 	}
 }
@@ -217,22 +221,6 @@ function selectOptionByIndex(selectLocator, index) {
 	$(selectLocator).prop("selectedIndex", index);
 	$(selectLocator).blur();
 	$(selectLocator).change();
-}
-
-function getFirstValidOption(selectLocator) {
-	var selectedOption = 0;
-	var selectElement = $(selectLocator);
-	var selectOptions = selectElement.children();
-	
-	if($(selectOptions[0]).text().trim() === "") {
-		selectedOption = 1;
-	}
-		
-	return selectedOption
-}
-
-function getSelectOptionsCount(selectLocator) {
-	return $(selectLocator).children().length;
 }
 
 //get random integer between min (inclusive) and max (inclusive)
